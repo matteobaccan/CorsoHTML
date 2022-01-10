@@ -16,7 +16,9 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-  
+    runs-on: ubuntu-latest
+
+    steps:  
     - name: HTML5 Validator
       # You may pin to the exact commit or the version.
       # uses: Cyb3r-Jak3/html5validator-action@02b835cb536d5a22714059a755940fa6f1f3fe1b
