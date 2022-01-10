@@ -36,7 +36,7 @@ jobs:
         # Format for logging output. Valid values: gnu,xml,json,text
         #format: # optional
         # Logging Level. Valid values: DEBUG, INFO, WARNING. Default: WARNING
-        log_level: DEBUG # optional, default is WARNING
+        #log_level: DEBUG # optional, default is WARNING
         # Checks css as well
         #css: # optional
         # Files or directories to ignore in checking
