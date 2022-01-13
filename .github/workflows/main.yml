@@ -41,6 +41,7 @@ jobs:
         #css: # optional
         # Files or directories to ignore in checking
         #blacklist: # optional
+      continue-on-error: true
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
