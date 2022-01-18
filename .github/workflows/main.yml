@@ -41,9 +41,10 @@ jobs:
         #css: # optional
         # Files or directories to ignore in checking
         #blacklist: # optional
+      continue-on-error: true
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
         name: log
-        path: esercizi/log.log
+        path: log.log
