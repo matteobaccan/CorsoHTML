@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Titolo della pagina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .sinistra {
+      float: left;
+      width: 18%;
+      border: 1px solid black;
+    }
+
+    .destra {
+      float: left;
+      width: 18%;
+      border: 1px solid black;
+    }
+
+    .centro {
+      float: left;
+      width: 60%;
+      border: 1px solid black;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .sinistra,
+      .centro,
+      .destra {
+        width: 100%;
+        border: 1px solid black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sinistra">
+    <p>sinistra</p>
+  </div>
+
+  <div class="centro">
+    <p>centro</p>
+  </div>
+
+  <div class="destra">
+    <p>destra</p>
+  </div>
+
+</body>
+
+</html>
