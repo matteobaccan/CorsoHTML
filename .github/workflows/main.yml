@@ -44,7 +44,7 @@ jobs:
       continue-on-error: true
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: log
         path: log.log
