@@ -20,7 +20,7 @@ jobs:
 
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: HTML5 Validator
       # You may pin to the exact commit or the version.
@@ -44,7 +44,7 @@ jobs:
       continue-on-error: true
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: log
         path: log.log
