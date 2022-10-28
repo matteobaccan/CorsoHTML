@@ -1,4 +1,10 @@
+---
+marp: true
+---
+
 ![](img%5CChapter_html0.png)
+
+---
 
 HTML
 
@@ -12,6 +18,8 @@ Identifica una serie di elementi strutturati
 
 La sua interpretazione necessita di un browser
 
+---
+
 HTML – strumenti
 
 Lo strumento che useremo durante il corso è
@@ -23,6 +31,8 @@ Lo strumento che useremo durante il corso è
 <span style="color:#000000">Iscrivetevi e seguite il profilo creato apposta per il corso</span>
 
 <span style="color:#C9211E">[https://codepen\.io/matteobaccan](https://codepen.io/matteobaccan)</span>
+
+---
 
 HTML – strumenti
 
