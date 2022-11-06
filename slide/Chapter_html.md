@@ -1,14 +1,19 @@
 ---
+theme: default
+_class: lead
+paginate: true
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
 ---
-
-![](img%5CChapter_html0.png)
+<!-- _paginate: false -->
+![bg](img/Chapter_html0.png)
 
 ---
 
-HTML
+# HTML
 
-Hyper Text Markup Language
+__Hyper Text Markup Language__
 
 È il linguaggio standard per la creazione di pagine web
 
@@ -20,29 +25,29 @@ La sua interpretazione necessita di un browser
 
 ---
 
-HTML – strumenti
+# HTML – strumenti
 
-Lo strumento che useremo durante il corso è
+Il portale che useremo durante il corso è
 
-<span style="color:#C9211E">[https://codepen\.io](https://codepen.io/)</span>
+[https://codepen\.io](https://codepen.io/)
 
-<span style="color:#000000"> _CodePen is a social development environment\. At its heart\, it allows you to write code in the browser\, and see the results of it as you build\. A useful and liberating online code editor for developers of any skill\, and particularly empowering for people learning to code\. We focus primarily on front\-end languages like HTML\, CSS\, JavaScript\, and preprocessing syntaxes that turn into those things\._ </span>
+_CodePen is a social development environment. At its heart\, it allows you to write code in the browser, and see the results of it as you build. A useful and liberating online code editor for developers of any skill\, and particularly empowering for people learning to code. We focus primarily on front-end languages like HTML, CSS, JavaScript, and preprocessing syntaxes that turn into those things._
 
-<span style="color:#000000">Iscrivetevi e seguite il profilo creato apposta per il corso</span>
+Iscrivetevi e seguite il profilo creato apposta per il corso
 
-<span style="color:#C9211E">[https://codepen\.io/matteobaccan](https://codepen.io/matteobaccan)</span>
+[https://codepen\.io/matteobaccan](https://codepen.io/matteobaccan)
 
 ---
 
-HTML – strumenti
+# HTML – strumenti
 
 Editor
 
-Codepen\.io
+Codepen.io
 
 Notepad
 
-Notepad\+\+
+Notepad++
 
 VisualStudio Code
 
@@ -50,18 +55,16 @@ Va bene qualsiasi editor\, non visuale\, meglio se con syntax highlighter e code
 
 Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools\.com](https://www.w3schools.com/) e costantemente aggiornati\, sono disponibili a questo indirizzo
 
-<span style="color:#C9211E">[https://github\.com/matteobaccan/CorsoHTML](https://github.com/matteobaccan/CorsoHTML)</span>
+[https://github\.com/matteobaccan/CorsoHTML](https://github.com/matteobaccan/CorsoHTML)
+
+---
+# HTML - Esempio
 
 \<\!DOCTYPE html>
-
 \<html lang="it">
-
 \<head>
-
 \<title>Titolo della pagina\</title>
-
 \</head>
-
 \<body>
 
 \<h1>Intestazione\</h1>
@@ -69,32 +72,39 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 \<p>Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Praesent laoreet hendrerit neque sed sagittis\. Donec sodales pharetra convallis\. Morbi sagittis orci vel erat cursus\, et pretium risus porttitor\.\</p>
 
 \</body>
-
 \</html>
+
+---
+# HTML - Elementi
 
 TAG
 
-<span style="color:#C9211E">\<nometag> contenuto </span>  <span style="color:#C9211E">\</nometag></span>
+__<nometag> contenuto </nometag>__
 
 Un tag è identificato da una sequenza di caratteri\, con una sintassi di apertura e chiusura
 
 All’interno del tag viene poi inserito il suo contenuti\, che a sua volta potrebbe essere del testo o altri tag
 
+---
+# HTML - Elementi
+
 Empty TAG
 
-<span style="color:#C9211E">\<br> \<hr> \<img></span>
+__\<br> <hr> <img>__
 
 Sono tag pensati per non avere un corpo\.
 
 In base al fatto che siano usati come HTML5 o XHTML5 potrebbero essere scritti in formato diverso
 
-<span style="color:#C9211E">\<br/> \<hr/> \<img/></span>
+__\<br/> <hr/> <img/>__
 
-HTML – attributi
+---
+
+# HTML – attributi
 
 Attributi
 
-<span style="color:#C9211E"><a href="</span>  <span style="color:#C9211E">[https://www\.baccan\.it](https://www.baccan.it/)</span>  <span style="color:#C9211E">">Visitate Baccan\.it\</a> </span>
+__<a href="https://www.baccan.it">Visitate Baccan.it</a>__
 
 I tag HTML possono avere degli attributi\.
 
@@ -102,13 +112,17 @@ Gli attributi aggiungono delle informazioni ai tag
 
 La loro struttura è per
 
-<span style="color:#C9211E">chiave=valore</span>
+__chiave=valore__
 
-HTML – definzione
+---
 
-<span style="color:#C9211E"> __\<\!DOCTYPE html>__ </span>
+# HTML – definzione
+
+__\<\!DOCTYPE html>__
 
 Identifica il fatto che il documento sia in formato HTML5
+
+---
 
 <span style="color:#C9211E"> __\<html lang="it">__ </span>
 
