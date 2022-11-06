@@ -116,7 +116,7 @@ __chiave=valore__
 
 ---
 
-# HTML – definzione
+# HTML – definizione
 
 __\<\!DOCTYPE html>__
 
