@@ -112,7 +112,7 @@ Gli attributi aggiungono delle informazioni ai tag
 
 La loro struttura è per
 
-__chiave=valore__
+__chiave="valore"__
 
 ---
 
@@ -123,20 +123,23 @@ __\<\!DOCTYPE html>__
 Identifica il fatto che il documento sia in formato HTML5
 
 ---
+# HTML primo tag
 
-<span style="color:#C9211E"> __\<html lang="it">__ </span>
+__\<html lang="it">__ 
 
-<span style="color:#C9211E"> __\.\.\.__ </span>
+ __\.\.\.__
 
-<span style="color:#C9211E"> __\</html>__ </span>
+ __\</html>__
 
-<span style="color:#000000">É il primo elemento di una pagina html\, all’interno di questo  elemento è contenuta la struttura della pagina</span>
+É il primo elemento di una pagina html\, all’interno di questo  elemento è contenuta la struttura della pagina
 
-<span style="color:#C9211E"> __\<head>__ </span>
+---
+# HEAD
+__\<head>__
 
-<span style="color:#C9211E"> __\.\.__ </span>
+__\.\.__
 
-<span style="color:#C9211E"> __\</head>__ </span>
+__\</head>__
 
 È il tag che contiene le informazioni inerenti alla pagina
 
@@ -148,61 +151,75 @@ Identifica il fatto che il documento sia in formato HTML5
 
 \- Tag per Social Network
 
+---
+# HEAD
 \<head>
 
-<span style="color:#C9211E">\<title>Titolo della pagina\</title></span>
+__\<title>Titolo della pagina\</title>__
 
 \</head>
 
 È il titolo della pagina: viene visualizzato all’interno del browser per dare un nome al tab che state visualizzando o dai motori di ricerca per rappresentare la vostra pagina
 
-<span style="color:#C9211E">\<body></span>
+---
+# BODY
+__\<body>__
 
-<span style="color:#C9211E">…</span>
+..
 
-<span style="color:#C9211E">\</body></span>
+__\</body>__
 
 Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabelle etc
 
+---
+# BODY
 \<body>
 
-<span style="color:#C9211E">\<h1>Intestazione\</h1></span>
+__\<h1>Intestazione\</h1>__
 
 \</body>
 
 È il primo degli heading disponibili in HTML5
 
+---
+# BODY
 \<body>
 
-<span style="color:#C9211E">	</span>  <span style="color:#C9211E">\<p>Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Praesent laoreet hendrerit neque sed sagittis\. Donec sodales pharetra convallis\. Morbi sagittis orci vel erat cursus\, et pretium risus porttitor\.\</p></span>
+__\<p>Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Praesent laoreet hendrerit neque sed sagittis\. Donec sodales pharetra convallis\. Morbi sagittis orci vel erat cursus\, et pretium risus porttitor\.\</p>__
 
 \</body>
 
 Definisce un paragrafo
 
-Heading
+---
+# Heading
 
-<span style="color:#C9211E">\<h1>Intestazione 1\</h1></span>
+\<h1>Intestazione 1\</h1>
 
-<span style="color:#C9211E">\<h2>Intestazione 2\</h2></span>
+\<h2>Intestazione 2\</h2>
 
-<span style="color:#C9211E">\<h3>Intestazione 3\</h3> </span>
+\<h3>Intestazione 3\</h3> 
 
 Questo tipo di tag sono intestazioni
 
 Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle parti di pagina\. Il loro utilizzo è utilizzato dai motori di ricerca per determinare delle parti importanti di pagina
 
+---
+# Style
+
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
 
-<span style="color:#C9211E">\<h1 style="color:red;">Intestazione\</h1></span>
+__\<h1 style="color:red;">Intestazione\</h1>__
 
-<span style="color:#C9211E">\<h2 style="color:blue;">Intestazione\</h2></span>
+__\<h2 style="color:blue;">Intestazione\</h2>__
 
-<span style="color:#C9211E">\<h3 style="color:yellow;">Intestazione\</h3></span>
+__\<h3 style="color:yellow;">Intestazione\</h3>__
 
 Ad esempio per cambiare il colore del carattere di un testo
 
-HTML – formattazione
+---
+
+# Formattazione
 
 \<b> \- Grassetto
 
@@ -224,7 +241,9 @@ HTML – formattazione
 
 \<sup> \- Superscript
 
-HTML – citazioni
+---
+
+# Citazioni
 
 Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
@@ -240,47 +259,61 @@ Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
 \<q>	Defines a short inline quotation
 
+---
+# Commenti
 Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo\.
 
-<span style="color:#C9211E">\<\!\-\- Questo è un commento \-\-></span>
+__\<\!\-\- Questo è un commento \-\->__
 
-<span style="color:#C9211E">\<p>Questo è un paragrafo\</p></span>
+\<p>Questo è un paragrafo\</p>
+
+---
+# Colori
 
 In HTML esistono 140 colori standard che possono essere chiamati per nome
 
-<span style="color:#C9211E">https://www\.w3schools\.com/colors/colors\_names\.asp</span>
+https://www\.w3schools\.com/colors/colors\_names\.asp
 
 Ad ognuno è associata una sequenza RGB
 
+---
+# Colori
+
 I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
 
-<span style="color:#C9211E">\<h1 style="background\-color:DodgerBlue;">Intestazione\</h1></span>
+\<h1 style="background\-color:DodgerBlue;">Intestazione\</h1>
 
-<span style="color:#C9211E">\<p style="background\-color:Tomato;">Paragrafo\</p></span>
+\<p style="background\-color:Tomato;">Paragrafo\</p>
 
-<span style="color:#C9211E">\<h1 style="color:Tomato;">Intestazione \</h1></span>
+\<h1 style="color:Tomato;">Intestazione \</h1>
 
-<span style="color:#C9211E">\<p style="color:DodgerBlue;">Paragrafo\</p></span>
+\<p style="color:DodgerBlue;">Paragrafo\</p>
 
-<span style="color:#C9211E">\<p style="color:MediumSeaGreen;">Paragrafo\</p></span>
+\<p style="color:MediumSeaGreen;">Paragrafo\</p>
 
-<span style="color:#C9211E">\<h1 style="border:2px solid Tomato;">Intestazione\</h1></span>
+\<h1 style="border:2px solid Tomato;">Intestazione\</h1>
 
-<span style="color:#C9211E">\<h1 style="border:2px solid DodgerBlue;">Intestazione\</h1></span>
+\<h1 style="border:2px solid DodgerBlue;">Intestazione\</h1>
 
-<span style="color:#C9211E">\<h1 style="border:2px solid Violet;">Intestazione\</h1></span>
+\<h1 style="border:2px solid Violet;">Intestazione\</h1>
+
+---
+# Colori
 
 I colori possono essere indicati in vari formati RGB\, HEX\, HSL\, RGBA e HSLA
 
-<span style="color:#C9211E">\<h1 style="background\-color:rgb\(255\, 99\, 71\);">\.\.\.\</h1></span>
+\<h1 style="background\-color:rgb\(255\, 99\, 71\);">\.\.\.\</h1>
 
-<span style="color:#C9211E">\<h1 style="background\-color:\#ff6347;">\.\.\.\</h1></span>
+\<h1 style="background\-color:\#ff6347;">\.\.\.\</h1>
 
-<span style="color:#C9211E">\<h1 style="background\-color:hsl\(9\, 100%\, 64%\);">\.\.\.\</h1></span>
+\<h1 style="background\-color:hsl\(9\, 100%\, 64%\);">\.\.\.\</h1>
 
-<span style="color:#C9211E">\<h1 style="background\-color:rgba\(255\, 99\, 71\, 0\.5\);">\.\.\.\</h1></span>
+\<h1 style="background\-color:rgba\(255\, 99\, 71\, 0\.5\);">\.\.\.\</h1>
 
-<span style="color:#C9211E">\<h1 style="background\-color:hsla\(9\, 100%\, 64%\, 0\.5\);">\.\.\.\</h1></span>
+\<h1 style="background\-color:hsla\(9\, 100%\, 64%\, 0\.5\);">\.\.\.\</h1>
+
+---
+# Colori
 
 Un colore RGB rappresenta le tre componenti di luce RED\, GREEN e BLUE
 
@@ -298,19 +331,29 @@ Il nero è rappresentato da  rgb\(0\, 0\, 0\)
 
 Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
+---
+# Colori RGB
+
 ![](img%5CChapter_html1.png)
 
-<span style="color:#C9211E">https://www\.w3schools\.com/colors/colors\_rgb\.asp</span>
+https://www\.w3schools\.com/colors/colors\_rgb\.asp
 
+---
+# Colori
 Un colore HEX è la rappresentazione esadecimale di un colore RGB\, usando la seguente griglia
 
 \#RRGGBB dove RR è il red\, GG è il green e BB è il blue
 
 Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
+---
+# Colori HEX
 ![](img%5CChapter_html2.png)
 
-<span style="color:#C9211E">https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp</span>
+https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp
+
+---
+# Colori
 
 HSL è acronimo di hue\, saturation e lightness \(tinta\, saturazione e luminosità\)
 
@@ -322,17 +365,25 @@ Saturation è una percentuale da 0% che identifica un’ombra grigia e  100% che
 
 Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che è il bianco\.
 
+---
+# Colori HSL
 ![](img%5CChapter_html3.png)
 
-<span style="color:#C9211E">https://www\.w3schools\.com/colors/colors\_hsl\.asp</span>
+https://www\.w3schools\.com/colors/colors\_hsl\.asp
 
-Cos'è il CSS?
+---
+
+# Cos'è il CSS?
 
 CSS è acronimo di  __Cascading Style Sheets__ \, sono fogli che vengono utilizzati per formattare le pagine web\.
 
 Con i CSS è possibile controllare il colore\, il carattere\, la dimensione del testo\, la spaziatura tra gli elementi\, il modo in cui gli elementi sono posizionati e disposti\, quali immagini di sfondo o colori di sfondo devono essere utilizzati\, o le diverse visualizzazioni in base alle dimensioni dello schermo
 
 Da notare che  __cascading __ identifica il fatto che uno stile applicato a un elemento padre si applicherà anche a tutti gli elementi figli all'interno dell'elemento padre
+
+---
+
+# CSS
 
 I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
@@ -342,21 +393,23 @@ Interno \- utilizzando un elemento \<style> nella sezione \<head>
 
 Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
-HTML – CSS Inline
+---
 
-<h1  __style="color:blue;"__ >Una intestazione blue\</h1>
+# CSS Inline
 
-<p  __style="color:red;"__ >Un paragrafo rosso\</p>
+\<h1  __style="color:blue;"__ >Una intestazione blue\</h1>
 
-HTML – CSS Interno
+\<p  __style="color:red;"__ >Un paragrafo rosso\</p>
 
-\<\!DOCTYPE html>
+---
 
-\<html>
+# CSS Interno
+
+...
 
 \<head>
 
-__  __  __\<style>__
+ __\<style>__
 
 __body \{background\-color: powderblue;\}__
 
@@ -364,25 +417,17 @@ __h1   \{color: blue;\}__
 
 __p    \{color: red;\}__
 
-__  __  __\</style>__
+ __\</style>__
 
 \</head>
 
-\<body>
+...
 
-\<h1>This is a heading\</h1>
+---
 
-\<p>This is a paragraph\.\</p>
+# CSS Esterno
 
-\</body>
-
-\</html>
-
-HTML – CSS Esterno
-
-\<\!DOCTYPE html>
-
-\<html>
+...
 
 \<head>
 
@@ -390,36 +435,32 @@ __\<link rel="stylesheet" href="styles\.css">__
 
 \</head>
 
-\<body>
+...
 
-\<h1>Intestazione\</h1>
+---
 
-\<p>Paragrafo\</p>
+# styles\.css
 
-\</body>
+    body {
 
-\</html>
+        background\-color: powderblue;
 
-HTML – CSS styles\.css
+    }
 
-body \{
+    h1 {
 
-background\-color: powderblue;
+        color: blue;
 
-\}
+    }
 
-h1 \{
+    p {
 
-color: blue;
+        color: red;
 
-\}
+    }
 
-p \{
-
-color: red;
-
-\}
-
+---
+# Link
 I link HTML sono collegamenti ipertestuali\.
 
 Lo scopo è quello di passare da una pagina all’altra
@@ -427,6 +468,10 @@ Lo scopo è quello di passare da una pagina all’altra
 Essendo elementi cliccabili\, quando viene spostato il mouse su un link il puntatore viene trasformato in una piccola mano\.
 
 ![](img%5CChapter_html4.png)
+
+---
+
+# Link
 
 Sintassi
 
@@ -440,6 +485,9 @@ Il testo del collegamento è la parte visibile all’interno della pagina HTML
 
 Facendo clic sul testo del collegamento\, il browser verrà indirizzato all'indirizzo  __URL__
 
+---
+# Link
+
 Esiste una convenzione fra browser per visualizzare i collegamenti con un colre diverso\, in base ad alcune caratteristiche
 
 Un collegamento  __non visitato__  è sottolineato e  __blu__
@@ -449,6 +497,10 @@ Un collegamento  __visitato__  è sottolineato e  __viola__
 Un collegamento  __attivo__  è sottolineato e  __rosso __
 
 Per ottenere l’attivo basta tenere cliccato il mouse sul link
+
+---
+
+# Target
 
 L'attributo di  __target__
 
@@ -467,6 +519,8 @@ __\_parent__  \- Apre il documento nel frame genitore
 __\_top__  \- Apre il documento in tutto il corpo della finestra
 
 __“__  __nomeframe” – __ Apre il documento in un determinato frame
+
+---
 
 \<iframe src="http://www\.acmenovara\.it" name="A">
 
@@ -512,7 +566,7 @@ HTML – Immagini di sfondo
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
 
-__<div __  <span style="color:#C9211E"> __style__ </span>  __="__  <span style="color:#C9211E"> __background\-image__ </span>  __: url\('__  __[https://i\.ytimg\.com/vi/\-cQk6kK7JVs/maxresdefault\.jpg](https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg)__  __'\);">__
+__<div __   __style__   __="__   __background\-image__   __: url\('__  __[https://i\.ytimg\.com/vi/\-cQk6kK7JVs/maxresdefault\.jpg](https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg)__  __'\);">__
 
 _Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Donec ante eros\, egestas vitae ullamcorper id\, dignissim nec ipsum\._
 
@@ -524,11 +578,11 @@ HTML – Immagini di sfondo \- cover
 
 Se volete che l'immagine di sfondo copra l'intero elemento\, si può impostare la proprietà
 
-<span style="color:#C9211E">background\-size: cover</span>
+background\-size: cover
 
 Inoltre\, per assicurasi che l'intero elemento sia sempre coperto\, basta impostare la proprietà
 
-<span style="color:#C9211E">background\-attachment: fixed</span>
+background\-attachment: fixed
 
 In questo modo\, l'immagine di sfondo coprirà l'intero elemento\, senza cambiarne le proporzioni
 
@@ -538,15 +592,15 @@ Ogni elemento  __\<source>__  ha un attributo multimediale che definisce quando 
 
 Infine un elemento  __\<img>__  indicherà il default da usare nel caso non ci siano match corretti
 
-<span style="color:#C9211E">\<picture></span>
+\<picture>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<source media="\(min\-width: 650px\)" srcset="computer\.jpg"></span>
+    \<source media="\(min\-width: 650px\)" srcset="computer\.jpg">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<source media="\(min\-width: 465px\)" srcset="tablet\.jpg"></span>
+    \<source media="\(min\-width: 465px\)" srcset="tablet\.jpg">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<img src="cellulare\.jpg"></span>
+    \<img src="cellulare\.jpg">
 
-<span style="color:#C9211E">\</picture> </span>
+\</picture> 
 
 Quando usare il tag  __\<picture>__ ?
 
@@ -564,15 +618,15 @@ L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __
 
 L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__ \, che definisce le aree cliccabili nella mappa dell'immagine
 
-<span style="color:#C9211E">\<img src="https://www\.affde\.com/uploads/article/33391/hMAObf6pOlc2GHIM\.jpg" usemap="\#workmap" width="500px" height="300px"></span>
+\<img src="https://www\.affde\.com/uploads/article/33391/hMAObf6pOlc2GHIM\.jpg" usemap="\#workmap" width="500px" height="300px">
 
-<span style="color:#C9211E">\<map name="workmap"></span>
+\<map name="workmap">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<area shape="rect" title="google" coords="0\,0\,250\,300" href="https://www\.google\.com"></span>
+    \<area shape="rect" title="google" coords="0\,0\,250\,300" href="https://www\.google\.com">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<area shape="rect" title="bing" coords="250\,0\,500\,300" href="https://www\.bing\.com"></span>
+    \<area shape="rect" title="bing" coords="250\,0\,500\,300" href="https://www\.bing\.com">
 
-<span style="color:#C9211E">\</map></span>
+\</map>
 
 Una favicon è una piccola immagine visualizzata accanto al titolo della pagina nella scheda del browser e nel bookmark del browser
 
@@ -580,11 +634,11 @@ Per aggiungere una favicon ad un sito web\, occorre salvarla nella directory pri
 
 Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il percorso a livello di  __head__
 
-<span style="color:#C9211E">\<head></span>
+\<head>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<link rel="icon" type="image/x\-icon" href="/images/favicon\.ico"></span>
+    \<link rel="icon" type="image/x\-icon" href="/images/favicon\.ico">
 
-<span style="color:#C9211E">\</head></span>
+\</head>
 
 ![](img%5CChapter_html5.png)
 
@@ -678,7 +732,7 @@ cella occupa più di una riga o di una colonna
 
 \<tr>
 
-<th  <span style="color:#C9211E">colspan="2"</span> >Colonna 1\</th>
+<th  colspan="2" >Colonna 1\</th>
 
 \<th>Colonna 2\</th>
 
@@ -690,7 +744,7 @@ cella occupa più di una riga o di una colonna
 
 \<tr>
 
-<td  <span style="color:#C9211E">rowspan="2"</span> >Dato 1\</td>
+<td  rowspan="2" >Dato 1\</td>
 
 \<td>Dato 2\</td>
 
@@ -720,7 +774,7 @@ Il tab  __caption __ deve essere inserito subito dopo il tag  __table__
 
 \<table>
 
-<span style="color:#C9211E">\<caption></span> Caption <span style="color:#C9211E">\</caption></span>
+\<caption> Caption \</caption>
 
 \.\.\.
 
@@ -732,13 +786,13 @@ Il tab  __col__  può anche avere un attributo che indica quante colonne subisco
 
 \<table>
 
-<span style="color:#C9211E">\<colgroup></span>
+\<colgroup>
 
-<span style="color:#C9211E">\<col span="2" style="background\-color:green;"></span>
+\<col span="2" style="background\-color:green;">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<col style="background\-color:blue; border: 5px solid black;"></span>
+    \<col style="background\-color:blue; border: 5px solid black;">
 
-<span style="color:#C9211E">\</colgroup></span>
+\</colgroup>
 
 \.\.\.
 
@@ -748,15 +802,15 @@ L’utilizzo dei tag  __ul __ e  __li __ permette di definire delle liste non or
 
 Le liste sono rappresentate da una serie di righe contigue evidenziate da un piccolo cerchio nero iniziale
 
-<span style="color:#C9211E">\<ul></span>
+\<ul>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Primo elemento\</li></span>
+      \<li>Primo elemento\</li>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Secondo elemento\</li></span>
+      \<li>Secondo elemento\</li>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Terzo elemento\</li></span>
+      \<li>Terzo elemento\</li>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\</ul></span>
+    \</ul>
 
 HTML – Liste ordinate
 
@@ -764,15 +818,15 @@ L’utilizzo dei tag  __ol __ e  __li __ permette di definire delle liste ordina
 
 Le liste sono rappresentate da una serie di righe contigue numerate
 
-<span style="color:#C9211E">\<ol></span>
+\<ol>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Primo elemento\</li></span>
+      \<li>Primo elemento\</li>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Secondo elemento\</li></span>
+      \<li>Secondo elemento\</li>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<li>Terzo elemento\</li></span>
+      \<li>Terzo elemento\</li>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\</ol></span>
+    \</ol>
 
 HTML – Liste descrittive
 
@@ -780,23 +834,23 @@ L’utilizzo dei tag  __dl\,__   __dt__  e  __dd __ permettono di creare delle l
 
 Con  __dl __ si definisce la lista\, con  __dt __ si descrive il nome \(term\)\, con  __dd __ si descrive il termine
 
-<span style="color:#C9211E">\<dl></span>
+\<dl>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dt>Cornetto\</dt></span>
+      \<dt>Cornetto\</dt>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dd>\- alla crema\</dd></span>
+      \<dd>\- alla crema\</dd>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dd>\- al cioccolato\</dd></span>
+      \<dd>\- al cioccolato\</dd>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dd>\- alla marmellata\</dd></span>
+      \<dd>\- alla marmellata\</dd>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dt>Latte\</dt></span>
+      \<dt>Latte\</dt>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dd>\- di soia\</dd></span>
+      \<dd>\- di soia\</dd>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">\<dd>\- di capra\</dd></span>
+      \<dd>\- di capra\</dd>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\</dl></span>
+    \</dl>
 
 HTML – Blocchi e inline
 
@@ -804,7 +858,7 @@ Esistono due tag generici e abbastanza simili utilizzati per definire delle aree
 
 I tag sono  __div __ e  __span__ \.
 
-<span style="color:#C9211E">DIV</span>
+DIV
 
 L’elemento inizia sempre su una nuova riga
 
@@ -812,7 +866,7 @@ Occupa l’intera larghezza disponibile
 
 Ha un margine inferiore e superiore
 
-<span style="color:#C9211E">SPAN</span>
+SPAN
 
 Non inizia su una nuova riga
 
@@ -824,7 +878,7 @@ HTML – Blocchi e inline
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div> Praesent laoreet hendrerit neque sed sagittis\.
 
-Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN\</span> Praesent laoreet hendrerit neque sed sagittis\.
+Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN\ Praesent laoreet hendrerit neque sed sagittis\.
 
 ![](img%5CChapter_html8.png)
 
@@ -832,7 +886,7 @@ Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<span style="backgro
 
 L’attributo  __class __ serve ad indicare una classe associata ad un qualsiasi tag\.
 
-<div  <span style="color:#C9211E">class</span> ="town">
+<div  class ="town">
 
 \<h2>Roma\</h2>
 
@@ -852,7 +906,7 @@ Avere un  __id__  ci permette di applicare delle caratteristiche ad un singolo t
 
 Il tag  __iframe __ permette l’inclusione di una pagina all’interno di una pagina HTML
 
-<span style="color:#C9211E">\<iframe src="url" title="descriptione">\</iframe> </span>
+\<iframe src="url" title="descriptione">\</iframe> 
 
 L’attributo necessario per il funzionamento di un  __Iframe__  è  __url__ \.
 
@@ -860,27 +914,27 @@ Questo attributo indica l’indirizzo della pagina da includere
 
 __iframe __ ha una serie di attributi che ne condizionano la visualizzazione come:
 
-<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  <span style="color:#C9211E">height</span> ="200"  <span style="color:#C9211E">width</span> ="300">\</iframe>
+<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  height ="200"  width ="300">\</iframe>
 
-<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  <span style="color:#C9211E">style</span> ="height:200px;width:300px;">\</iframe>
+<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  style ="height:200px;width:300px;">\</iframe>
 
 __Iframe __ può poi essere utilizzato come target di un tag  __a__
 
-<iframe src="about:blank" title="Matteo Baccan"  <span style="color:#C9211E">name="baccan"</span> >\</iframe>
+<iframe src="about:blank" title="Matteo Baccan"  name="baccan" >\</iframe>
 
-<a href="https://www\.baccan\.it/"  <span style="color:#C9211E">target="baccan"</span> >Baccan\.it\</a>
+<a href="https://www\.baccan\.it/"  target="baccan" >Baccan\.it\</a>
 
 __script __ è il tag col quale è possibile inserire del codice JavaScript per rendere dinamiche delle pagine HTML
 
 __script__  può contenere direttamente del codice\, o referenziare una pagina esterna contenente a sua volta del codice
 
-<span style="color:#C9211E">\<a href="https://www\.baccan\.it/" id="baccan">Baccan\.it\</a></span>
+\<a href="https://www\.baccan\.it/" id="baccan">Baccan\.it\</a>
 
-<span style="color:#C9211E">\<script></span>
+\<script>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">document\.getElementById\("baccan"\)\.innerHTML = "CIAO\!\!";</span>
+    document\.getElementById\("baccan"\)\.innerHTML = "CIAO\!\!";
 
-<span style="color:#C9211E">\</script></span>
+\</script>
 
 E’ importante capire come sono gestiti i file in una struttura a cartelle\. La corretta comprensione permette di indirizzare nel modo giusto le varie risorse
 
@@ -1016,7 +1070,7 @@ Un responsive web design si adatterà in automatico alle diverse dimensioni dell
 
 Per poter definire che una pagina è responsive occorre aggiungere una riga nel tag  __head__
 
-<span style="color:#C9211E"> __\<meta name="viewport" content="width=device\-width\, initial\-scale=1\.0"> __ </span>
+ __\<meta name="viewport" content="width=device\-width\, initial\-scale=1\.0"> __ 
 
 Questa riga dirà al browser come controllare le dimensioni di pagina
 
@@ -1024,21 +1078,21 @@ HTML – Responsive image
 
 Per rendere una immagine responsive è possibile utilizzare  __max\-width__  che ci permette di indica la dimensione massima che avrà in larghezza ed impostare l’altezza ad  __auto__
 
-<span style="color:#C9211E"><img src="gattino\.jpg" style="</span>  <span style="color:#C9211E"> __max\-width:100%; height:auto;__ </span>  <span style="color:#C9211E">"> </span>
+<img src="gattino\.jpg" style="   __max\-width:100%; height:auto;__   "> 
 
 HTML – Responsive image
 
 Un altro elemento responsive che abbiamo visto è il tag  __picture__
 
-<span style="color:#C9211E">\<picture></span>
+\<picture>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<source media="\(min\-width: 650px\)" srcset="computer\.jpg"></span>
+    \<source media="\(min\-width: 650px\)" srcset="computer\.jpg">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<source media="\(min\-width: 465px\)" srcset="tablet\.jpg"></span>
+    \<source media="\(min\-width: 465px\)" srcset="tablet\.jpg">
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<img src="cellulare\.jpg"></span>
+    \<img src="cellulare\.jpg">
 
-<span style="color:#C9211E">\</picture> </span>
+\</picture> 
 
 HTML – Responsive text
 
@@ -1048,7 +1102,7 @@ Per farlo occorre impostare le dimensioni del carattere in  __vw__  che rapprese
 
 Ad esempio proviamo ad impostare la grandezza di  __ciao__  a 10vw
 
-<span style="color:#C9211E"> </span>  <span style="color:#C9211E">\<div style="font\-size:10vw">Ciao\</div> </span>
+   \<div style="font\-size:10vw">Ciao\</div> 
 
 Ingrandendo a diminuendo la dimensione dello schermo il testo si adeguerà di conseguenza
 
@@ -1068,57 +1122,57 @@ All’interno di una media query è possibile indicare il momento in cui un part
 
 In questo caso\, il CSS viene considerato fino alla larghezza di 800px
 
-<span style="color:#C9211E">@media screen and \(max\-width: 800px\) \{</span>
+@media screen and \(max\-width: 800px\) \{
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">/\* CSS \*/</span>
+    /\* CSS \*/
 
-<span style="color:#C9211E">\}</span>
+\}
 
 Il tag  __code __ permette di evidenziare del testo in modo possa essere usato per la rappresentazione di codice\, ad esempio usando un font non proporzionale
 
-<span style="color:#C9211E">\<code></span>
+\<code>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">x = 1;</span>
+      x = 1;
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">y = 2;</span>
+      y = 2;
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">z = x \+ y;</span>
+      z = x \+ y;
 
-<span style="color:#C9211E">\</code></span>
+\</code>
 
 Il comportamento è simile all’uso di un tag  __span __ con font  __courier__
 
 Il tag  __kbd __ permette di evidenziare una sequenza di tasti da premere: l’aspetto è simile a quello di  __code__
 
-<span style="color:#C9211E">\<p>Visualizza il sorgente premendo \<kbd>Ctrl \+ U\</kbd>\</p></span>
+\<p>Visualizza il sorgente premendo \<kbd>Ctrl \+ U\</kbd>\</p>
 
 Il comportamento è simile all’uso di un tag  __span __ con font  __courier__
 
 Il tag  __samp __ permette di simulare l’output di un programma
 
-<span style="color:#C9211E">\<p>Esempio di output:\</p></span>
+\<p>Esempio di output:\</p>
 
-<span style="color:#C9211E">\<p>\<samp>Hello world\.\<br>Premi F1 per continuare\</samp>\</p></span>
+\<p>\<samp>Hello world\.\<br>Premi F1 per continuare\</samp>\</p>
 
 Il tag  __pre __ permette di mantenere la formattazione presente all’interno di un testo
 
-<span style="color:#C9211E">\<pre></span>
+\<pre>
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\<code></span>
+    \<code>
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">x = 1;</span>
+      x = 1;
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">y = 2;</span>
+      y = 2;
 
-<span style="color:#C9211E">    </span>  <span style="color:#C9211E">z = x \+ y;</span>
+      z = x \+ y;
 
-<span style="color:#C9211E">  </span>  <span style="color:#C9211E">\</code></span>
+    \</code>
 
-<span style="color:#C9211E">\</pre></span>
+\</pre>
 
 Il tag  __var __ evidenzia una variabile o una espressione
 
-<span style="color:#C9211E">L’area del rettangolo è \<var>b\</var> per \<var>a\</var>\, dove \<var>b\</var> è la base e \<var>a\</var> è l’altezza</span>
+L’area del rettangolo è \<var>b\</var> per \<var>a\</var>\, dove \<var>b\</var> è la base e \<var>a\</var> è l’altezza
 
 HTML ha diversi tag semantici che definiscono le diverse parti di una pagina\.
 
@@ -1708,7 +1762,7 @@ HTML – Bootstrap – Badge
 
 I badge sono delle etichette di testo che subiscono il contesto come button e text
 
-__\<h1>Esempio di intestazione \<span class="badge bg\-secondary">badge\</span>\</h1>__
+__\<h1>Esempio di intestazione \<span class="badge bg\-secondary">badge\\</h1>__
 
 In questo caso il suffisso da usare è __ bg__
 
