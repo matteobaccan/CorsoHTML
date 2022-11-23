@@ -518,29 +518,27 @@ __\_parent__  \- Apre il documento nel frame genitore
 
 __\_top__  \- Apre il documento in tutto il corpo della finestra
 
-__“__  __nomeframe” – __ Apre il documento in un determinato frame
+__“nomeframe”__ Apre il documento in un determinato frame
 
 ---
+# Link
 
 \<iframe src="http://www\.acmenovara\.it" name="A">
-
 \<p>ACME Novara\</p>
-
 \</iframe>
 
-<iframe src="[https://www\.google\.com](https://www.google.com/)" name="B">
-
+\<iframe src="[https://www\.google\.com](https://www.google.com/)" name="B">
 \<p>Google\.com\</p>
-
 \</iframe>
 
 \<iframe src="https://www\.google\.it" name="C">
-
 \<p>Google\.it\</p>
-
 \</iframe>
 
 \<a href="http://www\.acmenovara\.it" target="B">CAMBIO B\</a>
+
+---
+# Bookmark
 
 Crea un bookmark in HTML
 
@@ -550,59 +548,63 @@ Per creare un bookmark: prima occorre creare il bookmark\, poi aggiungere un col
 
 Quando si fa clic sul bookmark\, la pagina scorrerà verso il basso o verso l'alto fino alla posizione del bookmark\.
 
+---
+# IMG
 Il tag HTML  __\<img>__  viene utilizzato per incorporare un'immagine in una pagina web\.
 
 Le immagini non sono tecnicamente inserite in una pagina web; le immagini sono collegate a pagine web\. Il tag  __\<img>__  crea uno spazio per inserire l'immagine\.
 
-Il tag \<img> è vuoto\, contiene solo attributi e non ha un tag di chiusura\.
+Il tag __\<img>__ è vuoto\, contiene solo attributi e non ha un tag di chiusura\.
 
-Il tag \<img> ha due attributi obbligatori:
+Il tag __\<img>__ ha due attributi obbligatori:
 
 __src__  \- Specifica il percorso dell'immagine
 
 __alt__  \- Specifica un testo alternativo per l'immagine
 
-HTML – Immagini di sfondo
+---
+# Immagini di sfondo
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
 
-__<div __   __style__   __="__   __background\-image__   __: url\('__  __[https://i\.ytimg\.com/vi/\-cQk6kK7JVs/maxresdefault\.jpg](https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg)__  __'\);">__
+__<div style="background-image:url('https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg');">__
 
 _Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Donec ante eros\, egestas vitae ullamcorper id\, dignissim nec ipsum\._
 
 __\</div>__
 
-Testo  __Lorem ipsum__  _ _ generato da [https://www\.lipsum\.com/](https://www.lipsum.com/)
+Testo  __Lorem ipsum__ generato da [https://www\.lipsum\.com/](https://www.lipsum.com/)
 
-HTML – Immagini di sfondo \- cover
+---
+# Immagini di sfondo - cover
 
 Se volete che l'immagine di sfondo copra l'intero elemento\, si può impostare la proprietà
 
-background\-size: cover
+__background-size: cover__
 
 Inoltre\, per assicurasi che l'intero elemento sia sempre coperto\, basta impostare la proprietà
 
-background\-attachment: fixed
+__background-attachment: fixed__
 
 In questo modo\, l'immagine di sfondo coprirà l'intero elemento\, senza cambiarne le proporzioni
 
-L'elemento HTML  __\<picture>__  offre una maggiore flessibilità nello specificare le risorse dell'immagine\. Contiene uno o più elementi  __\<source>__ \, ognuno dei quali si riferisce a diverse immagini tramite l'attributo  __srcset__ \. In questo modo il browser sceglie l'immagine che meglio si adatta alla visualizzazione e/o al dispositivo corrente\.
+---
+# PICTURE
 
-Ogni elemento  __\<source>__  ha un attributo multimediale che definisce quando l'immagine è la più adatta\.
+L'elemento HTML  __<picture>__  offre una maggiore flessibilità nello specificare le risorse dell'immagine\. Contiene uno o più elementi  __<source>__, ognuno dei quali si riferisce a diverse immagini tramite l'attributo  __srcset__. In questo modo il browser sceglie l'immagine che meglio si adatta alla visualizzazione e/o al dispositivo corrente.
 
-Infine un elemento  __\<img>__  indicherà il default da usare nel caso non ci siano match corretti
+Ogni elemento  __<source>__  ha un attributo multimediale che definisce quando l'immagine è la più adatta.
 
-\<picture>
+Infine un elemento  __<img>__  indicherà il default da usare nel caso non ci siano match corretti.
 
-    \<source media="\(min\-width: 650px\)" srcset="computer\.jpg">
+    <picture>
+      <source media="(min-width: 650px)" srcset="computer.jpg">
+      <source media="(min-width: 465px)" srcset="tablet.jpg">
+      <img src="cellulare.jpg">
+    </picture> 
 
-    \<source media="\(min\-width: 465px\)" srcset="tablet\.jpg">
-
-    \<img src="cellulare\.jpg">
-
-\</picture> 
-
-Quando usare il tag  __\<picture>__ ?
+---
+# Quando usare il tag  __<picture>__?
 
 \- Risparmiare banda
 
@@ -610,23 +612,25 @@ Quando usare il tag  __\<picture>__ ?
 
 \- Adattare facilmente il contesto alla dimensione del device
 
-Il tag  __\<map>__  viene usato per definire una mappa di immagini\.
+---
+# MAP
+Il tag  __<map>__  viene usato per definire una mappa di immagini.
 
 Una mappa è un'immagine con delle aree selezionabili
 
-L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __usemap__  di  __\<img>__  e crea una relazione tra immagine e mappa
+L'attributo  __name__  dell'elemento  __<map>__  è associato all'attributo  __usemap__  di  __<img>__  e crea una relazione tra immagine e mappa.
 
-L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__ \, che definisce le aree cliccabili nella mappa dell'immagine
+L'elemento  __<map>__  contiene un numero di elementi  __<area>__, che definisce le aree cliccabili nella mappa dell'immagine
 
-\<img src="https://www\.affde\.com/uploads/article/33391/hMAObf6pOlc2GHIM\.jpg" usemap="\#workmap" width="500px" height="300px">
+    <img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg" usemap="#workmap" width="500px" height="300px">
 
-\<map name="workmap">
+    <map name="workmap">
+        <area shape="rect" title="google" coords="0,0,250,300" href="https://www.google.com">
+        <area shape="rect" title="bing" coords="250,0,500,300" href="https://www.bing.com">
+    </map>
 
-    \<area shape="rect" title="google" coords="0\,0\,250\,300" href="https://www\.google\.com">
-
-    \<area shape="rect" title="bing" coords="250\,0\,500\,300" href="https://www\.bing\.com">
-
-\</map>
+---
+# Favicon
 
 Una favicon è una piccola immagine visualizzata accanto al titolo della pagina nella scheda del browser e nel bookmark del browser
 
@@ -634,49 +638,42 @@ Per aggiungere una favicon ad un sito web\, occorre salvarla nella directory pri
 
 Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il percorso a livello di  __head__
 
-\<head>
-
-    \<link rel="icon" type="image/x\-icon" href="/images/favicon\.ico">
-
-\</head>
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
 
 ![](img%5CChapter_html5.png)
 
-Un sito utilizzabile per disegnare delle favicon è [https://www\.favicon\.cc/](https://www.favicon.cc/)
+---
+# Favicon
+Un sito utilizzabile per disegnare delle favicon è [https://www.favicon.cc/](https://www.favicon.cc/)
 
 Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una serie di altri formati orizzontalmente accettati dai maggiori browser
 
 ![](img%5CChapter_html6.png)
 
-Il tag  __table __ serve a racchiudere delle informazioni per righe e colonne\.
+---
+# Table
+Il tag  __table__ serve a racchiudere delle informazioni per righe e colonne\.
 
 Questo tag\, molto utilizzato in passato\, è stato progressivamente superato da altri costrutti responsive\, pur essendo fortemente utilizzato da molti siti web\.
+Il tag  __table__  contiene da più tag
 
-Il tag  __table__  è composto da più tag
+__table__ : tabella
+__thead__ : area di intestazione tabella
+__tbody__ : corpo della tabella
+__tfoot__ : piede della tabella
+__tr__ : riga
+__th__ : header
+__td__ : data
+__caption__ : titolo
+__colgroup__ : definizione di colonne
+__col__: singolo elemento di definizione di colonna
 
-__table : __ tabella
+---
+# Table border
 
-__thead : __ area di intestazione tabella
-
-__tbody :__  corpo della tabella
-
-__tfoot :__  piede della tabella
-
-__tr :__  riga
-
-__th : __ header
-
-__td : __ data
-
-__caption: __ titolo
-
-__colgroup: __ definizione di colonne
-
-__col: __ singolo elemento di definizione di colonna
-
-HTML – Table border
-
-Ci sono una serie di proprietà che possono essere utilizzate per personalizzare i tag  __table__ \, ad esempio
+Ci sono una serie di proprietà che possono essere utilizzate per personalizzare i tag  __table__, ad esempio
 
 border: 1px solid black;
 
@@ -688,6 +685,7 @@ border\-color: \#96D4D4;
 
 background\-color: \#96D4D4;
 
+---
 HTML – Table width
 
 Con lo  __style__   __width__  è possibile indicare l’occupazione di una singola colonna
