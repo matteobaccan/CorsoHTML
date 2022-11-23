@@ -675,100 +675,56 @@ __col__: singolo elemento di definizione di colonna
 
 Ci sono una serie di proprietà che possono essere utilizzate per personalizzare i tag  __table__, ad esempio
 
-border: 1px solid black;
-
-border\-collapse: collapse;
-
-border\-radius: 10px;
-
-border\-color: \#96D4D4;
-
-background\-color: \#96D4D4;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-color: #96D4D4;
+    background-color: #96D4D4;
 
 ---
-HTML – Table width
+# Table width
 
 Con lo  __style__   __width__  è possibile indicare l’occupazione di una singola colonna
 
-<table  __style="width:100%"__ >
-
+\<table  __style="width:100%"__ >
 \<thead>
-
 \<tr>
-
-<th  __style="width:10%"__ >Colonna 1\</th>
-
-\<th>Colonna 2\</th>
-
+\<th  __style="width:10%"__ >Colonna 1\</th> \<th>Colonna 2\</th>
 \</tr>
-
 \</thead>
-
 \<tbody>
-
 \<tr>
-
-\<td>Dato 1\</td>
-
-\<td>Dato 2\</td>
-
+\<td>Dato 1\</td>\<td>Dato 2\</td>
 \</tr>
-
 \</tbody>
-
 \</table>
 
-HTML – Table colspan e rowspan
+---
+# Table colspan e rowspan
 
-Con lo  __colspan __ e  __rowspan__  è possibile indicare che una
+Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa più di una riga o di una colonna
 
-cella occupa più di una riga o di una colonna
-
-\<table>
-
-\<thead>
-
-\<tr>
-
-<th  colspan="2" >Colonna 1\</th>
-
-\<th>Colonna 2\</th>
-
-\</tr>
-
-\</thead>
-
-\<tbody>
-
-\<tr>
-
-<td  rowspan="2" >Dato 1\</td>
-
-\<td>Dato 2\</td>
-
-\<td>Dato 3\</td>
-
-\</tr>
-
-\<tr>
-
-\<td>Dato 2\</td>
-
-\<td>Dato 3\</td>
-
-\</tr>
-
-\</tbody>
-
-\</table>
+    <table>
+    <thead>
+    <tr>
+    <th colspan="2" >Colonna 1</th> <th>Colonna 2</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
+    <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
+    </tbody>
+    </table>
 
 ![](img%5CChapter_html7.png)
 
-HTML – Table caption
+--- 
+
+# Table caption
 
 Con  __caption__  è possibile dare un titolo a una tabella
 
-Il tab  __caption __ deve essere inserito subito dopo il tag  __table__
+Il tab  __caption__ deve essere inserito subito dopo il tag  __table__
 
 \<table>
 
@@ -776,57 +732,51 @@ Il tab  __caption __ deve essere inserito subito dopo il tag  __table__
 
 \.\.\.
 
-HTML – Table colgroup col
+---
 
-Con  __colgroup __ e  __col__  è possibile indicare una serie di caratteristiche che la singola colonna deve avere: come un colore o un bordo
+# Table colgroup col
+
+Con  __colgroup__ e  __col__  è possibile indicare una serie di caratteristiche che la singola colonna deve avere: come un colore o un bordo
 
 Il tab  __col__  può anche avere un attributo che indica quante colonne subiscono il nuovo stile
 
-\<table>
+    <table>
+    <colgroup>
+    <col span="2" style="background-color:green;">
+        <col style="background-color:blue; border: 5px solid black;">
+    </colgroup>
 
-\<colgroup>
+---
 
-\<col span="2" style="background\-color:green;">
+# Liste non ordinate
 
-    \<col style="background\-color:blue; border: 5px solid black;">
-
-\</colgroup>
-
-\.\.\.
-
-HTML – Liste non ordinate
-
-L’utilizzo dei tag  __ul __ e  __li __ permette di definire delle liste non ordinate
+L’utilizzo dei tag  __ul__ e  __li__ permette di definire delle liste non ordinate
 
 Le liste sono rappresentate da una serie di righe contigue evidenziate da un piccolo cerchio nero iniziale
 
-\<ul>
+    <ul>
+        <li>Primo elemento</li>
+        <li>Secondo elemento</li>
+        <li>Terzo elemento</li>
+    </ul>
 
-      \<li>Primo elemento\</li>
+---
 
-      \<li>Secondo elemento\</li>
-
-      \<li>Terzo elemento\</li>
-
-    \</ul>
-
-HTML – Liste ordinate
+# Liste ordinate
 
 L’utilizzo dei tag  __ol __ e  __li __ permette di definire delle liste ordinate
 
 Le liste sono rappresentate da una serie di righe contigue numerate
 
-\<ol>
+    <ol>
+        <li>Primo elemento</li>
+        <li>Secondo elemento</li>
+        <li>Terzo elemento</li>
+    </ol>
 
-      \<li>Primo elemento\</li>
+---
 
-      \<li>Secondo elemento\</li>
-
-      \<li>Terzo elemento\</li>
-
-    \</ol>
-
-HTML – Liste descrittive
+# Liste descrittive
 
 L’utilizzo dei tag  __dl\,__   __dt__  e  __dd __ permettono di creare delle liste descrittive
 
@@ -850,7 +800,9 @@ Con  __dl __ si definisce la lista\, con  __dt __ si descrive il nome \(term\)\,
 
     \</dl>
 
-HTML – Blocchi e inline
+---
+
+# Blocchi e inline
 
 Esistono due tag generici e abbastanza simili utilizzati per definire delle aree\.
 
@@ -872,7 +824,8 @@ Occupa solo la larghezza necessaria
 
 Non ha un margine superiore e inferiore
 
-HTML – Blocchi e inline
+---
+# Blocchi e inline
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div> Praesent laoreet hendrerit neque sed sagittis\.
 
