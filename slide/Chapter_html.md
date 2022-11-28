@@ -494,7 +494,7 @@ Un collegamento  __non visitato__  è sottolineato e  __blu__
 
 Un collegamento  __visitato__  è sottolineato e  __viola__
 
-Un collegamento  __attivo__  è sottolineato e  __rosso __
+Un collegamento  __attivo__  è sottolineato e  __rosso__
 
 Per ottenere l’attivo basta tenere cliccato il mouse sul link
 
@@ -642,7 +642,7 @@ Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il p
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     </head>
 
-![](img%5CChapter_html5.png)
+![](img/Chapter_html5.png)
 
 ---
 # Favicon
@@ -650,7 +650,7 @@ Un sito utilizzabile per disegnare delle favicon è [https://www.favicon.cc/](ht
 
 Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una serie di altri formati orizzontalmente accettati dai maggiori browser
 
-![](img%5CChapter_html6.png)
+![](img/Chapter_html6.png)
 
 ---
 # Table
