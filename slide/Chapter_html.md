@@ -782,23 +782,15 @@ L’utilizzo dei tag  __dl\,__   __dt__  e  __dd __ permettono di creare delle l
 
 Con  __dl __ si definisce la lista\, con  __dt __ si descrive il nome \(term\)\, con  __dd __ si descrive il termine
 
-\<dl>
-
-      \<dt>Cornetto\</dt>
-
-      \<dd>\- alla crema\</dd>
-
-      \<dd>\- al cioccolato\</dd>
-
-      \<dd>\- alla marmellata\</dd>
-
-      \<dt>Latte\</dt>
-
-      \<dd>\- di soia\</dd>
-
-      \<dd>\- di capra\</dd>
-
-    \</dl>
+    <dl>
+        <dt>Cornetto</dt>
+            <dd>- alla crema</dd>
+            <dd>- al cioccolato</dd>
+            <dd>- alla marmellata</dd>
+        <dt>Latte</dt>
+            <dd>- di soia</dd>
+            <dd>- di capra</dd>
+    </dl>
 
 ---
 
@@ -806,9 +798,9 @@ Con  __dl __ si definisce la lista\, con  __dt __ si descrive il nome \(term\)\,
 
 Esistono due tag generici e abbastanza simili utilizzati per definire delle aree\.
 
-I tag sono  __div __ e  __span__ \.
+I tag sono  __div__ e  __span__ \.
 
-DIV
+__DIV__
 
 L’elemento inizia sempre su una nuova riga
 
@@ -816,7 +808,7 @@ Occupa l’intera larghezza disponibile
 
 Ha un margine inferiore e superiore
 
-SPAN
+__SPAN__
 
 Non inizia su una nuova riga
 
@@ -829,119 +821,147 @@ Non ha un margine superiore e inferiore
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div> Praesent laoreet hendrerit neque sed sagittis\.
 
+![](img%5CChapter_html8.png)
+
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN\ Praesent laoreet hendrerit neque sed sagittis\.
 
-![](img%5CChapter_html8.png)
 
 ![](img%5CChapter_html9.png)
 
-L’attributo  __class __ serve ad indicare una classe associata ad un qualsiasi tag\.
+---
+# Classi
+L’attributo  __class__ serve ad indicare una classe associata ad un qualsiasi tag\.
 
-<div  class ="town">
-
-\<h2>Roma\</h2>
-
-\<p>Forza Roma forza Lupi\</p>
-
+\<div __class__="town">
+&nbsp;&nbsp;\<h2>Roma\</h2>
+&nbsp;&nbsp;\<p>Forza Roma forza Lupi\</p>
 \</div>
 
 La classe specificata può poi essere descritta a livello di CSS\.
 
-Da notare che il nome della classe è case sensitive
+Da notare che il nome della classe è case sensitive\.
 
-L’attributo  __id __ permette di referenziare un singolo tag in modo univoco\.
+---
 
-Il browser non effettua nessun controllo di univocità sull’ __id__  è quindi a carico di chi crea la pagina assicurarsi che  __id__  sia effettivamente univoco
+# ID
+L’attributo  __id__ permette di referenziare un singolo tag in modo univoco\.
 
-Avere un  __id__  ci permette di applicare delle caratteristiche ad un singolo tag e di usarlo in modo più efficiente da parte di codice javascript
+Il browser non effettua nessun controllo di univocità sull’ __id__  è quindi a carico di chi crea la pagina assicurarsi che  __id__  sia effettivamente univoco.
 
-Il tag  __iframe __ permette l’inclusione di una pagina all’interno di una pagina HTML
+Avere un  __id__  ci permette di applicare delle caratteristiche ad un singolo tag e di usarlo in modo più efficiente da parte di codice javascript.
 
-\<iframe src="url" title="descriptione">\</iframe> 
+---
+
+# Iframe
+
+Il tag  __iframe__ permette l’inclusione di una pagina all’interno di una pagina HTML
+
+    <iframe src="url" title="descrizione"></iframe> 
 
 L’attributo necessario per il funzionamento di un  __Iframe__  è  __url__ \.
 
-Questo attributo indica l’indirizzo della pagina da includere
+Questo attributo indica l’indirizzo della pagina da includere.
 
-__iframe __ ha una serie di attributi che ne condizionano la visualizzazione come:
+---
 
-<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  height ="200"  width ="300">\</iframe>
+# Iframe
 
-<iframe src="https://www\.baccan\.it/" title="Matteo Baccan"  style ="height:200px;width:300px;">\</iframe>
+__iframe__ ha una serie di attributi che ne condizionano la visualizzazione come:
 
-__Iframe __ può poi essere utilizzato come target di un tag  __a__
+    <iframe src="https://www.baccan.it/" title="Matteo Baccan" height="200" width="300"></iframe>
+&nbsp;
 
-<iframe src="about:blank" title="Matteo Baccan"  name="baccan" >\</iframe>
+    <iframe src="https://www.baccan.it/" title="Matteo Baccan" style="height:200px;width:300px;"></iframe>
 
-<a href="https://www\.baccan\.it/"  target="baccan" >Baccan\.it\</a>
+__Iframe__ può poi essere utilizzato come target di un tag  __a__
 
-__script __ è il tag col quale è possibile inserire del codice JavaScript per rendere dinamiche delle pagine HTML
+    <iframe src="about:blank" title="Matteo Baccan" name="baccan"></iframe>
+&nbsp;
 
-__script__  può contenere direttamente del codice\, o referenziare una pagina esterna contenente a sua volta del codice
+    <a href="https://www.baccan.it/" target="baccan">Baccan.it</a>
 
-\<a href="https://www\.baccan\.it/" id="baccan">Baccan\.it\</a>
+---
+# Script
 
-\<script>
+__script__ è il tag col quale è possibile inserire del codice JavaScript per rendere dinamiche delle pagine HTML.
 
-    document\.getElementById\("baccan"\)\.innerHTML = "CIAO\!\!";
+__script__  può contenere direttamente del codice\, o referenziare una pagina esterna contenente a sua volta del codice.
 
-\</script>
+    <a href="https://www.baccan.it/" id="baccan">Baccan.it</a>
 
-E’ importante capire come sono gestiti i file in una struttura a cartelle\. La corretta comprensione permette di indirizzare nel modo giusto le varie risorse
+    <script>
+        document.getElementById("baccan").innerHTML = "CIAO!!";
+    </script>
+
+---
+# Path
+
+E’ importante capire come sono gestiti i file in una struttura a cartelle\. La corretta comprensione permette di indirizzare nel modo giusto le varie risorse.
 
 Rispetto alla pagina corrente
 
-\<img src="foto\.jpg"> 				 __foto\.jpg __ è nella stessa cartella
+\<img src="foto\.jpg"> 				 __foto\.jpg__ è nella stessa cartella
 
-\<img src="immagini/foto\.jpg"> 		 __foto\.jgp __ è nella cartella  __immagini__
+\<img src="immagini/foto\.jpg"> 		 __foto\.jgp__ è nella cartella  __immagini__
 
-\<img src="/immagini/foto\.jpg"> 		 __foto\.jpg __ è nella cartella  __immagini __ del root folder
+\<img src="/immagini/foto\.jpg"> 		 __foto\.jpg__ è nella cartella  __immagini__ del root folder
 
-\<img src="\.\./foto\.jpg"> 				 __foto\.jpg __ è nella cartella padre della cartella corrente
+\<img src="\.\./foto\.jpg"> 				 __foto\.jpg__ è nella cartella padre della cartella corrente
 
-\<img src="http://www\.foo\.bar/foto\.jpg"> 	 __foto\.jpg __ è sul sito  __foo\.bar__
+\<img src="http://www\.foo\.bar/foto\.jpg"> 	 __foto\.jpg__ è sul sito  __foo\.bar__
+
+---
+# Head
 
 __head__  è il tag dove sono contenute una serie di informazioni propedeutiche alla visualizzazione corretta di una pagina e alla sua indicizzazione all’interno di motori di ricerca e social network\.
 
-Nel tag  __head __ sono presenti anche i riferimenti a file esterni\, tipicamente  __css__
+Nel tag  __head__ sono presenti anche i riferimenti a file esterni\, tipicamente  __css__
 
 Altri elementi che entrano a far parte di questo tag sono i tag  __meta__
 
+---
+# Head
+
 Il set di caratteri usato per la corretta visualizzazione del sito
 
-\<meta charset="UTF\-8">
+    <meta charset="UTF-8">
 
 Aggiornamento automatico
 
-\<meta http\-equiv="refresh" content="10">
+    <meta http-equiv="refresh" content="10">
 
 Impostazioni per la visualizzazione responsive
 
-\<meta name="viewport" content="width=device\-width\, initial\-scale=1\.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+---
+# Head
 Elementi utilizzati dai motori di ricerca
 
 Descrizione
 
-\<meta name="description" content="La mia bellissima pagina">
+    <meta name="description" content="La mia bellissima pagina">
 
 Keywords
 
-\<meta name="keywords" content="HTML\, CSS\, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
 
 L’autore
 
-\<meta name="author" content="Matteo Baccan">
+    <meta name="author" content="Matteo Baccan">
 
-HTML – Open Graph
+---
+# Open Graph
 
-Altri elementi che si trovano in  __head__  sono quelli del protocollo Open Graph
+Altri elementi che si trovano in  __head__  sono quelli del protocollo Open Graph.
 
 https://ogp\.me/
 
 Il protocollo Open Graph consente a qualsiasi pagina Web di essere arricchita di dati utili ad un “social graph”\. Ad esempio\, questo protocollo viene utilizzato su Facebook per consentire a qualsiasi pagina Web di avere le stesse funzionalità di qualsiasi altro oggetto su Facebook\.
 
-HTML – Open Graph
+---
+
+# Open Graph
 
 Le quattro proprietà minime per Open Graph sono
 
@@ -953,23 +973,27 @@ __og:image__  : l’immagine che rappresenta l’oggetto
 
 __og:url__  : l’indirizzo canonico dell’oggetto
 
-HTML – Open Graph
+---
+
+# Open Graph
 
 Un esempio di utilizzo delle proprietà Open Graph
 
-<meta property="og:url"		   content="https://www\.baccan\.it" />
+    <meta property="og:url"             content="https://www.baccan.it" />
 
-<meta property="og:title"		   content="Il sito personale di Matteo Baccan" />
+    <meta property="og:title"           content="Il sito personale di Matteo Baccan" />
 
-\<meta property="og:description"  content="Scrivo software e aiuto le aziende a scriverne di migliore" />
+    <meta property="og:description"     content="Scrivo software e aiuto le aziende a scriverne di migliore" />
 
-<meta property="og:image"	   content="https://www\.baccan\.it/logo/29\.png" />
+    <meta property="og:image"           content="https://www.baccan.it/logo/29.png" />
 
-<meta property="og:type"		   content="blog" />
+    <meta property="og:type"            content="blog" />
 
-<meta property="og:site\_name"	   content="Il sito personale di Matteo Baccan" />
+    <meta property="og:site_name"       content="Il sito personale di Matteo Baccan" />
 
-HTML – Open Graph
+---
+
+# Open Graph
 
 Altri elementi di Open Graph sono
 
@@ -987,33 +1011,36 @@ og:site\_name : se l’oggetto è parte di un grande sito web\, sarà il nome co
 
 og:video : l’indirizzo del video in accompagnamento della pagina
 
-HTML – Open Graph
+---
 
-Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot __  __[https://www\.imdb\.com/name/nm2933757/](https://www.imdb.com/name/nm2933757/)__  protagonista di “Wonder Woman 1984”
+# Open Graph
+
+Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot__  __[https://www\.imdb\.com/name/nm2933757/](https://www.imdb.com/name/nm2933757/)__  protagonista di “Wonder Woman 1984”
 
 <meta  __property="og:url"__  content="http://www\.imdb\.com/name/nm2933757/" />
-
 <meta  __property='og:image'__  content="https://m\.media\-amazon\.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@\.\_V1\_UY1200\_CR165\,0\,630\,1200\_AL\_\.jpg" />
-
 <meta  __property='og:type'__  content="actor" />
 
+---
+
+# Open Graph
+
 <meta  __property="og:description"__  content="Gal Gadot\, Actress: Wonder Woman 1984\. Gal Gadot is an Israeli actress\, singer\, martial artist\, and model\. She was born in Rosh Ha'ayin\, Israel\. Her parents are Irit\, a teacher\, and Michael\, an engineer\. She served in the IDF for two years\, and won the Miss Israel title in 2004\. Gal made her film debut in the fourth film of the Fast and Furious franchise\, Fast &amp; Furious \- Solo parti\.\.\." />
-
 <meta  __property='og:title'__  content="Gal Gadot \- IMDb" />
-
 <meta  __property='og:site\_name' __ content='IMDb' />
 
-HTML – Open Graph
+---
+# Open Graph
 
 Alcune proprietà Open Graph possono avere delle proprietà aggiuntive\.
 
-Ad esempio  __og:image__  può indicare alcuni dati in riferimento alla propria dimensione
+Ad esempio  __og:image__  può indicare alcuni dati in riferimento alla propria dimensione.
 
-og:image:width – Larghezza in pixel
+    og:image:width      Larghezza in pixel
+    og:image:height     Altezza in pixel
 
-og:image:height – Altezza in pixel
-
-HTML – Responsive
+---
+# Responsive
 
 Il responsive web design consiste nel creare pagine web che si adattino a qualsiasi dispositivo
 
@@ -1021,9 +1048,11 @@ Un responsive web design si adatterà in automatico alle diverse dimensioni dell
 
 Per poter definire che una pagina è responsive occorre aggiungere una riga nel tag  __head__
 
- __\<meta name="viewport" content="width=device\-width\, initial\-scale=1\.0"> __ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 Questa riga dirà al browser come controllare le dimensioni di pagina
+
+---
 
 HTML – Responsive image
 
