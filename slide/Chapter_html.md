@@ -46,7 +46,6 @@ Editor
 Codepen.io
 Notepad
 Notepad++
-
 VisualStudio Code
 
 Va bene qualsiasi editor\, non visuale\, meglio se con syntax highlighter e code completion
@@ -175,7 +174,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 # BODY
     <body>
 
-    <h1>Intestazione</h1>
+        <h1>Intestazione</h1>
 
     </body>
 
@@ -185,7 +184,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 # BODY
     <body>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     </body>
 
@@ -282,19 +281,14 @@ Ad ognuno è associata una sequenza RGB
 I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
 
     <h1 style="background-color:DodgerBlue;">Intestazione</h1>
-
     <p style="background-color:Tomato;">Paragrafo</p>
 
     <h1 style="color:Tomato;">Intestazione </h1>
-
     <p style="color:DodgerBlue;">Paragrafo</p>
-
     <p style="color:MediumSeaGreen;">Paragrafo</p>
 
     <h1 style="border:2px solid Tomato;">Intestazione</h1>
-
     <h1 style="border:2px solid DodgerBlue;">Intestazione</h1>
-
     <h1 style="border:2px solid Violet;">Intestazione</h1>
 
 ---
@@ -303,13 +297,10 @@ I colori possono essere usati in vari contesti\, come colore di fondo\, colore d
 I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
     <h1 style="background-color:rgb(255, 99, 71);">...</h1>
-
     <h1 style="background-color:#ff6347;">...</h1>
-
     <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
 
     <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
-
     <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
 
 ---
@@ -348,7 +339,8 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 # Colori HEX
-![](img%5CChapter_html2.png)
+
+![](img/Chapter_html2.png)
 
 https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp
 
