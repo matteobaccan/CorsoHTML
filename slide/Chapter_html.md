@@ -44,9 +44,7 @@ Iscrivetevi e seguite il profilo creato apposta per il corso
 Editor
 
 Codepen.io
-
 Notepad
-
 Notepad++
 
 VisualStudio Code
@@ -60,19 +58,20 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 ---
 # HTML - Esempio
 
-\<\!DOCTYPE html>
-\<html lang="it">
-\<head>
-\<title>Titolo della pagina\</title>
-\</head>
-\<body>
+    <!DOCTYPE html>
 
-\<h1>Intestazione\</h1>
+    <html lang="it">
 
-\<p>Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Praesent laoreet hendrerit neque sed sagittis\. Donec sodales pharetra convallis\. Morbi sagittis orci vel erat cursus\, et pretium risus porttitor\.\</p>
+    <head>
+    <title>Titolo della pagina</title>
+    </head>
 
-\</body>
-\</html>
+    <body>
+    <h1>Intestazione</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </body>
+
+    </html>
 
 ---
 # HTML - Elementi
@@ -118,28 +117,29 @@ __chiave="valore"__
 
 # HTML – definizione
 
-__\<\!DOCTYPE html>__
+    <!DOCTYPE html>
 
 Identifica il fatto che il documento sia in formato HTML5
 
 ---
 # HTML primo tag
 
-__\<html lang="it">__ 
+    <html lang="it">
 
- __\.\.\.__
+    ...
 
- __\</html>__
+    </html>
 
 É il primo elemento di una pagina html\, all’interno di questo  elemento è contenuta la struttura della pagina
 
 ---
 # HEAD
-__\<head>__
 
-__\.\.__
+    <head>
 
-__\</head>__
+    ...
+
+    </head>
 
 È il tag che contiene le informazioni inerenti alla pagina
 
@@ -153,52 +153,52 @@ __\</head>__
 
 ---
 # HEAD
-\<head>
+    <head>
 
-__\<title>Titolo della pagina\</title>__
+    <title>Titolo della pagina</title>
 
-\</head>
+    </head>
 
 È il titolo della pagina: viene visualizzato all’interno del browser per dare un nome al tab che state visualizzando o dai motori di ricerca per rappresentare la vostra pagina
 
 ---
 # BODY
-__\<body>__
+    <body>
 
-..
+    ...
 
-__\</body>__
+    </body>
 
 Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabelle etc
 
 ---
 # BODY
-\<body>
+    <body>
 
-__\<h1>Intestazione\</h1>__
+    <h1>Intestazione</h1>
 
-\</body>
+    </body>
 
 È il primo degli heading disponibili in HTML5
 
 ---
 # BODY
-\<body>
+    <body>
 
-__\<p>Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Praesent laoreet hendrerit neque sed sagittis\. Donec sodales pharetra convallis\. Morbi sagittis orci vel erat cursus\, et pretium risus porttitor\.\</p>__
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-\</body>
+    </body>
 
 Definisce un paragrafo
 
 ---
 # Heading
 
-\<h1>Intestazione 1\</h1>
+    <h1>Intestazione 1</h1>
 
-\<h2>Intestazione 2\</h2>
+    <h2>Intestazione 2</h2>
 
-\<h3>Intestazione 3\</h3> 
+    <h3>Intestazione 3</h3> 
 
 Questo tipo di tag sono intestazioni
 
@@ -209,11 +209,11 @@ Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle p
 
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
 
-__\<h1 style="color:red;">Intestazione\</h1>__
+    <h1 style="color:red;">Intestazione</h1>
 
-__\<h2 style="color:blue;">Intestazione\</h2>__
+    <h2 style="color:blue;">Intestazione</h2>
 
-__\<h3 style="color:yellow;">Intestazione\</h3>__
+    <h3 style="color:yellow;">Intestazione</h3>
 
 Ad esempio per cambiare il colore del carattere di un testo
 
@@ -221,25 +221,25 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 # Formattazione
 
-\<b> \- Grassetto
+    <b> - Grassetto
 
-\<strong> \- Importante
+    <strong> - Importante
 
-\<i> \- Italico
+    <i> - Italico
 
-\<em> \- Enfatizzato
+    <em> - Enfatizzato
 
-\<mark> \- Marked
+    <mark> - Marked
 
-\<small> \- Smaller
+    <small> - Smaller
 
-\<del> \- Cancellato
+    <del> - Cancellato
 
-\<ins> \- Inserted
+    <ins> - Inserted
 
-\<sub> \- Subscript
+    <sub> - Subscript
 
-\<sup> \- Superscript
+    <sup> - Superscript
 
 ---
 
@@ -247,25 +247,25 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
-\<abbr>	Defines an abbreviation or acronym
+    <abbr>	        Defines an abbreviation or acronym
 
-\<address>	Defines contact information for the author/owner of a document
+    <address>       Defines contact information for the author/owner of a document
 
-\<bdo>	Defines the text direction
+    <bdo>	        Defines the text direction
 
-\<blockquote>	Defines a section that is quoted from another source
+    <blockquote>	Defines a section that is quoted from another source
 
-\<cite>	Defines the title of a work
+    <cite>	        Defines the title of a work
 
-\<q>	Defines a short inline quotation
+    <q>             Defines a short inline quotation
 
 ---
 # Commenti
 Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo\.
 
-__\<\!\-\- Questo è un commento \-\->__
+    <!-- Questo è un commento -->
 
-\<p>Questo è un paragrafo\</p>
+    <p>Questo è un paragrafo</p>
 
 ---
 # Colori
@@ -281,36 +281,36 @@ Ad ognuno è associata una sequenza RGB
 
 I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
 
-\<h1 style="background\-color:DodgerBlue;">Intestazione\</h1>
+    <h1 style="background-color:DodgerBlue;">Intestazione</h1>
 
-\<p style="background\-color:Tomato;">Paragrafo\</p>
+    <p style="background-color:Tomato;">Paragrafo</p>
 
-\<h1 style="color:Tomato;">Intestazione \</h1>
+    <h1 style="color:Tomato;">Intestazione </h1>
 
-\<p style="color:DodgerBlue;">Paragrafo\</p>
+    <p style="color:DodgerBlue;">Paragrafo</p>
 
-\<p style="color:MediumSeaGreen;">Paragrafo\</p>
+    <p style="color:MediumSeaGreen;">Paragrafo</p>
 
-\<h1 style="border:2px solid Tomato;">Intestazione\</h1>
+    <h1 style="border:2px solid Tomato;">Intestazione</h1>
 
-\<h1 style="border:2px solid DodgerBlue;">Intestazione\</h1>
+    <h1 style="border:2px solid DodgerBlue;">Intestazione</h1>
 
-\<h1 style="border:2px solid Violet;">Intestazione\</h1>
+    <h1 style="border:2px solid Violet;">Intestazione</h1>
 
 ---
 # Colori
 
-I colori possono essere indicati in vari formati RGB\, HEX\, HSL\, RGBA e HSLA
+I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
-\<h1 style="background\-color:rgb\(255\, 99\, 71\);">\.\.\.\</h1>
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
 
-\<h1 style="background\-color:\#ff6347;">\.\.\.\</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
 
-\<h1 style="background\-color:hsl\(9\, 100%\, 64%\);">\.\.\.\</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
 
-\<h1 style="background\-color:rgba\(255\, 99\, 71\, 0\.5\);">\.\.\.\</h1>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
 
-\<h1 style="background\-color:hsla\(9\, 100%\, 64%\, 0\.5\);">\.\.\.\</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
 
 ---
 # Colori
@@ -397,9 +397,9 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 # CSS Inline
 
-\<h1  __style="color:blue;"__ >Una intestazione blue\</h1>
+    <h1 style="color:blue;">Una intestazione blue</h1>
 
-\<p  __style="color:red;"__ >Un paragrafo rosso\</p>
+    <p style="color:red;">Un paragrafo rosso</p>
 
 ---
 
@@ -407,19 +407,19 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ...
 
-\<head>
+    <head>
 
- __\<style>__
+    <style>
 
-__body \{background\-color: powderblue;\}__
+    body {background-color: powderblue;}
 
-__h1   \{color: blue;\}__
+    h1   {color: blue;}
 
-__p    \{color: red;\}__
+    p    {color: red;}
 
- __\</style>__
+    </style>
 
-\</head>
+    </head>
 
 ...
 
@@ -429,11 +429,11 @@ __p    \{color: red;\}__
 
 ...
 
-\<head>
+    <head>
 
-__\<link rel="stylesheet" href="styles\.css">__
+        <link rel="stylesheet" href="styles.css">
 
-\</head>
+    </head>
 
 ...
 
@@ -742,7 +742,7 @@ Il tab  __col__  può anche avere un attributo che indica quante colonne subisco
 
     <table>
     <colgroup>
-    <col span="2" style="background-color:green;">
+        <col span="2" style="background-color:green;">
         <col style="background-color:blue; border: 5px solid black;">
     </colgroup>
 
@@ -764,7 +764,7 @@ Le liste sono rappresentate da una serie di righe contigue evidenziate da un pic
 
 # Liste ordinate
 
-L’utilizzo dei tag  __ol __ e  __li __ permette di definire delle liste ordinate
+L’utilizzo dei tag  __ol__ e  __li__ permette di definire delle liste ordinate
 
 Le liste sono rappresentate da una serie di righe contigue numerate
 
@@ -778,9 +778,9 @@ Le liste sono rappresentate da una serie di righe contigue numerate
 
 # Liste descrittive
 
-L’utilizzo dei tag  __dl\,__   __dt__  e  __dd __ permettono di creare delle liste descrittive
+L’utilizzo dei tag  __dl__, __dt__ e __dd__ permettono di creare delle liste descrittive
 
-Con  __dl __ si definisce la lista\, con  __dt __ si descrive il nome \(term\)\, con  __dd __ si descrive il termine
+Con  __dl__ si definisce la lista\, con  __dt__ si descrive il nome \(term\)\, con  __dd__ si descrive il termine
 
     <dl>
         <dt>Cornetto</dt>
