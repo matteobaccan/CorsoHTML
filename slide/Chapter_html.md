@@ -325,7 +325,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 ---
 # Colori RGB
 
-![](img%5CChapter_html1.png)
+![](img/Chapter_html1.png)
 
 https://www\.w3schools\.com/colors/colors\_rgb\.asp
 
