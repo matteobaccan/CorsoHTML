@@ -642,21 +642,19 @@ Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una s
 
 ---
 # Table
-Il tag  __table__ serve a racchiudere delle informazioni per righe e colonne\.
-
-Questo tag\, molto utilizzato in passato\, è stato progressivamente superato da altri costrutti responsive\, pur essendo fortemente utilizzato da molti siti web\.
+Il tag  __table__ serve a racchiudere delle informazioni rappresentabili in righe e colonne\. Anche se molto utilizzato in passato\, è stato progressivamente superato da altri costrutti responsive\.
 Il tag  __table__  contiene da più tag
 
-__table__ : tabella
-__thead__ : area di intestazione tabella
-__tbody__ : corpo della tabella
-__tfoot__ : piede della tabella
-__tr__ : riga
-__th__ : header
-__td__ : data
-__caption__ : titolo
-__colgroup__ : definizione di colonne
-__col__: singolo elemento di definizione di colonna
+    table       : tabella
+    thead       : area di intestazione tabella
+    tbody       : corpo della tabella
+    tfoot       : piede della tabella
+    tr          : riga
+    th          : header
+    td          : data
+    caption     : titolo
+    colgroup    : definizione di colonne
+    col         : singolo elemento di definizione di colonna
 
 ---
 # Table border
@@ -702,7 +700,7 @@ Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa pi�
         </tbody>
     </table>
 
-![](img%5CChapter_html7.png)
+![](img/Chapter_html7.png)
 
 --- 
 
@@ -712,7 +710,7 @@ Con  __caption__  è possibile dare un titolo a una tabella
 
 Il tab  __caption__ deve essere inserito subito dopo il tag  __table__
 
-\<table>
+\.\.\.
 
 __\<caption> Caption \</caption>__
 
@@ -726,7 +724,6 @@ Con  __colgroup__ e  __col__  è possibile indicare una serie di caratteristiche
 
 Il tab  __col__  può anche avere un attributo che indica quante colonne subiscono il nuovo stile
 
-    <table>
     <colgroup>
         <col span="2" style="background-color:green;">
         <col style="background-color:blue; border: 5px solid black;">
@@ -848,14 +845,12 @@ Questo attributo indica l’indirizzo della pagina da includere.
 __iframe__ ha una serie di attributi che ne condizionano la visualizzazione come:
 
     <iframe src="https://www.baccan.it/" title="Matteo Baccan" height="200" width="300"></iframe>
-&nbsp;
 
     <iframe src="https://www.baccan.it/" title="Matteo Baccan" style="height:200px;width:300px;"></iframe>
 
 __Iframe__ può poi essere utilizzato come target di un tag  __a__
 
     <iframe src="about:blank" title="Matteo Baccan" name="baccan"></iframe>
-&nbsp;
 
     <a href="https://www.baccan.it/" target="baccan">Baccan.it</a>
 
