@@ -5,8 +5,10 @@ paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
+footer: https://github.com/matteobaccan/CorsoHTML
 ---
 <!-- _paginate: false -->
+<!-- _footer: "" -->
 ![bg](img/Chapter_html0.png)
 
 ---
@@ -221,23 +223,14 @@ Ad esempio per cambiare il colore del carattere di un testo
 # Formattazione
 
     <b> - Grassetto
-
     <strong> - Importante
-
     <i> - Italico
-
     <em> - Enfatizzato
-
     <mark> - Marked
-
     <small> - Smaller
-
     <del> - Cancellato
-
     <ins> - Inserted
-
     <sub> - Subscript
-
     <sup> - Superscript
 
 ---
@@ -312,7 +305,7 @@ I colori RGBA sono una estensione di RGB con l’aggiunta del canale Alpha per l
 
 In HTML possiamo indicare un RGB con questa formula
 
-rgb\(red\, green\, blue\)
+__rgb\(red\, green\, blue\)__
 
 Ogni parametro identifica l’intensità del colore in una scala da 0 a 255
 
@@ -325,7 +318,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 ---
 # Colori RGB
 
-![](img/Chapter_html1.png)
+![width:700px](img/Chapter_html1.png)
 
 https://www\.w3schools\.com/colors/colors\_rgb\.asp
 
@@ -333,14 +326,14 @@ https://www\.w3schools\.com/colors/colors\_rgb\.asp
 # Colori
 Un colore HEX è la rappresentazione esadecimale di un colore RGB\, usando la seguente griglia
 
-\#RRGGBB dove RR è il red\, GG è il green e BB è il blue
+__\#RRGGBB__ dove RR è il red\, GG è il green e BB è il blue
 
 Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 # Colori HEX
 
-![](img/Chapter_html2.png)
+![width:700px](img/Chapter_html2.png)
 
 https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp
 
@@ -359,7 +352,7 @@ Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che
 
 ---
 # Colori HSL
-![](img%5CChapter_html3.png)
+![width:700px](img/Chapter_html3.png)
 
 https://www\.w3schools\.com/colors/colors\_hsl\.asp
 
