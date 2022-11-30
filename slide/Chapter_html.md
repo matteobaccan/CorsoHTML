@@ -360,11 +360,11 @@ https://www\.w3schools\.com/colors/colors\_hsl\.asp
 
 # Cos'è il CSS?
 
-CSS è acronimo di  __Cascading Style Sheets__ \, sono fogli che vengono utilizzati per formattare le pagine web\.
+CSS è acronimo di  __Cascading Style Sheets__\, sono fogli che vengono utilizzati per formattare le pagine web\.
 
 Con i CSS è possibile controllare il colore\, il carattere\, la dimensione del testo\, la spaziatura tra gli elementi\, il modo in cui gli elementi sono posizionati e disposti\, quali immagini di sfondo o colori di sfondo devono essere utilizzati\, o le diverse visualizzazioni in base alle dimensioni dello schermo
 
-Da notare che  __cascading __ identifica il fatto che uno stile applicato a un elemento padre si applicherà anche a tutti gli elementi figli all'interno dell'elemento padre
+Da notare che  __cascading__ identifica il fatto che uno stile applicato a un elemento padre si applicherà anche a tutti gli elementi figli all'interno dell'elemento padre
 
 ---
 
@@ -452,7 +452,7 @@ Lo scopo è quello di passare da una pagina all’altra
 
 Essendo elementi cliccabili\, quando viene spostato il mouse su un link il puntatore viene trasformato in una piccola mano\.
 
-![](img%5CChapter_html4.png)
+![](img/Chapter_html4.png)
 
 ---
 
@@ -552,11 +552,12 @@ __alt__  \- Specifica un testo alternativo per l'immagine
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
 
-__<div style="background-image:url('https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg');">__
+    <div style="background-image:url('https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg');">
 
-_Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. Donec ante eros\, egestas vitae ullamcorper id\, dignissim nec ipsum\._
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Donec ante eros, egestas vitae ullamcorper id, dignissim nec ipsum.
 
-__\</div>__
+    </div>
 
 Testo  __Lorem ipsum__ generato da [https://www\.lipsum\.com/](https://www.lipsum.com/)
 
@@ -580,7 +581,7 @@ L'elemento HTML  __<picture>__  offre una maggiore flessibilità nello specifica
 
 Ogni elemento  __<source>__  ha un attributo multimediale che definisce quando l'immagine è la più adatta.
 
-Infine un elemento  __<img>__  indicherà il default da usare nel caso non ci siano match corretti.
+L'elemento  __<img>__  indicherà il default da usare nel caso non ci siano match corretti.
 
     <picture>
       <source media="(min-width: 650px)" srcset="computer.jpg">
@@ -589,7 +590,9 @@ Infine un elemento  __<img>__  indicherà il default da usare nel caso non ci si
     </picture> 
 
 ---
-# Quando usare il tag  __<picture>__?
+# Picture
+
+Quando usare il tag  __<picture>__?
 
 \- Risparmiare banda
 
@@ -671,18 +674,18 @@ Ci sono una serie di proprietà che possono essere utilizzate per personalizzare
 
 Con lo  __style__   __width__  è possibile indicare l’occupazione di una singola colonna
 
-\<table  __style="width:100%"__ >
-\<thead>
-\<tr>
-\<th  __style="width:10%"__ >Colonna 1\</th> \<th>Colonna 2\</th>
-\</tr>
-\</thead>
-\<tbody>
-\<tr>
-\<td>Dato 1\</td>\<td>Dato 2\</td>
-\</tr>
-\</tbody>
-\</table>
+    <table  style="width:100%" >
+        <thead>
+            <tr>
+                <th  style="width:10%" >Colonna 1</th> <th>Colonna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td><td>Dato 2</td>
+            </tr>
+        </tbody>
+    </table>
 
 ---
 # Table colspan e rowspan
@@ -690,15 +693,13 @@ Con lo  __style__   __width__  è possibile indicare l’occupazione di una sing
 Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa più di una riga o di una colonna
 
     <table>
-    <thead>
-    <tr>
-    <th colspan="2" >Colonna 1</th> <th>Colonna 2</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
-    <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
-    </tbody>
+        <thead>
+            <tr> <th colspan="2" >Colonna 1</th><th>Colonna 2</th> </tr>
+        </thead>
+        <tbody>
+            <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
+            <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
+        </tbody>
     </table>
 
 ![](img%5CChapter_html7.png)
@@ -713,7 +714,7 @@ Il tab  __caption__ deve essere inserito subito dopo il tag  __table__
 
 \<table>
 
-\<caption> Caption \</caption>
+__\<caption> Caption \</caption>__
 
 \.\.\.
 
@@ -788,39 +789,32 @@ I tag sono  __div__ e  __span__ \.
 __DIV__
 
 L’elemento inizia sempre su una nuova riga
-
 Occupa l’intera larghezza disponibile
-
 Ha un margine inferiore e superiore
 
 __SPAN__
 
 Non inizia su una nuova riga
-
 Occupa solo la larghezza necessaria
-
 Non ha un margine superiore e inferiore
 
 ---
 # Blocchi e inline
 
-Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div> Praesent laoreet hendrerit neque sed sagittis\.
+Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div>__ Praesent laoreet hendrerit neque sed sagittis\.
+![](img/Chapter_html8.png)
 
-![](img%5CChapter_html8.png)
-
-Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. \<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN\ Praesent laoreet hendrerit neque sed sagittis\.
-
-
-![](img%5CChapter_html9.png)
+Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN__</span> Praesent laoreet hendrerit neque sed sagittis\.
+![](img/Chapter_html9.png)
 
 ---
 # Classi
 L’attributo  __class__ serve ad indicare una classe associata ad un qualsiasi tag\.
 
-\<div __class__="town">
-&nbsp;&nbsp;\<h2>Roma\</h2>
-&nbsp;&nbsp;\<p>Forza Roma forza Lupi\</p>
-\</div>
+    <div class="town">
+        <h2>Parigi</h2>
+        <p>Capitale della federazione dei pianeti uniti, situata sul Quadrante Alfa</p>
+    </div>
 
 La classe specificata può poi essere descritta a livello di CSS\.
 
