@@ -1100,7 +1100,7 @@ Il tag  __samp__ permette di simulare l’output di un programma
 ---
 # pre
 
-Il tag  __pre __ permette di mantenere la formattazione presente all’interno di un testo
+Il tag  __pre__ permette di mantenere la formattazione presente all’interno di un testo
 
     <pre>
         <code>
@@ -1137,13 +1137,13 @@ Questi elementi permettono una standardizzazione del codice verso una serie di e
 # Layout
 Esistono tecniche diverse per posizionare questi tag
 
-L’uso di framework CSS come Bootstrap
+- L’uso di framework CSS come Bootstrap
 
-L’uso delle proprietà  __float__ e  __clear__
+- L’uso delle proprietà  __float__ e  __clear__
 
-L’uso di Flexbox \(1\)
+- L’uso di Flexbox \(1\)
 
-L’uso di Grid Layout \(2\)
+- L’uso di Grid Layout \(2\)
 
 https://caniuse\.com/flexbox
 https://caniuse\.com/css\-grid
@@ -1257,7 +1257,7 @@ Un esempio sono i simboli matematici
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
-https://www\.w3schools\.com/charsets/ref\_utf\_math\.asp
+[https://www.w3schools.com/charsets/ref_utf_math.asp](https://www.w3schools.com/charsets/ref_utf_math.asp)
 
 ---
 # Entity - emoji
@@ -1286,7 +1286,7 @@ Di seguito alcuni esempi di emoji
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
-https://www\.w3schools\.com/charsets/ref\_emoji\.asp
+[https://www.w3schools.com/charsets/ref_emoji.asp](https://www.w3schools.com/charsets/ref_emoji.asp)
 
 ---
 
@@ -1304,173 +1304,112 @@ https://www\.researchgate\.net/figure/Seven\-dierent\-implementations\-of\-three
 
 Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, dopo l’entity della emoji\, un entity di colorazione
 
-&\#127999; 🏿 Carnagione scura
+    &#127999; 🏿 Carnagione scura
+    &#127998; 🏾 Carnagione abbastanza scura
+    &#127997; 🏽 Carnagione media
+    &#127996; 🏼 Carnagione abbastanza chiara
+    &#127995; 🏻 Carnagione chiara
 
-&\#127998; 🏾 Carnagione abbastanza scura
+---
 
-&\#127997; 🏽 Carnagione media
-
-&\#127996; 🏼 Carnagione abbastanza chiara
-
-&\#127995; 🏻 Carnagione chiara
+# Entity - emoji – tonalità della pelle
 
 Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
 
-&\#9757; Nessun tono della pelle
+    &#9757; Nessun tono della pelle
+    &#9757;&#127999; Scuro
+    &#9757;&#127998; Medio Scuro
+    &#9757;&#127997; Medio
+    &#9757;&#127996; Luce media
+    &#9757;&#127995; Luce
 
-&\#9757;&\#127999; Scuro
-
-&\#9757;&\#127998; Medio Scuro
-
-&\#9757;&\#127997; Medio
-
-&\#9757;&\#127996; Luce media
-
-&\#9757;&\#127995; Luce
-
+---
+# Form
 Un form HTML serve a raccogliere l'input dell'utente\.
 
-__Form __ è tag che inizia e finisce una maschera di acquisizione dati
+__Form__ è tag che inizia e finisce una maschera di acquisizione dati
 
-< __form__  action="/action\.php">
+    <form action="/action.php">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="fname" value="Matteo">
+        <label for="lname">Cognome:</label>
+        <input type="text" id="lname" name="lname" value="Baccan">
+        <input type="submit" value="conferma">
+    </form>
 
-\<label for="fname">Nome:\</label>\<br>
+---
+# Form attributi
 
-\<input type="text" id="fname" name="fname" value="Matteo">\<br>
+Il tag  __form__ ha una serie di attributi che ne modificano il comportamento
 
-\<label for="lname">Cognome:\</label>\<br>
+__target__ si comporta analogamente al target inserito all’interno di un tag  __a__
 
-\<input type="text" id="lname" name="lname" value="Baccan">\<br>\<br>
-
-\<input type="submit" value="conferma">
-
-</ __form__ >
-
-HTML – form attributi
-
-Il tag  __form __ ha una serie di attributi che ne modificano il comportamento
-
-__target __ si comporta analogamente al target inserito all’interno di un tag  __a__
-
-__method __ è il metodo col quale i parametri devono essere passati alla chiamata http di conferma\. Normalmente i metodi sono  __get__  o  __post__ \.
+__method__ è il metodo col quale i parametri devono essere passati alla chiamata http di conferma\. Normalmente i metodi sono  __get__  o  __post__ \.
 
 Se non indicato il default è  __get__
 
 Ci sono delle implicazioni a livello di sicurezza e di gestione di cui tener conto quando viene scelto il metodo per inviare i dati
 
-__autocomplete __ è una indicazione che viene data al browser\, che indica se automatizzare il completamento dei campi con dati che sono stati precedentemente digitati
+__autocomplete__ è una indicazione che viene data al browser\, che indica se automatizzare il completamento dei campi con dati che sono stati precedentemente digitati
 
-__novalidate __ indica che i dati inseriti non devono essere validati al loro salvataggio
+__novalidate__ indica che i dati inseriti non devono essere validati al loro salvataggio
 
-HTML – form elementi
+---
+# Form elementi
 
 Esistono più tag che rappresentano il modo col quale inserire dati in una form\.
 
 Ognuno di essi ha delle proprie caratteristiche di utilizzo
 
-\<input>
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
 
-\<label>
+---
+# Form input
 
-\<select>
+Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testuali monoriga\. Normalmente si lega ad un tag  __label__  che rappresenta la sua descrizione
 
-\<textarea>
+    <label for="fname">Nome:</label>
 
-\<button>
+    <input type="text" id="fname" name="fname">
 
-\<fieldset>
+---
+# Form input type
 
-\<legend>
+Uno degli attributi più interessanti di  __input__ è type\, che identifica il tipo di dati che verranno inseriti nel campo
 
-\<datalist>
+    button    checkboxcolor    date    datetime    datetime-local    email
+    file    hidden    image    month    number    password    radio
+    range    reset    search    submit    tel    text    time    url    week
 
-\<output>
-
-\<option>
-
-\<optgroup>
-
-HTML – form input
-
-Il tag  __input __ è il primo tag utilizzato e serve ad inserire dei campi testuali monoriga\. Normalmente si lega ad un tag  __label__  che rappresenta la sua descrizione
-
-\<label for="fname">Nome:\</label>
-
-\<input type="text" id="fname" name="fname">
-
-HTML – form input type
-
-Uno degli attributi più interessanti di  __input __ è type\, che identifica il tipo di dati che verranno inseriti nel campo
-
-button
-
-checkboxcolor
-
-date
-
-datetime
-
-datetime\-local
-
-email
-
-file
-
-hidden
-
-image
-
-month
-
-number
-
-password
-
-radio
-
-range
-
-reset
-
-search
-
-submit
-
-tel
-
-text
-
-time
-
-url
-
-week
-
-HTML – CSS Framework
+---
+# CSS Framework
 
 Per facilitare la scrittura di pagine HTML sono nati col tempo una serie di framework CSS utili a velocizzare il lavoro
 
 Fra i framework più noti ci sono
 
-Boostrap
+    Boostrap
+    Foundation
+    Bulma
+    Tailwind
+    Uikit
+    Milligram
+    Pure CSS
+    Tachyons
+    Materialize CSS
 
-Foundation
-
-Bulma
-
-Tailwind
-
-Uikit
-
-Milligram
-
-Pure CSS
-
-Tachyons
-
-Materialize CSS
-
-HTML – Bootstrap
+---
+# Bootstrap
 
 Cos'è Bootstrap?
 
@@ -1480,219 +1419,185 @@ Bootstrap include modelli di progettazione basati su HTML e CSS per tipografia\,
 
 Bootstrap ti dà anche la possibilità di creare facilmente design reattivi
 
-HTML – Bootstrap \- container
+---
+
+# Bootstrap - container
 
 Boostrap fornisce 2 classi per definire un container
 
-__\.container __
+__\.container__
 
 che fornisce un contenitore reattivo a larghezza fissa
 
-__\.container\-fluid __
+__\.container\-fluid__
 
 che fornisce un contenitore a larghezza intera\, che copre l'intera larghezza della finestra
 
-HTML – Bootstrap \- grid
+---
+# Bootstrap - grid
 
 Il sistema a griglia di Bootstrap è costruito con flexbox e consente fino a 12 colonne nella pagina\.
 
 Se non desideri utilizzare tutte e 12 le colonne singolarmente\, puoi raggruppare le colonne insieme per creare colonne più larghe
 
-HTML – Bootstrap \- grid
+---
+# Bootstrap \- grid
 
 il sistema a griglia Bootstrap 5 ha sei classi:
 
-\.col\- \(dispositivi extra piccoli \- larghezza dello schermo inferiore a 576px\)
+    .col- (dispositivi extra piccoli - larghezza dello schermo inferiore a 576px)
 
-\.col\-sm\- \(piccoli dispositivi \- larghezza dello schermo uguale o superiore a 576px\)
+    .col-sm- (piccoli dispositivi - larghezza dello schermo uguale o superiore a 576px)
 
-\.col\-md\- \(dispositivi medi \- larghezza dello schermo uguale o superiore a 768px\)
+    .col-md- (dispositivi medi - larghezza dello schermo uguale o superiore a 768px)
 
-\.col\-lg\- \(dispositivi di grandi dimensioni \- larghezza dello schermo uguale o superiore a 992px\)
+    .col-lg- (dispositivi di grandi dimensioni - larghezza dello schermo uguale o superiore a 992px)
 
-\.col\-xl\- \(dispositivi xlarge \- larghezza dello schermo uguale o superiore a 1200px\)
+    .col-xl- (dispositivi xlarge - larghezza dello schermo uguale o superiore a 1200px)
 
-\.col\-xxl\- \(dispositivi xxlarge \- larghezza dello schermo uguale o superiore a 1400px\)
+    .col-xxl- (dispositivi xxlarge - larghezza dello schermo uguale o superiore a 1400px)
 
 Le classi di cui sopra possono essere combinate per creare layout più dinamici e flessibili\.
 
-HTML – Bootstrap \- table
+---
+# Bootstrap \- table
 
 Boostrap dispone di classi predisposte per la visualizzazione dei tag  __table__
 
 Per utilizzarle è sufficiente indicarle a livello di attributo  __class__
 
-__\<table class="table">__
+    <table class="table">
+    </table>
 
-__…__
+    <table class="table table-striped">
+    </table>
 
-__\</table>__
+    <table class="table table-hover">
+    </table>
 
-__\<table class="table table\-striped">__
+    <table class="table table-bordered">
+    </table>
 
-__…__
+[https://getbootstrap.com/docs/5.0/content/tables/](https://getbootstrap.com/docs/5.0/content/tables/)
 
-__\</table>__
+---
 
-__\<table class="table table\-hover">__
-
-__…__
-
-__\</table>__
-
-__\<table class="table table\-bordered">__
-
-__…__
-
-__\</table>__
-
-https://getbootstrap\.com/docs/5\.0/content/tables/
-
-HTML – Bootstrap \- testi
+# Bootstrap \- testi
 
 Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \.\. h6__ \, ma soprattutto aggiunge una serie di classi per la formattazione dei testi:
 
-\.text\-start 			Allinea il testo a sinistra
+    .text-start             Allinea il testo a sinistra
+    .text-center            Allinea al centro
+    .text-decoration-none   Rimuove la sottolineatura da un collegamento
+    .text-end               Allinea a destra
+    .text-nowrap            Evita il ritorno a capo
+    .text-lowercase         Minuscolo
+    .text-uppercase         Maiuscolo
+    .text-capitalize        Iniziale in maiuscolo
 
-\.text\-center 		Allinea al centro
-
-\.text\-decoration\-none 	Rimuove la sottolineatura da un collegamento
-
-\.text\-end 			Allinea a destra
-
-\.text\-nowrap 		Evita il ritorno a capo
-
-\.text\-lowercase 		Minuscolo
-
-\.text\-uppercase 		Maiuscolo
-
-\.text\-capitalize 		Iniziale in maiuscolo
-
-HTML – Bootstrap – colori testo
+---
+# Bootstrap – colori testo
 
 Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori\. Queste classi possono essere sovrascritte da template CSS integrativi
 
-\.text\-muted
+    .text-muted
+    .text-primary
+    .text-success
+    .text-info
+    .text-warning
+    .text-danger
+    .text-secondary
+    .text-white
+    .text-dark
+    .text-body
+    .text-light
 
-\.text\-primary
-
-\.text\-success
-
-\.text\-info
-
-\.text\-warning
-
-\.text\-danger
-
-\.text\-secondary
-
-\.text\-white
-
-\.text\-dark
-
-\.text\-body
-
-\.text\-light
-
-HTML – Bootstrap – colori sfondo
+---
+# Bootstrap – colori sfondo
 
 Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
-\.bg\-primary
+    .bg-primary
+    .bg-success
+    .bg-info
+    .bg-warning
+    .bg-danger
+    .bg-secondary
+    .bg-dark
+    .bg-light
 
-\.bg\-success
-
-\.bg\-info
-
-\.bg\-warning
-
-\.bg\-danger
-
-\.bg\-secondary
-
-\.bg\-dark
-
-\.bg\-light
-
-HTML – Bootstrap – immagini
+---
+# Bootstrap – immagini
 
 Per quanto riguarda le immagini\, sono state introdotte una serie di classi che aiutano la loro visualizzazione e allineamento
 
-\.rounded 		Arrotonda gli angoli dell’immagine
+    .rounded                Arrotonda gli angoli dell’immagine
+    .rounded-circle         Mette l’immagine in un cerchio
+    .img-thumbnail          Mette un bordo all’immagine
+    .float-start            Allinea a sinistra
+    .float-end              Allinea a destra
+    .mx-auto (margin:auto) ed .d-block (display:block)      Permettono la centratura
+    .img-fluid              Crea un’immagine responsive applicando
+                            max-width: 100%; e height: auto;
 
-\.rounded\-circle 	Mette l’immagine in un cerchio
-
-\.img\-thumbnail 	Mette un bordo all’immagine
-
-\.float\-start		Allinea a sinistra
-
-\.float\-end		Allinea a destra
-
-\.mx\-auto \(margin:auto\) ed \.d\-block \(display:block\)	Permettono la centratura
-
-\.img\-fluid		Crea un’immagine responsive applicando 				max\-width: 100%; e height: auto;
-
-HTML – Bootstrap – Jumbotron
+---
+# Bootstrap – Jumbotron
 
 jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni contenuti
 
-__\<div class="jumbotron">__
+    <div class="jumbotron">
 
-__  __  __\<h1>Titolo\</h1>__
+        <h1>Titolo</h1>
 
-__  __  __\<p>testo testo testo testo testo testo testo testo testo testo \</p>__
+        <p>testo testo testo testo testo testo testo testo testo testo </p>
 
-__\</div>__
+    </div>
 
-HTML – Bootstrap – Alert
+---
+# Bootstrap – Alert
 
 Le classi di alert servono ad evidenziare un testo utilizzando un contesto\, come nel caso dei testi
 
-__\<div class="alert alert\-success">__
-
-__  __  __\<strong>SUCCESSO\</strong> hai fatto qualcosa di perfetto__
-
-__\</div>__
+    <div class="alert alert-success">
+        <strong>SUCCESSO</strong> hai fatto qualcosa di perfetto
+    </div>
 
 Le tipogie di classi di alert si sovrappongono a quelle già viste per i testi
 
-\.alert\-success \.alert\-info \.alert\-warning \.alert\-danger \.alert\-primary \.alert\-secondary \.alert\-light \.alert\-dark
+    .alert-success .alert-info .alert-warning .alert-danger .alert-primary .alert-secondary .alert-light .alert-dark
 
 Come classi di supporto agli alert è possibile anche usare
 
-\.alert\-dismissible	Alert chiudibile
+    .alert-dismissible	Alert chiudibile
+    .fade .show		Alert con un fade in chiusura
 
-\.fade \.show		Alert con un fade in chiusura
-
-HTML – Bootstrap – Button
+---
+# Bootstrap – Button
 
 Come per testi e alert\, anche i button hanno delle classi relative al contesto
 
-__\<button type="button" class="btn">Basic\</button>__
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
 
-__\<button type="button" class="btn btn\-primary">Primary\</button>__
+Le tipologie di classi di btn si sovrappongono a quelle già viste per i testi
 
-__\<button type="button" class="btn btn\-secondary">Secondary\</button>__
+    .btn-success .btn-info .btn-warning .btn-danger .btn-primary .btn-secondary .btn-light .btn-dark
 
-__\<button type="button" class="btn btn\-success">Success\</button>__
+Come classi di supporto è possibile usare le stesse classi con aggiunta di  __outline__
 
-__\<button type="button" class="btn btn\-info">Info\</button>__
+    .btn-outline-primary .btn-outline-secondary ...
 
-Le tipogie di classi di btn si sovrappongono a quelle già viste per i testi
-
-\.btn\-success \.btn\-info \.btn\-warning \.btn\-danger \.btn\-primary \.btn\-secondary \.btn\-light \.btn\-dark
-
-Come classi di supporto ai button è possibile usare le stesse classi con aggiunta di  __outline__
-
-\.btn\-outline\-primary \.btn\-outline\-secondary \.\.\.
-
-HTML – Bootstrap – Badge
+---
+# Bootstrap – Badge
 
 I badge sono delle etichette di testo che subiscono il contesto come button e text
 
-__\<h1>Esempio di intestazione \<span class="badge bg\-secondary">badge\\</h1>__
+    <h1>Esempio di intestazione <span class="badge bg-secondary">badge</h1>
 
-In questo caso il suffisso da usare è __ bg__
+In questo caso il suffisso da usare è __bg__
 
 La classe di supporto dei badge è
 
