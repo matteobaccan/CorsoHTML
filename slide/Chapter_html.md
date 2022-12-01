@@ -875,13 +875,9 @@ E’ importante capire come sono gestiti i file in una struttura a cartelle\. La
 Rispetto alla pagina corrente
 
 \<img src="foto\.jpg"> 				 __foto\.jpg__ è nella stessa cartella
-
 \<img src="immagini/foto\.jpg"> 		 __foto\.jgp__ è nella cartella  __immagini__
-
 \<img src="/immagini/foto\.jpg"> 		 __foto\.jpg__ è nella cartella  __immagini__ del root folder
-
 \<img src="\.\./foto\.jpg"> 				 __foto\.jpg__ è nella cartella padre della cartella corrente
-
 \<img src="http://www\.foo\.bar/foto\.jpg"> 	 __foto\.jpg__ è sul sito  __foo\.bar__
 
 ---
@@ -971,19 +967,13 @@ Un esempio di utilizzo delle proprietà Open Graph
 
 Altri elementi di Open Graph sono
 
-og:audio : l’audio che accompagna questo oggetto
-
-og:description : la descrizione di questo oggetto
-
-og:determiner : la parola che appare prima del titolo all’interno di una frase\. E’ possibile scegliere fra  __a__ \,  __an__ \,  __the__ \,  __""__ \,  __auto__ \)\. Se è scelto  __auto __ il valore sarà scelto fra  __a__  o  __an__ \. Il default è vuoto  __""__  \(blank\)\.
-
-og:locale : è la lingua dell’oggetto\. Se non indicato il default è  __en\_US__ \.
-
-og:locale:alternate : l’elenco di altre lingue nelle quali la pagina è disponibile
-
-og:site\_name : se l’oggetto è parte di un grande sito web\, sarà il nome con il quale verrà referenziato il sito
-
-og:video : l’indirizzo del video in accompagnamento della pagina
+__og:audio__ : l’audio che accompagna questo oggetto
+__og:description__ : la descrizione di questo oggetto
+__og:determiner__ : la parola che appare prima del titolo all’interno di una frase\. E’ possibile scegliere fra  __a__ \,  __an__ \,  __the__ \,  __""__ \,  __auto__ \)\. Se è scelto  __auto __ il valore sarà scelto fra  __a__  o  __an__ \. Il default è vuoto  __""__  \(blank\)\.
+__og:locale__ : è la lingua dell’oggetto\. Se non indicato il default è  __en\_US__ \.
+__og:locale:alternate__ : l’elenco di altre lingue nelle quali la pagina è disponibile
+__og:site\_name__ : se l’oggetto è parte di un grande sito web\, sarà il nome con il quale verrà referenziato il sito
+__og:video__ : l’indirizzo del video in accompagnamento della pagina
 
 ---
 
@@ -1028,27 +1018,25 @@ Questa riga dirà al browser come controllare le dimensioni di pagina
 
 ---
 
-HTML – Responsive image
+# Responsive image
 
 Per rendere una immagine responsive è possibile utilizzare  __max\-width__  che ci permette di indica la dimensione massima che avrà in larghezza ed impostare l’altezza ad  __auto__
 
-<img src="gattino\.jpg" style="   __max\-width:100%; height:auto;__   "> 
+    <img src="gattino.jpg" style=" max-width:100%; height:auto;"> 
 
-HTML – Responsive image
+---
+# Responsive image
 
 Un altro elemento responsive che abbiamo visto è il tag  __picture__
 
-\<picture>
+    <picture>
+        <source media="(min-width: 650px)" srcset="computer.jpg">
+        <source media="(min-width: 465px)" srcset="tablet.jpg">
+        <img src="cellulare.jpg">
+    </picture>
 
-    \<source media="\(min\-width: 650px\)" srcset="computer\.jpg">
-
-    \<source media="\(min\-width: 465px\)" srcset="tablet\.jpg">
-
-    \<img src="cellulare\.jpg">
-
-\</picture> 
-
-HTML – Responsive text
+---
+# Responsive text
 
 Anche gli elementi testuali possono avere delle caratteristiche responsive\.
 
@@ -1056,7 +1044,7 @@ Per farlo occorre impostare le dimensioni del carattere in  __vw__  che rapprese
 
 Ad esempio proviamo ad impostare la grandezza di  __ciao__  a 10vw
 
-   \<div style="font\-size:10vw">Ciao\</div> 
+    <div style="font-size:10vw">Ciao</div>
 
 Ingrandendo a diminuendo la dimensione dello schermo il testo si adeguerà di conseguenza
 
@@ -1064,109 +1052,106 @@ Il  __viewport width__  è la larghezza della finestra del browser e l’unità 
 
 [https://whatismyviewport\.com/](https://whatismyviewport.com/)
 
-HTML – Media Query
+---
+# Media Query
 
 Un altro modo per adattare le pagine ad una particolare dimensione è l’utilizzo delle media query
 
 In questo modo è possibile cambiare completamente layout\, in base alle dimensioni dello schermo
 
-HTML – Media Query
+---
+# Media Query
 
 All’interno di una media query è possibile indicare il momento in cui un particolare frammento di CSS deve entrare in gioco
 
 In questo caso\, il CSS viene considerato fino alla larghezza di 800px
 
-@media screen and \(max\-width: 800px\) \{
+    @media screen and (max-width: 800px) {
+        /* CSS */
+    }
 
-    /\* CSS \*/
+---
+# Code
+Il tag  __code__ permette di evidenziare del testo in modo possa essere usato per la rappresentazione di codice\, ad esempio usando un font non proporzionale
 
-\}
+    <code>
+        x = 1;
+        y = 2;
+        z = x + y;
+    </code>
 
-Il tag  __code __ permette di evidenziare del testo in modo possa essere usato per la rappresentazione di codice\, ad esempio usando un font non proporzionale
+Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
-\<code>
+---
+# kbd
+Il tag  __kbd__ permette di evidenziare una sequenza di tasti da premere: l’aspetto è simile a quello di  __code__
 
-      x = 1;
+    <p>Visualizza il sorgente premendo <kbd>Ctrl + U</kbd></p>
 
-      y = 2;
+Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
-      z = x \+ y;
+---
+# samp
+Il tag  __samp__ permette di simulare l’output di un programma
 
-\</code>
+    <p>Esempio di output:</p>
+    <p><samp>Hello world.<br>Premi F1 per continuare</samp></p>
 
-Il comportamento è simile all’uso di un tag  __span __ con font  __courier__
-
-Il tag  __kbd __ permette di evidenziare una sequenza di tasti da premere: l’aspetto è simile a quello di  __code__
-
-\<p>Visualizza il sorgente premendo \<kbd>Ctrl \+ U\</kbd>\</p>
-
-Il comportamento è simile all’uso di un tag  __span __ con font  __courier__
-
-Il tag  __samp __ permette di simulare l’output di un programma
-
-\<p>Esempio di output:\</p>
-
-\<p>\<samp>Hello world\.\<br>Premi F1 per continuare\</samp>\</p>
+---
+# pre
 
 Il tag  __pre __ permette di mantenere la formattazione presente all’interno di un testo
 
-\<pre>
+    <pre>
+        <code>
+        x = 1;
+        y = 2;
+        z = x + y;
+        </code>
+    </pre>
 
-    \<code>
+---
+# var
+Il tag  __var__ evidenzia una variabile o una espressione
 
-      x = 1;
+    L’area del rettangolo è <var>b</var> per <var>a</var>, dove <var>b</var> è la base e <var>a</var> è l’altezza
 
-      y = 2;
-
-      z = x \+ y;
-
-    \</code>
-
-\</pre>
-
-Il tag  __var __ evidenzia una variabile o una espressione
-
-L’area del rettangolo è \<var>b\</var> per \<var>a\</var>\, dove \<var>b\</var> è la base e \<var>a\</var> è l’altezza
-
+---
+# Layout
 HTML ha diversi tag semantici che definiscono le diverse parti di una pagina\.
 
 Questi elementi permettono una standardizzazione del codice verso una serie di elementi comuni
 
-\<header> \- Intestazione o sezione di un documento
+    <header> - Intestazione o sezione di un documento
+    <nav> - Link di navigazione
+    <section> - Sezioni
+    <article> - Un contenuto
+    <aside> - Una sidebar
+    <footer> - Il piede del documento o di una sezione
+    <details> - Dettagli aggiuntivi rispetto al documento
+    <summary> - Un header dell’elemento <details>
 
-\<nav> \- Link di navigazione
+![bg right:40% 80%](img/Chapter_html10.png)
 
-\<section> \- Sezioni
-
-\<article> \- Un contenuto
-
-\<aside> \- Una sidebar
-
-\<footer> \- Il piede del documento o di una sezione
-
-\<details> \- Dettagli aggiuntivi rispetto al documento
-
-\<summary> \- Un header dell’elemento \<details>
-
-![](img%5CChapter_html10.png)
-
+---
+# Layout
 Esistono tecniche diverse per posizionare questi tag
 
 L’uso di framework CSS come Bootstrap
 
-L’uso delle proprietà  __float __ e  __clear__
+L’uso delle proprietà  __float__ e  __clear__
 
 L’uso di Flexbox \(1\)
 
 L’uso di Grid Layout \(2\)
 
 https://caniuse\.com/flexbox
-
 https://caniuse\.com/css\-grid
 
-![](img%5CChapter_html11.png)
+![bg right:50% 90%](img/Chapter_html11.png)
 
-HTML – validazione
+---
+# Validazione
 
 Per verificare che il proprio codice HTML/CSS sia valido è possibile usare dei siti di validazione codice
 
@@ -1180,7 +1165,8 @@ In alternativa esistono dei plugin utilizzabili direttamente da browser\, come  
 
 https://chrome\.google\.com/webstore/detail/html\-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk
 
-HTML – validazione cross device
+---
+# Validazione cross device
 
 Esistono una serie di siti web che permettono di verificare che il proprio sito venga visualizzato correttamente su una serie di device\.
 
@@ -1190,18 +1176,22 @@ Alcuni di più famosi sono
 
 [https://www\.browserling\.com](https://www.browserling.com/)
 
-HTML – validazione cross device
+---
+# Validazione cross device
 
 Browserstack richiede una registrazione per poter usare la versione gratuita e mette a disposizione una simulazione su device reali per sistemi operativi Windows\, Mac\, IOS e Android
 
-![](img%5CChapter_html12.png)
+![bg right:40% 90%](img/Chapter_html12.png)
 
-HTML – validazione cross device
+---
+# Validazione cross device
 
 Browserling permette 1 minuto di navigazione su una serie di sistemi operativi e versioni di browser
 
-![](img%5CChapter_html13.png)
+![bg right:50% 90%](img/Chapter_html13.png)
 
+---
+# Entity
 Esistono una serie ci caratteri riservati che non possono essere inseriti all’interno di una pagina HTML\.
 
 Ad esempio i caratteri \< e > che rappresentano l’inizio e la fine di un  __tag\.__
@@ -1216,75 +1206,61 @@ Oppure
 
 __&\#numero\_entity;__
 
+---
+# Entity
+
 Di seguito una serie di entity largamente diffuse
 
-non\-breaking space 			&nbsp; 	&\#160;
+        non-breaking space                      &nbsp;      &#160;
+    <   less than                               &lt;        &#60;
+    >   greater than                            &gt;        &#62;
+    &   ampersand                               &amp;       &#38;
+    "   double quotation mark                   &quot;      &#34;
+    '   single quotation mark (apostrophe)      &apos;      &#39;
+    ¢   cent                                    &cent;      &#162;
+    £   pound                                   &pound;     &#163;
+    ¥   yen                                     &yen;       &#165;
+    €   euro                                    &euro;      &#8364;
+    ©   copyright                               &copy;      &#169;
+    ®   registered trademark                    &reg;       &#174;
 
-< 	less than 						&lt; 		&\#60;
+---
 
-> 	greater than 					&gt; 		&\#62;
-
-& 	ampersand 					&amp; 	&\#38;
-
-" 	double quotation mark 			&quot; 	&\#34;
-
-' 	single quotation mark \(apostrophe\) 	&apos; 	&\#39;
-
-¢ 	cent 							&cent;	&\#162;
-
-£ 	pound 						&pound; 	&\#163;
-
-¥ 	yen 							&yen; 	&\#165;
-
-€ 	euro 							&euro; 	&\#8364;
-
-© 	copyright 						&copy; 	&\#169;
-
-® 	registered trademark 			&reg; 	&\#174;
-
-HTML – entity \- simboli
+# Entity - simboli
 
 Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili da tastiera\, anche loro sono rappresentabili con delle entity
 
 Un esempio sono i simboli matematici
 
-∀ 	&\#8704; 	&forall; 		FOR ALL
+    ∀ 	&#8704; 	&forall;        FOR ALL
+    ∂ 	&#8706; 	&part;          PARTIAL DIFFERENTIAL
+    ∃ 	&#8707; 	&exist;         THERE EXISTS
+    ∅ 	&#8709; 	&empty;         EMPTY SETS
+    ∇ 	&#8711; 	&nabla;         NABLA
+    ∈ 	&#8712; 	&isin;          ELEMENT OF
+    ∉ 	&#8713; 	&notin;         NOT AN ELEMENT OF
+    ∋ 	&#8715; 	&ni;            CONTAINS AS MEMBER
+    ∏ 	&#8719; 	&prod;          N-ARY PRODUCT
+    ∑ 	&#8721; 	&sum;           N-ARY SUMMATION
 
-∂ 	&\#8706; 	&part; 		PARTIAL DIFFERENTIAL
+---
 
-∃ 	&\#8707; 	&exist; 		THERE EXISTS
-
-∅ 	&\#8709; 	&empty; 	EMPTY SETS
-
-∇ 	&\#8711; 	&nabla; 	NABLA
-
-∈ 	&\#8712; 	&isin; 		ELEMENT OF
-
-∉ 	&\#8713; 	&notin; 		NOT AN ELEMENT OF
-
-∋ 	&\#8715; 	&ni; 		CONTAINS AS MEMBER
-
-∏ 	&\#8719; 	&prod; 		N\-ARY PRODUCT
-
-∑ 	&\#8721; 	&sum; 		N\-ARY SUMMATION
-
-HTML – entity \- simboli
+# Entity - simboli
 
 Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili da tastiera\, anche loro sono rappresentabili con delle entity
 
 Un esempio sono i simboli matematici
 
-∅ 	&\#8709; 	&empty; 	Vuoto
-
-∈ 	&\#8712; 	&isin; 		Contenuto
-
-∉ 	&\#8713; 	&notin; 		Non contenuto
+    ∅ 	&#8709; 	&empty;     Vuoto
+    ∈ 	&#8712; 	&isin;      Contenuto
+    ∉ 	&#8713; 	&notin;     Non contenuto
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
 https://www\.w3schools\.com/charsets/ref\_utf\_math\.asp
 
-HTML – entity \- emoji
+---
+# Entity - emoji
 
 Le entity possono rappresentare\, non solo caratteri\, ma anche emoji\, che vengono visualizzate come piccole immagini\, pur non essendolo\.
 
@@ -1294,39 +1270,37 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 
 __\<meta charset="UTF\-8">__
 
-HTML – entity \- emoji
+---
+# Entity - emoji
 
 Di seguito alcuni esempi di emoji
 
 ✔	10004	2714
-
 ✖	10006	2716
-
 ✝	10013	271D
-
 ✡	10017	2721
-
 ✨	10024	2728
-
 ✳	10035	2733
-
 ✴	10036	2734
-
 ❄	10052	2744
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
 https://www\.w3schools\.com/charsets/ref\_emoji\.asp
 
-HTML – entity \- emoji
+---
+
+# Entity - emoji
 
 Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentate diversamente in base al sistema operativo\, sito web o applicazione che le rappresenta\.
 
+![width:800px](img/Chapter_html14.png)
+
 https://www\.researchgate\.net/figure/Seven\-dierent\-implementations\-of\-three\-dierent\-Emoji\-The\-face\-with\-tears\-of\_fig16\_316168050
 
-![](img%5CChapter_html14.png)
+---
 
-HTML – entity \- emoji – tonalità della pelle
+# Entity - emoji – tonalità della pelle
 
 Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, dopo l’entity della emoji\, un entity di colorazione
 
