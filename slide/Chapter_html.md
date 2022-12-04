@@ -797,6 +797,7 @@ Non ha un margine superiore e inferiore
 
 ---
 # Blocchi e inline
+La rappresentazione di __DIV__ e __SPAN__ è notevolmente diversa:
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div>__ Praesent laoreet hendrerit neque sed sagittis\.
 ![](img/Chapter_html8.png)
@@ -874,20 +875,20 @@ E’ importante capire come sono gestiti i file in una struttura a cartelle\. La
 
 Rispetto alla pagina corrente
 
-\<img src="foto\.jpg"> 				 __foto\.jpg__ è nella stessa cartella
-\<img src="immagini/foto\.jpg"> 		 __foto\.jgp__ è nella cartella  __immagini__
-\<img src="/immagini/foto\.jpg"> 		 __foto\.jpg__ è nella cartella  __immagini__ del root folder
-\<img src="\.\./foto\.jpg"> 				 __foto\.jpg__ è nella cartella padre della cartella corrente
-\<img src="http://www\.foo\.bar/foto\.jpg"> 	 __foto\.jpg__ è sul sito  __foo\.bar__
+    <img src="foto.jpg">                        foto.jpg è nella stessa cartella
+    <img src="immagini/foto.jpg">               foto.jpg è nella cartella  immagini
+    <img src="/immagini/foto.jpg">              foto.jpg è nella cartella  immagini del root folder
+    <img src="../foto.jpg">                     foto.jpg è nella cartella padre della cartella corrente
+    <img src="http://www.foo.bar/foto.jpg">     foto.jpg è sul sito foo.bar
 
 ---
 # Head
 
 __head__  è il tag dove sono contenute una serie di informazioni propedeutiche alla visualizzazione corretta di una pagina e alla sua indicizzazione all’interno di motori di ricerca e social network\.
 
-Nel tag  __head__ sono presenti anche i riferimenti a file esterni\, tipicamente  __css__
+Nel tag  __head__ sono presenti anche i riferimenti a file esterni\, tipicamente  __css__\.
 
-Altri elementi che entrano a far parte di questo tag sono i tag  __meta__
+Altri elementi che entrano a far parte di questo tag sono i tag  __meta__\.
 
 ---
 # Head
@@ -925,7 +926,7 @@ L’autore
 
 Altri elementi che si trovano in  __head__  sono quelli del protocollo Open Graph.
 
-https://ogp\.me/
+<https://ogp.me/>
 
 Il protocollo Open Graph consente a qualsiasi pagina Web di essere arricchita di dati utili ad un “social graph”\. Ad esempio\, questo protocollo viene utilizzato su Facebook per consentire a qualsiasi pagina Web di avere le stesse funzionalità di qualsiasi altro oggetto su Facebook\.
 
@@ -1039,16 +1040,14 @@ Un altro elemento responsive che abbiamo visto è il tag  __picture__
 # Responsive text
 
 Anche gli elementi testuali possono avere delle caratteristiche responsive\.
-
 Per farlo occorre impostare le dimensioni del carattere in  __vw__  che rappresenta il  __viewport width__
 
 Ad esempio proviamo ad impostare la grandezza di  __ciao__  a 10vw
 
     <div style="font-size:10vw">Ciao</div>
 
-Ingrandendo a diminuendo la dimensione dello schermo il testo si adeguerà di conseguenza
-
-Il  __viewport width__  è la larghezza della finestra del browser e l’unità  __vw__  è il suo percentile
+Ingrandendo a diminuendo la dimensione dello schermo il testo si adeguerà di conseguenza\.
+Il __viewport width__ è la larghezza della finestra del browser e l’unità __vw__ è il suo percentile
 
 [https://whatismyviewport\.com/](https://whatismyviewport.com/)
 
@@ -1145,10 +1144,10 @@ Esistono tecniche diverse per posizionare questi tag
 
 - L’uso di Grid Layout \(2\)
 
-https://caniuse\.com/flexbox
-https://caniuse\.com/css\-grid
+<https://caniuse.com/flexbox>
+<https://caniuse.com/css-grid>
 
-![bg right:50% 90%](img/Chapter_html11.png)
+![bg right:43% 95%](img/Chapter_html11.png)
 
 ---
 # Validazione
@@ -1158,12 +1157,11 @@ Per verificare che il proprio codice HTML/CSS sia valido è possibile usare dei 
 Il più conosciuto è il validatore di w3\.org\, che è in grado di darci segnalazione di tutte le anomalie presenti nel nostro codice\. Esistono però delle valide alternative
 
 [https://validator\.w3\.org](https://validator.w3.org/)
-
 [https://html5\.validator\.nu](https://html5.validator.nu/)
 
 In alternativa esistono dei plugin utilizzabili direttamente da browser\, come  __html\-validator__  per Chrome
 
-https://chrome\.google\.com/webstore/detail/html\-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk
+<https://chrome.google.com/webstore/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk>
 
 ---
 # Validazione cross device
@@ -1172,9 +1170,8 @@ Esistono una serie di siti web che permettono di verificare che il proprio sito 
 
 Alcuni di più famosi sono
 
-[https://www\.browserstack\.com](https://www.browserstack.com/)
-
-[https://www\.browserling\.com](https://www.browserling.com/)
+[https://www.browserstack.com](https://www.browserstack.com/)
+[https://www.browserling.com](https://www.browserling.com/)
 
 ---
 # Validazione cross device
@@ -1268,7 +1265,7 @@ Le emoji sono caratteri provenienti dal charset Unicode UTF\-8 e sono sottoposte
 
 L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è che la pagina inizi col metatag
 
-__\<meta charset="UTF\-8">__
+    <meta charset="UTF-8">
 
 ---
 # Entity - emoji
@@ -1296,7 +1293,7 @@ Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentat
 
 ![width:800px](img/Chapter_html14.png)
 
-https://www\.researchgate\.net/figure/Seven\-dierent\-implementations\-of\-three\-dierent\-Emoji\-The\-face\-with\-tears\-of\_fig16\_316168050
+<https://www.researchgate.net/figure/Seven-dierent-implementations-of-three-dierent-Emoji-The-face-with-tears-of_fig16_316168050>
 
 ---
 
@@ -1344,11 +1341,7 @@ Il tag  __form__ ha una serie di attributi che ne modificano il comportamento
 
 __target__ si comporta analogamente al target inserito all’interno di un tag  __a__
 
-__method__ è il metodo col quale i parametri devono essere passati alla chiamata http di conferma\. Normalmente i metodi sono  __get__  o  __post__ \.
-
-Se non indicato il default è  __get__
-
-Ci sono delle implicazioni a livello di sicurezza e di gestione di cui tener conto quando viene scelto il metodo per inviare i dati
+__method__ è il metodo col quale i parametri devono essere passati alla chiamata http di conferma\. Normalmente i metodi sono  __get__  o  __post__ \. Se non indicato il default è  __get__\. Ci sono delle implicazioni a livello di sicurezza e di gestione di cui tener conto quando viene scelto il metodo per inviare i dati
 
 __autocomplete__ è una indicazione che viene data al browser\, che indica se automatizzare il completamento dei campi con dati che sono stati precedentemente digitati
 
