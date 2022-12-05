@@ -5,27 +5,37 @@
   <title>Titolo della pagina</title>
 
   <style>
-    #roma {
-      background-color: red;
-      color: black;
-      border: 5px solid yellow;
-    }
+#roma {
+  background-color: red;
+  border: 5px solid black;
+  margin: 3px;
+  padding: 5px;
+}
+
+.town {
+  color: green;
+  border-radius: 10px;
+}
+
+#townh1 {
+  display: none;
+}
   </style>
 
 </head>
 
 <body>
 
-  <h1>Town</h1>
+  <h1 id="townh1">Town</h1>
 
-  <div id="roma">
+  <div id="roma" class="town">
     <h2>Roma</h2>
     <p>Forza Roma forza Lupi</p>
   </div>
 
-  <div id="milano">
+  <div id="milano" class="town">
     <h2>Milano</h2>
-    <p>La citt&agrave; da bere</p>
+    <p>La città da bere</p>
   </div>
 
 </body>
