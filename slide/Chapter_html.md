@@ -991,7 +991,7 @@ Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot__  _
 
 <meta  __property="og:description"__  content="Gal Gadot\, Actress: Wonder Woman 1984\. Gal Gadot is an Israeli actress\, singer\, martial artist\, and model\. She was born in Rosh Ha'ayin\, Israel\. Her parents are Irit\, a teacher\, and Michael\, an engineer\. She served in the IDF for two years\, and won the Miss Israel title in 2004\. Gal made her film debut in the fourth film of the Fast and Furious franchise\, Fast &amp; Furious \- Solo parti\.\.\." />
 <meta  __property='og:title'__  content="Gal Gadot \- IMDb" />
-<meta  __property='og:site\_name' __ content='IMDb' />
+<meta  __property='og:site\_name'__ content='IMDb' />
 
 ---
 # Open Graph
