@@ -1022,7 +1022,7 @@ Questa riga dirà al browser come controllare le dimensioni di pagina
 
 Per rendere una immagine responsive è possibile utilizzare  __max\-width__  che ci permette di indica la dimensione massima che avrà in larghezza ed impostare l’altezza ad  __auto__
 
-    <img src="gattino.jpg" style=" max-width:100%; height:auto;"> 
+    <img src="gattino.jpg" style="max-width:100%; height:auto;"> 
 
 ---
 # Responsive image
@@ -1101,11 +1101,9 @@ Il tag  __samp__ permette di simulare l’output di un programma
 Il tag  __pre__ permette di mantenere la formattazione presente all’interno di un testo
 
     <pre>
-        <code>
         x = 1;
         y = 2;
         z = x + y;
-        </code>
     </pre>
 
 ---
@@ -1266,19 +1264,21 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 
     <meta charset="UTF-8">
 
+<https://www.fileformat.info/info/charset/UTF-8/list.htm>
+
 ---
 # Entity - emoji
 
 Di seguito alcuni esempi di emoji
 
-✔	10004	2714
-✖	10006	2716
-✝	10013	271D
-✡	10017	2721
-✨	10024	2728
-✳	10035	2733
-✴	10036	2734
-❄	10052	2744
+    ✔	&#10004;	2714
+    ✖	&#10006;	2716
+    ✝	&#10013;	271D
+    ✡	&#10017;	2721
+    ✨	&#10024;	2728
+    ✳	&#10035;	2733
+    ✴	&#10036;	2734
+    ❄	&#10052;	2744
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
