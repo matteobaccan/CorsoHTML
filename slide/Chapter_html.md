@@ -57,6 +57,7 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 [https://github\.com/matteobaccan/CorsoHTML](https://github.com/matteobaccan/CorsoHTML)
 
 ---
+
 # HTML - Esempio
 
     <!DOCTYPE html>
@@ -75,28 +76,30 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
     </html>
 
 ---
+
 # HTML - Elementi
 
 TAG
 
-__<nometag> contenuto </nometag>__
+__\<nometag> contenuto </nometag>__
 
 Un tag è identificato da una sequenza di caratteri\, con una sintassi di apertura e chiusura
 
 All’interno del tag viene poi inserito il suo contenuti\, che a sua volta potrebbe essere del testo o altri tag
 
 ---
+
 # HTML - Elementi
 
 Empty TAG
 
-__\<br> <hr> <img>__
+__\<br> \<hr> \<img>__
 
 Sono tag pensati per non avere un corpo\.
 
 In base al fatto che siano usati come HTML5 o XHTML5 potrebbero essere scritti in formato diverso
 
-__\<br/> <hr/> <img/>__
+__\<br/> \<hr/> \<img/>__
 
 ---
 
@@ -104,7 +107,7 @@ __\<br/> <hr/> <img/>__
 
 Attributi
 
-__<a href="https://www.baccan.it">Visitate Baccan.it</a>__
+__\<a href="https://www.baccan.it">Visitate Baccan.it</a>__
 
 I tag HTML possono avere degli attributi\.
 
@@ -123,6 +126,7 @@ __chiave="valore"__
 Identifica il fatto che il documento sia in formato HTML5
 
 ---
+
 # HTML primo tag
 
     <html lang="it">
@@ -134,6 +138,7 @@ Identifica il fatto che il documento sia in formato HTML5
 É il primo elemento di una pagina html\, all’interno di questo  elemento è contenuta la struttura della pagina
 
 ---
+
 # HEAD
 
     <head>
@@ -153,7 +158,9 @@ Identifica il fatto che il documento sia in formato HTML5
 \- Tag per Social Network
 
 ---
+
 # HEAD
+
     <head>
 
     <title>Titolo della pagina</title>
@@ -163,7 +170,9 @@ Identifica il fatto che il documento sia in formato HTML5
 È il titolo della pagina: viene visualizzato all’interno del browser per dare un nome al tab che state visualizzando o dai motori di ricerca per rappresentare la vostra pagina
 
 ---
+
 # BODY
+
     <body>
 
     ...
@@ -173,7 +182,9 @@ Identifica il fatto che il documento sia in formato HTML5
 Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabelle etc
 
 ---
+
 # BODY
+
     <body>
 
         <h1>Intestazione</h1>
@@ -183,7 +194,9 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 È il primo degli heading disponibili in HTML5
 
 ---
+
 # BODY
+
     <body>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -193,6 +206,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 Definisce un paragrafo
 
 ---
+
 # Heading
 
     <h1>Intestazione 1</h1>
@@ -206,6 +220,7 @@ Questo tipo di tag sono intestazioni
 Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle parti di pagina\. Il loro utilizzo è utilizzato dai motori di ricerca per determinare delle parti importanti di pagina
 
 ---
+
 # Style
 
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
@@ -239,20 +254,22 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
-    <abbr>	        Defines an abbreviation or acronym
+    <abbr>          Defines an abbreviation or acronym
 
     <address>       Defines contact information for the author/owner of a document
 
-    <bdo>	        Defines the text direction
+    <bdo>           Defines the text direction
 
-    <blockquote>	Defines a section that is quoted from another source
+    <blockquote>    Defines a section that is quoted from another source
 
-    <cite>	        Defines the title of a work
+    <cite>          Defines the title of a work
 
     <q>             Defines a short inline quotation
 
 ---
+
 # Commenti
+
 Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo\.
 
     <!-- Questo è un commento -->
@@ -260,15 +277,17 @@ Esiste la possibilità di inserire del testo che verrà scartato in automatico d
     <p>Questo è un paragrafo</p>
 
 ---
+
 # Colori
 
 In HTML esistono 140 colori standard che possono essere chiamati per nome
 
-https://www\.w3schools\.com/colors/colors\_names\.asp
+<https://www.w3schools.com/colors/colors_names\.asp>
 
 Ad ognuno è associata una sequenza RGB
 
 ---
+
 # Colori
 
 I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
@@ -285,6 +304,7 @@ I colori possono essere usati in vari contesti\, come colore di fondo\, colore d
     <h1 style="border:2px solid Violet;">Intestazione</h1>
 
 ---
+
 # Colori
 
 I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
@@ -297,6 +317,7 @@ I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
     <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
 
 ---
+
 # Colori
 
 Un colore RGB rappresenta le tre componenti di luce RED\, GREEN e BLUE
@@ -316,14 +337,17 @@ Il nero è rappresentato da  rgb\(0\, 0\, 0\)
 Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ---
+
 # Colori RGB
 
 ![width:700px](img/Chapter_html1.png)
 
-https://www\.w3schools\.com/colors/colors\_rgb\.asp
+<https://www.w3schools.com/colors/colors_rgb\.asp>
 
 ---
+
 # Colori
+
 Un colore HEX è la rappresentazione esadecimale di un colore RGB\, usando la seguente griglia
 
 __\#RRGGBB__ dove RR è il red\, GG è il green e BB è il blue
@@ -331,6 +355,7 @@ __\#RRGGBB__ dove RR è il red\, GG è il green e BB è il blue
 Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
+
 # Colori HEX
 
 ![width:700px](img/Chapter_html2.png)
@@ -338,6 +363,7 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp
 
 ---
+
 # Colori
 
 HSL è acronimo di hue\, saturation e lightness \(tinta\, saturazione e luminosità\)
@@ -351,7 +377,9 @@ Saturation è una percentuale da 0% che identifica un’ombra grigia e  100% che
 Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che è il bianco\.
 
 ---
+
 # Colori HSL
+
 ![width:700px](img/Chapter_html3.png)
 
 https://www\.w3schools\.com/colors/colors\_hsl\.asp
@@ -445,7 +473,9 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
     }
 
 ---
+
 # Link
+
 I link HTML sono collegamenti ipertestuali\.
 
 Lo scopo è quello di passare da una pagina all’altra
