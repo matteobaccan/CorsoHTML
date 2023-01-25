@@ -7,13 +7,27 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
 footer: https://github.com/matteobaccan/CorsoHTML
 ---
+
+# Corso HTML5
+
+Impariamo a usare HTML5 conoscendone le basi
+
+![bg right](img/matteo-baccan.jpg)
+
 <!-- _paginate: false -->
 <!-- _footer: "" -->
-![bg](img/Chapter_html0.png)
 
 ---
 
-# HTML
+## Scopo del corso
+
+Queste slide nascono dalla mia curiosità verso HTML5 e dall'esperienza che ho accumulato nel corso degli anni.
+
+La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchisce con nuovi esempi ed una serie di slide in italiano.
+
+---
+
+## HTML
 
 __Hyper Text Markup Language__
 
@@ -27,7 +41,7 @@ La sua interpretazione necessita di un browser
 
 ---
 
-# HTML – strumenti
+## HTML – strumenti
 
 Il portale che useremo durante il corso è
 
@@ -41,7 +55,7 @@ Iscrivetevi e seguite il profilo creato apposta per il corso
 
 ---
 
-# HTML – strumenti
+## HTML – editor
 
 Editor
 
@@ -58,7 +72,7 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ---
 
-# HTML - Esempio
+## HTML - Esempio
 
     <!DOCTYPE html>
 
@@ -77,7 +91,7 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ---
 
-# HTML - Elementi
+## HTML - Elementi
 
 TAG
 
@@ -89,7 +103,7 @@ All’interno del tag viene poi inserito il suo contenuti\, che a sua volta potr
 
 ---
 
-# HTML - Elementi
+## HTML - Elementi
 
 Empty TAG
 
@@ -103,7 +117,7 @@ __\<br/> \<hr/> \<img/>__
 
 ---
 
-# HTML – attributi
+## HTML – attributi
 
 Attributi
 
@@ -119,7 +133,7 @@ __chiave="valore"__
 
 ---
 
-# HTML – definizione
+## HTML – definizione
 
     <!DOCTYPE html>
 
@@ -127,7 +141,7 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ---
 
-# HTML primo tag
+## HTML primo tag
 
     <html lang="it">
 
@@ -139,7 +153,7 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ---
 
-# HEAD
+## HEAD
 
     <head>
 
@@ -159,7 +173,7 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ---
 
-# HEAD
+## HEAD
 
     <head>
 
@@ -171,7 +185,7 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ---
 
-# BODY
+## BODY
 
     <body>
 
@@ -183,7 +197,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ---
 
-# BODY
+## BODY
 
     <body>
 
@@ -195,7 +209,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ---
 
-# BODY
+## BODY
 
     <body>
 
@@ -207,7 +221,7 @@ Definisce un paragrafo
 
 ---
 
-# Heading
+## Heading
 
     <h1>Intestazione 1</h1>
 
@@ -221,7 +235,7 @@ Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle p
 
 ---
 
-# Style
+## Style
 
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
 
@@ -235,7 +249,7 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 ---
 
-# Formattazione
+## Formattazione
 
     <b> - Grassetto
     <strong> - Importante
@@ -250,7 +264,7 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 ---
 
-# Citazioni
+## Citazioni
 
 Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
@@ -268,7 +282,7 @@ Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
 ---
 
-# Commenti
+## Commenti
 
 Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo\.
 
@@ -278,7 +292,7 @@ Esiste la possibilità di inserire del testo che verrà scartato in automatico d
 
 ---
 
-# Colori
+## Colori
 
 In HTML esistono 140 colori standard che possono essere chiamati per nome
 
@@ -288,7 +302,7 @@ Ad ognuno è associata una sequenza RGB
 
 ---
 
-# Colori
+## Colori
 
 I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
 
@@ -305,7 +319,7 @@ I colori possono essere usati in vari contesti\, come colore di fondo\, colore d
 
 ---
 
-# Colori
+## Colori
 
 I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
@@ -318,7 +332,7 @@ I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
 ---
 
-# Colori
+## Colori
 
 Un colore RGB rappresenta le tre componenti di luce RED\, GREEN e BLUE
 
@@ -338,7 +352,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ---
 
-# Colori RGB
+## Colori RGB
 
 ![width:700px](img/Chapter_html1.png)
 
@@ -346,7 +360,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ---
 
-# Colori
+## Colori
 
 Un colore HEX è la rappresentazione esadecimale di un colore RGB\, usando la seguente griglia
 
@@ -356,15 +370,15 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 
-# Colori HEX
+## Colori HEX
 
 ![width:700px](img/Chapter_html2.png)
 
-https://www\.w3schools\.com/colors/colors\_hexadecimal\.asp
+<https://www.w3schools.com/colors/colors_hexadecimal.asp>
 
 ---
 
-# Colori
+## Colori
 
 HSL è acronimo di hue\, saturation e lightness \(tinta\, saturazione e luminosità\)
 
@@ -378,15 +392,15 @@ Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che
 
 ---
 
-# Colori HSL
+## Colori HSL
 
 ![width:700px](img/Chapter_html3.png)
 
-https://www\.w3schools\.com/colors/colors\_hsl\.asp
+<https://www.w3schools.com/colors/colors_hsl\.asp>
 
 ---
 
-# Cos'è il CSS?
+## Cos'è il CSS?
 
 CSS è acronimo di  __Cascading Style Sheets__\, sono fogli che vengono utilizzati per formattare le pagine web\.
 
@@ -396,7 +410,7 @@ Da notare che  __cascading__ identifica il fatto che uno stile applicato a un el
 
 ---
 
-# CSS
+## CSS
 
 I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
@@ -408,7 +422,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ---
 
-# CSS Inline
+## CSS Inline
 
     <h1 style="color:blue;">Una intestazione blue</h1>
 
@@ -416,7 +430,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ---
 
-# CSS Interno
+## CSS Interno
 
 ...
 
@@ -438,7 +452,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ---
 
-# CSS Esterno
+## CSS Esterno
 
 ...
 
@@ -452,7 +466,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ---
 
-# styles\.css
+## styles\.css
 
     body {
 
@@ -474,7 +488,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ---
 
-# Link
+## Link
 
 I link HTML sono collegamenti ipertestuali\.
 
@@ -482,11 +496,11 @@ Lo scopo è quello di passare da una pagina all’altra
 
 Essendo elementi cliccabili\, quando viene spostato il mouse su un link il puntatore viene trasformato in una piccola mano\.
 
-![](img/Chapter_html4.png)
+![Click](img/Chapter_html4.png)
 
 ---
 
-# Link
+## Link
 
 Sintassi
 
@@ -501,7 +515,8 @@ Il testo del collegamento è la parte visibile all’interno della pagina HTML
 Facendo clic sul testo del collegamento\, il browser verrà indirizzato all'indirizzo  __URL__
 
 ---
-# Link
+
+## Link
 
 Esiste una convenzione fra browser per visualizzare i collegamenti con un colre diverso\, in base ad alcune caratteristiche
 
@@ -515,7 +530,7 @@ Per ottenere l’attivo basta tenere cliccato il mouse sul link
 
 ---
 
-# Target
+## Target
 
 L'attributo di  __target__
 
@@ -536,7 +551,8 @@ __\_top__  \- Apre il documento in tutto il corpo della finestra
 __“nomeframe”__ Apre il documento in un determinato frame
 
 ---
-# Link
+
+## Link
 
 \<iframe src="http://www\.acmenovara\.it" name="A">
 \<p>ACME Novara\</p>
@@ -553,7 +569,8 @@ __“nomeframe”__ Apre il documento in un determinato frame
 \<a href="http://www\.acmenovara\.it" target="B">CAMBIO B\</a>
 
 ---
-# Bookmark
+
+## Bookmark
 
 Crea un bookmark in HTML
 
@@ -564,7 +581,9 @@ Per creare un bookmark: prima occorre creare il bookmark\, poi aggiungere un col
 Quando si fa clic sul bookmark\, la pagina scorrerà verso il basso o verso l'alto fino alla posizione del bookmark\.
 
 ---
-# IMG
+
+## IMG
+
 Il tag HTML  __\<img>__  viene utilizzato per incorporare un'immagine in una pagina web\.
 
 Le immagini non sono tecnicamente inserite in una pagina web; le immagini sono collegate a pagine web\. Il tag  __\<img>__  crea uno spazio per inserire l'immagine\.
@@ -578,7 +597,8 @@ __src__  \- Specifica il percorso dell'immagine
 __alt__  \- Specifica un testo alternativo per l'immagine
 
 ---
-# Immagini di sfondo
+
+## Immagini di sfondo
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
 
@@ -592,7 +612,8 @@ Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo 
 Testo  __Lorem ipsum__ generato da [https://www\.lipsum\.com/](https://www.lipsum.com/)
 
 ---
-# Immagini di sfondo - cover
+
+## Immagini di sfondo - cover
 
 Se volete che l'immagine di sfondo copra l'intero elemento\, si può impostare la proprietà
 
@@ -605,13 +626,14 @@ __background-attachment: fixed__
 In questo modo\, l'immagine di sfondo coprirà l'intero elemento\, senza cambiarne le proporzioni
 
 ---
-# PICTURE
 
-L'elemento HTML  __<picture>__  offre una maggiore flessibilità nello specificare le risorse dell'immagine\. Contiene uno o più elementi  __<source>__, ognuno dei quali si riferisce a diverse immagini tramite l'attributo  __srcset__. In questo modo il browser sceglie l'immagine che meglio si adatta alla visualizzazione e/o al dispositivo corrente.
+## Picture
 
-Ogni elemento  __<source>__  ha un attributo multimediale che definisce quando l'immagine è la più adatta.
+L'elemento HTML  __\<picture>__  offre una maggiore flessibilità nello specificare le risorse dell'immagine\. Contiene uno o più elementi  __\<source>__, ognuno dei quali si riferisce a diverse immagini tramite l'attributo  __srcset__. In questo modo il browser sceglie l'immagine che meglio si adatta alla visualizzazione e/o al dispositivo corrente.
 
-L'elemento  __<img>__  indicherà il default da usare nel caso non ci siano match corretti.
+Ogni elemento  __\<source>__  ha un attributo multimediale che definisce quando l'immagine è la più adatta.
+
+L'elemento  __\<img>__  indicherà il default da usare nel caso non ci siano match corretti.
 
     <picture>
       <source media="(min-width: 650px)" srcset="computer.jpg">
@@ -620,9 +642,10 @@ L'elemento  __<img>__  indicherà il default da usare nel caso non ci siano matc
     </picture> 
 
 ---
-# Picture
 
-Quando usare il tag  __<picture>__?
+## Picture
+
+Quando usare il tag  __\<picture>__?
 
 \- Risparmiare banda
 
@@ -631,14 +654,15 @@ Quando usare il tag  __<picture>__?
 \- Adattare facilmente il contesto alla dimensione del device
 
 ---
-# MAP
-Il tag  __<map>__  viene usato per definire una mappa di immagini.
+## MAP
+
+Il tag  __\<map>__  viene usato per definire una mappa di immagini.
 
 Una mappa è un'immagine con delle aree selezionabili
 
-L'attributo  __name__  dell'elemento  __<map>__  è associato all'attributo  __usemap__  di  __<img>__  e crea una relazione tra immagine e mappa.
+L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __usemap__  di  __\<img>__  e crea una relazione tra immagine e mappa.
 
-L'elemento  __<map>__  contiene un numero di elementi  __<area>__, che definisce le aree cliccabili nella mappa dell'immagine
+L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__, che definisce le aree cliccabili nella mappa dell'immagine
 
     <img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg" usemap="#workmap" width="500px" height="300px">
 
@@ -648,7 +672,8 @@ L'elemento  __<map>__  contiene un numero di elementi  __<area>__, che definisce
     </map>
 
 ---
-# Favicon
+
+## Favicon
 
 Una favicon è una piccola immagine visualizzata accanto al titolo della pagina nella scheda del browser e nel bookmark del browser
 
@@ -663,7 +688,9 @@ Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il p
 ![](img/Chapter_html5.png)
 
 ---
-# Favicon
+
+## Favicon
+
 Un sito utilizzabile per disegnare delle favicon è [https://www.favicon.cc/](https://www.favicon.cc/)
 
 Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una serie di altri formati orizzontalmente accettati dai maggiori browser
@@ -671,7 +698,9 @@ Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una s
 ![](img/Chapter_html6.png)
 
 ---
-# Table
+
+## Table
+
 Il tag  __table__ serve a racchiudere delle informazioni rappresentabili in righe e colonne\. Anche se molto utilizzato in passato\, è stato progressivamente superato da altri costrutti responsive\.
 Il tag  __table__  contiene da più tag
 
@@ -687,7 +716,8 @@ Il tag  __table__  contiene da più tag
     col         : singolo elemento di definizione di colonna
 
 ---
-# Table border
+
+## Table border
 
 Ci sono una serie di proprietà che possono essere utilizzate per personalizzare i tag  __table__, ad esempio
 
@@ -698,7 +728,8 @@ Ci sono una serie di proprietà che possono essere utilizzate per personalizzare
     background-color: #96D4D4;
 
 ---
-# Table width
+
+## Table width
 
 Con lo  __style__   __width__  è possibile indicare l’occupazione di una singola colonna
 
@@ -716,7 +747,8 @@ Con lo  __style__   __width__  è possibile indicare l’occupazione di una sing
     </table>
 
 ---
-# Table colspan e rowspan
+
+## Table colspan e rowspan
 
 Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa più di una riga o di una colonna
 
@@ -731,9 +763,9 @@ Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa pi�
 
 ![](img/Chapter_html7.png)
 
---- 
+---
 
-# Table caption
+## Table caption
 
 Con  __caption__  è possibile dare un titolo a una tabella
 
@@ -747,7 +779,7 @@ __\<caption> Caption \</caption>__
 
 ---
 
-# Table colgroup col
+## Table colgroup col
 
 Con  __colgroup__ e  __col__  è possibile indicare una serie di caratteristiche che la singola colonna deve avere: come un colore o un bordo
 
@@ -760,7 +792,7 @@ Il tab  __col__  può anche avere un attributo che indica quante colonne subisco
 
 ---
 
-# Liste non ordinate
+## Liste non ordinate
 
 L’utilizzo dei tag  __ul__ e  __li__ permette di definire delle liste non ordinate
 
@@ -774,7 +806,7 @@ Le liste sono rappresentate da una serie di righe contigue evidenziate da un pic
 
 ---
 
-# Liste ordinate
+## Liste ordinate
 
 L’utilizzo dei tag  __ol__ e  __li__ permette di definire delle liste ordinate
 
@@ -788,7 +820,7 @@ Le liste sono rappresentate da una serie di righe contigue numerate
 
 ---
 
-# Liste descrittive
+## Liste descrittive
 
 L’utilizzo dei tag  __dl__, __dt__ e __dd__ permettono di creare delle liste descrittive
 
@@ -806,7 +838,7 @@ Con  __dl__ si definisce la lista\, con  __dt__ si descrive il nome \(term\)\, c
 
 ---
 
-# Blocchi e inline
+## Blocchi e inline
 
 Esistono due tag generici e abbastanza simili utilizzati per definire delle aree\.
 
@@ -825,7 +857,9 @@ Occupa solo la larghezza necessaria
 Non ha un margine superiore e inferiore
 
 ---
-# Blocchi e inline
+
+## Blocchi e inline
+
 La rappresentazione di __DIV__ e __SPAN__ è notevolmente diversa:
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div>__ Praesent laoreet hendrerit neque sed sagittis\.
@@ -835,7 +869,9 @@ Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="backg
 ![](img/Chapter_html9.png)
 
 ---
-# Classi
+
+## Classi
+
 L’attributo  __class__ serve ad indicare una classe associata ad un qualsiasi tag\.
 
     <div class="town">
@@ -849,7 +885,8 @@ Da notare che il nome della classe è case sensitive\.
 
 ---
 
-# ID
+## ID
+
 L’attributo  __id__ permette di referenziare un singolo tag in modo univoco\.
 
 Il browser non effettua nessun controllo di univocità sull’ __id__  è quindi a carico di chi crea la pagina assicurarsi che  __id__  sia effettivamente univoco.
@@ -858,7 +895,7 @@ Avere un  __id__  ci permette di applicare delle caratteristiche ad un singolo t
 
 ---
 
-# Iframe
+## Iframe
 
 Il tag  __iframe__ permette l’inclusione di una pagina all’interno di una pagina HTML
 
@@ -870,7 +907,7 @@ Questo attributo indica l’indirizzo della pagina da includere.
 
 ---
 
-# Iframe
+## Iframe
 
 __iframe__ ha una serie di attributi che ne condizionano la visualizzazione come:
 
@@ -885,7 +922,8 @@ __Iframe__ può poi essere utilizzato come target di un tag  __a__
     <a href="https://www.baccan.it/" target="baccan">Baccan.it</a>
 
 ---
-# Script
+
+## Script
 
 __script__ è il tag col quale è possibile inserire del codice JavaScript per rendere dinamiche delle pagine HTML.
 
@@ -898,7 +936,8 @@ __script__  può contenere direttamente del codice\, o referenziare una pagina e
     </script>
 
 ---
-# Path
+
+## Path
 
 E’ importante capire come sono gestiti i file in una struttura a cartelle\. La corretta comprensione permette di indirizzare nel modo giusto le varie risorse.
 
@@ -911,7 +950,8 @@ Rispetto alla pagina corrente
     <img src="http://www.foo.bar/foto.jpg">     foto.jpg è sul sito foo.bar
 
 ---
-# Head
+
+## Head
 
 __head__  è il tag dove sono contenute una serie di informazioni propedeutiche alla visualizzazione corretta di una pagina e alla sua indicizzazione all’interno di motori di ricerca e social network\.
 
@@ -920,7 +960,8 @@ Nel tag  __head__ sono presenti anche i riferimenti a file esterni\, tipicamente
 Altri elementi che entrano a far parte di questo tag sono i tag  __meta__\.
 
 ---
-# Head
+
+## Head
 
 Il set di caratteri usato per la corretta visualizzazione del sito
 
@@ -935,7 +976,9 @@ Impostazioni per la visualizzazione responsive
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ---
-# Head
+
+## Head
+
 Elementi utilizzati dai motori di ricerca
 
 Descrizione
@@ -951,7 +994,7 @@ L’autore
     <meta name="author" content="Matteo Baccan">
 
 ---
-# Open Graph
+## Open Graph
 
 Altri elementi che si trovano in  __head__  sono quelli del protocollo Open Graph.
 
@@ -961,7 +1004,7 @@ Il protocollo Open Graph consente a qualsiasi pagina Web di essere arricchita di
 
 ---
 
-# Open Graph
+## Open Graph
 
 Le quattro proprietà minime per Open Graph sono
 
@@ -975,7 +1018,7 @@ __og:url__  : l’indirizzo canonico dell’oggetto
 
 ---
 
-# Open Graph
+## Open Graph
 
 Un esempio di utilizzo delle proprietà Open Graph
 
@@ -993,7 +1036,7 @@ Un esempio di utilizzo delle proprietà Open Graph
 
 ---
 
-# Open Graph
+## Open Graph
 
 Altri elementi di Open Graph sono
 
@@ -1007,24 +1050,25 @@ __og:video__ : l’indirizzo del video in accompagnamento della pagina
 
 ---
 
-# Open Graph
+## Open Graph
 
 Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot__  __[https://www\.imdb\.com/name/nm2933757/](https://www.imdb.com/name/nm2933757/)__  protagonista di “Wonder Woman 1984”
 
-<meta  __property="og:url"__  content="http://www\.imdb\.com/name/nm2933757/" />
-<meta  __property='og:image'__  content="https://m\.media\-amazon\.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@\.\_V1\_UY1200\_CR165\,0\,630\,1200\_AL\_\.jpg" />
-<meta  __property='og:type'__  content="actor" />
+\<meta  __property="og:url"__  content="http://www\.imdb\.com/name/nm2933757/" />
+\<meta  __property='og:image'__  content="https://m\.media\-amazon\.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@\.\_V1\_UY1200\_CR165\,0\,630\,1200\_AL\_\.jpg" />
+\<meta  __property='og:type'__  content="actor" />
 
 ---
 
-# Open Graph
+## Open Graph
 
-<meta  __property="og:description"__  content="Gal Gadot\, Actress: Wonder Woman 1984\. Gal Gadot is an Israeli actress\, singer\, martial artist\, and model\. She was born in Rosh Ha'ayin\, Israel\. Her parents are Irit\, a teacher\, and Michael\, an engineer\. She served in the IDF for two years\, and won the Miss Israel title in 2004\. Gal made her film debut in the fourth film of the Fast and Furious franchise\, Fast &amp; Furious \- Solo parti\.\.\." />
-<meta  __property='og:title'__  content="Gal Gadot \- IMDb" />
-<meta  __property='og:site\_name'__ content='IMDb' />
+\<meta  __property="og:description"__  content="Gal Gadot\, Actress: Wonder Woman 1984\. Gal Gadot is an Israeli actress\, singer\, martial artist\, and model\. She was born in Rosh Ha'ayin\, Israel\. Her parents are Irit\, a teacher\, and Michael\, an engineer\. She served in the IDF for two years\, and won the Miss Israel title in 2004\. Gal made her film debut in the fourth film of the Fast and Furious franchise\, Fast &amp; Furious \- Solo parti\.\.\." />
+\<meta  __property='og:title'__  content="Gal Gadot \- IMDb" />
+\<meta  __property='og:site\_name'__ content='IMDb' />
 
 ---
-# Open Graph
+
+## Open Graph
 
 Alcune proprietà Open Graph possono avere delle proprietà aggiuntive\.
 
@@ -1034,7 +1078,8 @@ Ad esempio  __og:image__  può indicare alcuni dati in riferimento alla propria 
     og:image:height     Altezza in pixel
 
 ---
-# Responsive
+
+## Responsive
 
 Il responsive web design consiste nel creare pagine web che si adattino a qualsiasi dispositivo
 
@@ -1048,14 +1093,15 @@ Questa riga dirà al browser come controllare le dimensioni di pagina
 
 ---
 
-# Responsive image
+## Responsive image
 
 Per rendere una immagine responsive è possibile utilizzare  __max\-width__  che ci permette di indica la dimensione massima che avrà in larghezza ed impostare l’altezza ad  __auto__
 
     <img src="gattino.jpg" style="max-width:100%; height:auto;"> 
 
 ---
-# Responsive image
+
+## Responsive image
 
 Un altro elemento responsive che abbiamo visto è il tag  __picture__
 
@@ -1066,7 +1112,8 @@ Un altro elemento responsive che abbiamo visto è il tag  __picture__
     </picture>
 
 ---
-# Responsive text
+
+## Responsive text
 
 Anche gli elementi testuali possono avere delle caratteristiche responsive\.
 Per farlo occorre impostare le dimensioni del carattere in  __vw__  che rappresenta il  __viewport width__
@@ -1081,14 +1128,16 @@ Il __viewport width__ è la larghezza della finestra del browser e l’unità __
 [https://whatismyviewport\.com/](https://whatismyviewport.com/)
 
 ---
-# Media Query
+
+## Media Query
 
 Un altro modo per adattare le pagine ad una particolare dimensione è l’utilizzo delle media query
 
 In questo modo è possibile cambiare completamente layout\, in base alle dimensioni dello schermo
 
 ---
-# Media Query
+
+## Media Query
 
 All’interno di una media query è possibile indicare il momento in cui un particolare frammento di CSS deve entrare in gioco
 
@@ -1099,7 +1148,9 @@ In questo caso\, il CSS viene considerato fino alla larghezza di 800px
     }
 
 ---
-# Code
+
+## Code
+
 Il tag  __code__ permette di evidenziare del testo in modo possa essere usato per la rappresentazione di codice\, ad esempio usando un font non proporzionale
 
     <code>
@@ -1111,7 +1162,9 @@ Il tag  __code__ permette di evidenziare del testo in modo possa essere usato pe
 Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
 ---
-# kbd
+
+## kbd
+
 Il tag  __kbd__ permette di evidenziare una sequenza di tasti da premere: l’aspetto è simile a quello di  __code__
 
     <p>Visualizza il sorgente premendo <kbd>Ctrl + U</kbd></p>
@@ -1119,14 +1172,17 @@ Il tag  __kbd__ permette di evidenziare una sequenza di tasti da premere: l’as
 Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
 ---
-# samp
+
+## samp
+
 Il tag  __samp__ permette di simulare l’output di un programma
 
     <p>Esempio di output:</p>
     <p><samp>Hello world.<br>Premi F1 per continuare</samp></p>
 
 ---
-# pre
+
+## pre
 
 Il tag  __pre__ permette di mantenere la formattazione presente all’interno di un testo
 
@@ -1137,13 +1193,17 @@ Il tag  __pre__ permette di mantenere la formattazione presente all’interno di
     </pre>
 
 ---
-# var
+
+## var
+
 Il tag  __var__ evidenzia una variabile o una espressione
 
     L’area del rettangolo è <var>b</var> per <var>a</var>, dove <var>b</var> è la base e <var>a</var> è l’altezza
 
 ---
-# Layout
+
+## Layout
+
 HTML ha diversi tag semantici che definiscono le diverse parti di una pagina\.
 
 Questi elementi permettono una standardizzazione del codice verso una serie di elementi comuni
@@ -1160,7 +1220,9 @@ Questi elementi permettono una standardizzazione del codice verso una serie di e
 ![bg right:40% 80%](img/Chapter_html10.png)
 
 ---
-# Layout
+
+## Layout
+
 Esistono tecniche diverse per posizionare questi tag
 
 - L’uso di framework CSS come Bootstrap
@@ -1177,7 +1239,8 @@ Esistono tecniche diverse per posizionare questi tag
 ![bg right:43% 95%](img/Chapter_html11.png)
 
 ---
-# Validazione
+
+## Validazione
 
 Per verificare che il proprio codice HTML/CSS sia valido è possibile usare dei siti di validazione codice
 
@@ -1191,7 +1254,8 @@ In alternativa esistono dei plugin utilizzabili direttamente da browser\, come  
 <https://chrome.google.com/webstore/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk>
 
 ---
-# Validazione cross device
+
+## Validazione cross device
 
 Esistono una serie di siti web che permettono di verificare che il proprio sito venga visualizzato correttamente su una serie di device\.
 
@@ -1201,21 +1265,25 @@ Alcuni di più famosi sono
 [https://www.browserling.com](https://www.browserling.com/)
 
 ---
-# Validazione cross device
+
+## Validazione cross device
 
 Browserstack richiede una registrazione per poter usare la versione gratuita e mette a disposizione una simulazione su device reali per sistemi operativi Windows\, Mac\, IOS e Android
 
 ![bg right:40% 90%](img/Chapter_html12.png)
 
 ---
-# Validazione cross device
+
+## Validazione cross device
 
 Browserling permette 1 minuto di navigazione su una serie di sistemi operativi e versioni di browser
 
 ![bg right:50% 90%](img/Chapter_html13.png)
 
 ---
-# Entity
+
+## Entity
+
 Esistono una serie ci caratteri riservati che non possono essere inseriti all’interno di una pagina HTML\.
 
 Ad esempio i caratteri \< e > che rappresentano l’inizio e la fine di un  __tag\.__
@@ -1231,7 +1299,8 @@ Oppure
 __&\#numero\_entity;__
 
 ---
-# Entity
+
+## Entity
 
 Di seguito una serie di entity largamente diffuse
 
@@ -1250,7 +1319,7 @@ Di seguito una serie di entity largamente diffuse
 
 ---
 
-# Entity - simboli
+## Entity - simboli
 
 Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili da tastiera\, anche loro sono rappresentabili con delle entity
 
@@ -1269,7 +1338,7 @@ Un esempio sono i simboli matematici
 
 ---
 
-# Entity - simboli
+## Entity - simboli
 
 Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili da tastiera\, anche loro sono rappresentabili con delle entity
 
@@ -1284,7 +1353,8 @@ Per un elenco completo è possibile utilizzare questo indirizzo
 [https://www.w3schools.com/charsets/ref_utf_math.asp](https://www.w3schools.com/charsets/ref_utf_math.asp)
 
 ---
-# Entity - emoji
+
+## Entity - emoji
 
 Le entity possono rappresentare\, non solo caratteri\, ma anche emoji\, che vengono visualizzate come piccole immagini\, pur non essendolo\.
 
@@ -1297,7 +1367,8 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 <https://www.fileformat.info/info/charset/UTF-8/list.htm>
 
 ---
-# Entity - emoji
+
+## Entity - emoji
 
 Di seguito alcuni esempi di emoji
 
@@ -1316,7 +1387,7 @@ Per un elenco completo è possibile utilizzare questo indirizzo
 
 ---
 
-# Entity - emoji
+## Entity - emoji
 
 Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentate diversamente in base al sistema operativo\, sito web o applicazione che le rappresenta\.
 
@@ -1326,7 +1397,7 @@ Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentat
 
 ---
 
-# Entity - emoji – tonalità della pelle
+## Entity - emoji – tonalità della pelle
 
 Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, dopo l’entity della emoji\, un entity di colorazione
 
@@ -1338,7 +1409,7 @@ Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, 
 
 ---
 
-# Entity - emoji – tonalità della pelle
+## Entity - emoji – esempi di tonalità della pelle
 
 Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
 
@@ -1350,7 +1421,9 @@ Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
     &#9757;&#127995; Luce
 
 ---
-# Form
+
+## Form
+
 Un form HTML serve a raccogliere l'input dell'utente\.
 
 __Form__ è tag che inizia e finisce una maschera di acquisizione dati
@@ -1364,7 +1437,8 @@ __Form__ è tag che inizia e finisce una maschera di acquisizione dati
     </form>
 
 ---
-# Form attributi
+
+## Form attributi
 
 Il tag  __form__ ha una serie di attributi che ne modificano il comportamento
 
@@ -1377,7 +1451,8 @@ __autocomplete__ è una indicazione che viene data al browser\, che indica se au
 __novalidate__ indica che i dati inseriti non devono essere validati al loro salvataggio
 
 ---
-# Form elementi
+
+## Form elementi
 
 Esistono più tag che rappresentano il modo col quale inserire dati in una form\.
 
@@ -1396,7 +1471,8 @@ Ognuno di essi ha delle proprie caratteristiche di utilizzo
     <optgroup>
 
 ---
-# Form input
+
+## Form input
 
 Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testuali monoriga\. Normalmente si lega ad un tag  __label__  che rappresenta la sua descrizione
 
@@ -1405,7 +1481,8 @@ Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testu
     <input type="text" id="fname" name="fname">
 
 ---
-# Form input type
+
+## Form input type
 
 Uno degli attributi più interessanti di  __input__ è type\, che identifica il tipo di dati che verranno inseriti nel campo
 
@@ -1414,7 +1491,8 @@ Uno degli attributi più interessanti di  __input__ è type\, che identifica il 
     range    reset    search    submit    tel    text    time    url    week
 
 ---
-# CSS Framework
+
+## CSS Framework
 
 Per facilitare la scrittura di pagine HTML sono nati col tempo una serie di framework CSS utili a velocizzare il lavoro
 
@@ -1431,7 +1509,8 @@ Fra i framework più noti ci sono
     Materialize CSS
 
 ---
-# Bootstrap
+
+## Bootstrap
 
 Cos'è Bootstrap?
 
@@ -1443,7 +1522,7 @@ Bootstrap ti dà anche la possibilità di creare facilmente design reattivi
 
 ---
 
-# Bootstrap - container
+## Bootstrap - container
 
 Boostrap fornisce 2 classi per definire un container
 
@@ -1456,14 +1535,16 @@ __\.container\-fluid__
 che fornisce un contenitore a larghezza intera\, che copre l'intera larghezza della finestra
 
 ---
-# Bootstrap - grid
+
+## Bootstrap - grid
 
 Il sistema a griglia di Bootstrap è costruito con flexbox e consente fino a 12 colonne nella pagina\.
 
 Se non desideri utilizzare tutte e 12 le colonne singolarmente\, puoi raggruppare le colonne insieme per creare colonne più larghe
 
 ---
-# Bootstrap \- grid
+
+## Bootstrap \- grid
 
 il sistema a griglia Bootstrap 5 ha sei classi:
 
@@ -1482,7 +1563,8 @@ il sistema a griglia Bootstrap 5 ha sei classi:
 Le classi di cui sopra possono essere combinate per creare layout più dinamici e flessibili\.
 
 ---
-# Bootstrap \- table
+
+## Bootstrap \- table
 
 Boostrap dispone di classi predisposte per la visualizzazione dei tag  __table__
 
@@ -1504,7 +1586,7 @@ Per utilizzarle è sufficiente indicarle a livello di attributo  __class__
 
 ---
 
-# Bootstrap \- testi
+## Bootstrap \- testi
 
 Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \.\. h6__ \, ma soprattutto aggiunge una serie di classi per la formattazione dei testi:
 
@@ -1518,7 +1600,8 @@ Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \
     .text-capitalize        Iniziale in maiuscolo
 
 ---
-# Bootstrap – colori testo
+
+## Bootstrap – colori testo
 
 Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori\. Queste classi possono essere sovrascritte da template CSS integrativi
 
@@ -1535,7 +1618,8 @@ Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base
     .text-light
 
 ---
-# Bootstrap – colori sfondo
+
+## Bootstrap – colori sfondo
 
 Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
@@ -1549,7 +1633,8 @@ Boostrap anche gli sfondi hanno delle colorazioni contestuali
     .bg-light
 
 ---
-# Bootstrap – immagini
+
+## Bootstrap – immagini
 
 Per quanto riguarda le immagini\, sono state introdotte una serie di classi che aiutano la loro visualizzazione e allineamento
 
@@ -1563,7 +1648,8 @@ Per quanto riguarda le immagini\, sono state introdotte una serie di classi che 
                             max-width: 100%; e height: auto;
 
 ---
-# Bootstrap – Jumbotron
+
+## Bootstrap – Jumbotron
 
 jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni contenuti
 
@@ -1576,7 +1662,8 @@ jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni con
     </div>
 
 ---
-# Bootstrap – Alert
+
+## Bootstrap – Alert
 
 Le classi di alert servono ad evidenziare un testo utilizzando un contesto\, come nel caso dei testi
 
@@ -1594,7 +1681,8 @@ Come classi di supporto agli alert è possibile anche usare
     .fade .show		Alert con un fade in chiusura
 
 ---
-# Bootstrap – Button
+
+## Bootstrap – Button
 
 Come per testi e alert\, anche i button hanno delle classi relative al contesto
 
@@ -1613,7 +1701,8 @@ Come classi di supporto è possibile usare le stesse classi con aggiunta di  __o
     .btn-outline-primary .btn-outline-secondary ...
 
 ---
-# Bootstrap – Badge
+
+## Bootstrap – Badge
 
 I badge sono delle etichette di testo che subiscono il contesto come button e text
 
@@ -1625,3 +1714,8 @@ La classe di supporto dei badge è
 
 __rounded\-pill__ 	Arrotonda i bordi del badge
 
+---
+
+### Disclaimer
+
+L'autore ha generato questo testo in parte con GPT-3, il modello di generazione del linguaggio su larga scala di OpenAI. Dopo aver generato la bozza della lingua, l'autore ha rivisto, modificato e rivisto la lingua a proprio piacimento e si assume la responsabilità  ultima del contenuto di questa pubblicazione.
