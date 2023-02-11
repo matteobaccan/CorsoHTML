@@ -596,6 +596,9 @@ __src__  \- Specifica il percorso dell'immagine
 
 __alt__  \- Specifica un testo alternativo per l'immagine
 
+25/2/1993 nasce il tag IMG
+<http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html>
+
 ---
 
 ## Immagini di sfondo
