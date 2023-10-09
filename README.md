@@ -14,6 +14,5 @@ Le slide sono disponibili nella directory `slide`. Sono in formato MD e possono 
 
 __[Scarica gratuitamente le slide in formato PDF](https://github.com/matteobaccan/CorsoHTML/blob/main/slide/CorsoHTML.pdf)__
 
-
 [![HTML5 Validation](https://github.com/matteobaccan/CorsoHTML/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsoHTML/actions/workflows/validation.yml)
 [![Genera PDF](https://github.com/matteobaccan/CorsoHTML/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsoHTML/actions/workflows/generatepdf.yml)
