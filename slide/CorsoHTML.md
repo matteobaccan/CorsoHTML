@@ -29,7 +29,7 @@ La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchi
 
 ## HTML
 
-__Hyper Text Markup Language__
+### Hyper Text Markup Language
 
 È il linguaggio standard per la creazione di pagine web
 
@@ -91,11 +91,13 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ---
 
-## HTML - Elementi
+## HTML - Elementi - TAG
 
 TAG
 
-__\<nometag> contenuto </nometag>__
+```html
+<nometag> contenuto </nometag>
+```
 
 Un tag è identificato da una sequenza di caratteri\, con una sintassi di apertura e chiusura
 
@@ -103,17 +105,21 @@ All’interno del tag viene poi inserito il suo contenuti\, che a sua volta potr
 
 ---
 
-## HTML - Elementi
+## HTML - Elementi - empty TAG
 
 Empty TAG
 
-__\<br> \<hr> \<img>__
+```html
+<br> <hr> <img>
+```
 
 Sono tag pensati per non avere un corpo\.
 
 In base al fatto che siano usati come HTML5 o XHTML5 potrebbero essere scritti in formato diverso
 
-__\<br/> \<hr/> \<img/>__
+```html
+<br/> <hr/> <img/>
+```
 
 ---
 
@@ -121,7 +127,9 @@ __\<br/> \<hr/> \<img/>__
 
 Attributi
 
-__\<a href="https://www.baccan.it">Visitate Baccan.it</a>__
+```html
+<a href="https://www.baccan.it">Visitate Baccan.it</a>
+```
 
 I tag HTML possono avere degli attributi\.
 
@@ -173,7 +181,7 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ---
 
-## HEAD
+## HEAD - esempio
 
     <head>
 
@@ -209,7 +217,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ---
 
-## BODY
+## BODY - esempio
 
     <body>
 
