@@ -5,7 +5,7 @@ paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
-footer: https://github.com/matteobaccan/CorsoHTML
+footer: https://github.com/matteobaccan/CorsoHTML versione del %date% %time%
 ---
 
 # Corso HTML5
@@ -16,6 +16,12 @@ Impariamo a usare HTML5 conoscendone le basi
 
 <!-- _paginate: false -->
 <!-- _footer: "" -->
+<!-- style: "
+img[alt~='center'] {
+  display: block;
+  margin: 0 auto;
+}
+" -->
 
 ---
 
@@ -31,13 +37,12 @@ La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchi
 
 ### Hyper Text Markup Language
 
-È il linguaggio standard per la creazione di pagine web
+Cos'è HTML?
 
-Descrive la struttura delle pagine
-
-Identifica una serie di elementi strutturati
-
-La sua interpretazione necessita di un browser
+- È il linguaggio standard per la creazione di pagine web tramite marcatori.
+- Il suo scopo è quello di descrive la struttura delle pagine.
+- Identifica una serie di elementi strutturati.
+- La sua interpretazione necessita di un browser.
 
 ---
 
@@ -72,7 +77,68 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ---
 
-## HTML - Esempio
+## Browser
+
+I browser sono dei programmi necessari alla corretta visualizzazione di una pagina HTML.
+
+Esempi di browser sono:
+
+    - Chrome
+    - Firefox
+    - Edge
+    - Safari
+    - Opera
+
+Senza i browser non sarebbe possibile visualizzare le pagine web, vista anche la loro complessità e natura dinamica.
+
+---
+
+## Com'è fatto un browser?
+
+Un browser è composto da una serie di componenti che permettono la visualizzazione delle pagine HTML.
+
+__Browser engine__: address bar, pulsanti di navigazione, viewport, print
+__Rendering engine__: chiama la rendering engine per visualizzare il contenuto richiesto
+__Javascript interpreter__: interpreta il codice javascript
+__Networking__: HTTP requests, SSL, etc
+__UI backend__: disegna i widget nativi come alert, form di caricamento file etc
+
+---
+
+## Componenti del browser
+
+![center width:700px](img/browser.bmp)
+
+---
+
+## Flusso di richiesta
+
+- Inserimento dell'indirizzo di destinazione
+- Risoluzione dell'indirizzo via DNS
+- Verifica della presenza in cache della pagina/risorsa
+- Eventuale download
+- Gestione del codice d'errore
+- Rendering della pagina
+
+---
+
+## Gestione delle richieste
+
+![center width:500px](img/browser-flow.bmp)
+
+<https://www.oreilly.com/library/view/learning-php-mysql/9781449337452/ch01s01.html>
+
+---
+
+## Rendering delle pagine
+
+Il rendering è quel processo che permette di visualizzare una pagina HTML.
+
+![center width:700px](img/browser-render.bmp)
+
+---
+
+## HTML - esempio minimo di pagina HTML
 
     <!DOCTYPE html>
 
@@ -93,15 +159,15 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ## HTML - Elementi - TAG
 
-TAG
+Le pagine HTML sono composte da una serie di elementi, chiamati TAG, formattatine nel seguente modo:
 
 ```html
 <nometag> contenuto </nometag>
 ```
 
-Un tag è identificato da una sequenza di caratteri\, con una sintassi di apertura e chiusura
+Un tag è identificato da una sequenza di caratteri, con una sintassi di apertura e chiusura
 
-All’interno del tag viene poi inserito il suo contenuti\, che a sua volta potrebbe essere del testo o altri tag
+All’interno del tag viene poi inserito il suo contenuti, che a sua volta potrebbe essere del testo o altri tag
 
 ---
 
@@ -135,9 +201,7 @@ I tag HTML possono avere degli attributi\.
 
 Gli attributi aggiungono delle informazioni ai tag
 
-La loro struttura è per
-
-__chiave="valore"__
+La loro struttura è per __chiave__ = __"valore"__
 
 ---
 
@@ -205,7 +269,7 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ---
 
-## BODY
+## BODY - Intestazione
 
     <body>
 
@@ -310,9 +374,9 @@ Ad ognuno è associata una sequenza RGB
 
 ---
 
-## Colori
+## Colori - sfondo, testo e bordo
 
-I colori possono essere usati in vari contesti\, come colore di fondo\, colore di testo o di bordo
+I colori possono essere usati in vari contesti\, come colore di sfondo\, colore di testo o di bordo
 
     <h1 style="background-color:DodgerBlue;">Intestazione</h1>
     <p style="background-color:Tomato;">Paragrafo</p>
@@ -327,7 +391,7 @@ I colori possono essere usati in vari contesti\, come colore di fondo\, colore d
 
 ---
 
-## Colori
+## Colori - varianti
 
 I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
@@ -340,7 +404,7 @@ I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
 ---
 
-## Colori
+## Colori - RBG
 
 Un colore RGB rappresenta le tre componenti di luce RED\, GREEN e BLUE
 
@@ -348,7 +412,7 @@ I colori RGBA sono una estensione di RGB con l’aggiunta del canale Alpha per l
 
 In HTML possiamo indicare un RGB con questa formula
 
-__rgb\(red\, green\, blue\)__
+    rgb(red, green, blue)
 
 Ogni parametro identifica l’intensità del colore in una scala da 0 a 255
 
@@ -368,7 +432,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ---
 
-## Colori
+## Colori - HEX
 
 Un colore HEX è la rappresentazione esadecimale di un colore RGB\, usando la seguente griglia
 
@@ -378,7 +442,7 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 
-## Colori HEX
+## Colori HEX Calculator
 
 ![width:700px](img/Chapter_html2.png)
 
@@ -386,7 +450,7 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 
-## Colori
+## Colori - HSL
 
 HSL è acronimo di hue\, saturation e lightness \(tinta\, saturazione e luminosità\)
 
@@ -400,7 +464,7 @@ Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che
 
 ---
 
-## Colori HSL
+## Colori HSL Calculator
 
 ![width:700px](img/Chapter_html3.png)
 
@@ -508,7 +572,7 @@ Essendo elementi cliccabili\, quando viene spostato il mouse su un link il punta
 
 ---
 
-## Link
+## Link - a
 
 Sintassi
 
@@ -524,7 +588,7 @@ Facendo clic sul testo del collegamento\, il browser verrà indirizzato all'indi
 
 ---
 
-## Link
+## Link - colori
 
 Esiste una convenzione fra browser per visualizzare i collegamenti con un colre diverso\, in base ad alcune caratteristiche
 
@@ -560,21 +624,23 @@ __“nomeframe”__ Apre il documento in un determinato frame
 
 ---
 
-## Link
+## Link - esempi
 
-\<iframe src="http://www\.acmenovara\.it" name="A">
-\<p>ACME Novara\</p>
-\</iframe>
+```HTML
+<iframe src="http://www.acmenovara.it" name="A">
+<p>ACME Novara</p>
+</iframe>
 
-\<iframe src="[https://www\.google\.com](https://www.google.com/)" name="B">
-\<p>Google\.com\</p>
-\</iframe>
+<iframe src="https://www.google.com" name="B">
+<p>Google.com</p>
+</iframe>
 
-\<iframe src="https://www\.google\.it" name="C">
-\<p>Google\.it\</p>
-\</iframe>
+<iframe src="https://www.google.it" name="C">
+<p>Google.it</p>
+</iframe>
 
-\<a href="http://www\.acmenovara\.it" target="B">CAMBIO B\</a>
+<a href="http://www.acmenovara.it" target="B">CAMBIO B</a>
+```
 
 ---
 
@@ -654,7 +720,7 @@ L'elemento  __\<img>__  indicherà il default da usare nel caso non ci siano mat
 
 ---
 
-## Picture
+## Picture - perchè?
 
 Quando usare il tag  __\<picture>__?
 
@@ -700,7 +766,7 @@ Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il p
 
 ---
 
-## Favicon
+## Favicon - come disegnarle
 
 Un sito utilizzabile per disegnare delle favicon è [https://www.favicon.cc/](https://www.favicon.cc/)
 
@@ -1724,6 +1790,14 @@ In questo caso il suffisso da usare è __bg__
 La classe di supporto dei badge è
 
 __rounded\-pill__ 	Arrotonda i bordi del badge
+
+---
+
+## Bibliografia
+
+<https://mahipal.dev/web-browser-engine-overview-for-beginners> : spiegazione delle strutture del browser
+<https://www.oreilly.com/library/view/learning-php-mysql/9781449337452/ch01s01.html> : browser flow
+<https://www.w3schools.com> : vari esempi e spunti
 
 ---
 

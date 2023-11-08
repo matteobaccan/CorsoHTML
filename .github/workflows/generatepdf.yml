@@ -17,8 +17,13 @@ jobs:
     - name: generate pdf
       run: | 
         cd slide
-        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="it_IT.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli CorsoHTML.md --pdf --allow-local-files
-      
+        cp CorsoHTML.md CorsoHTML-backup.md
+        sed -i "s/%date%/$(date +'%Y-%m-%d')/g" CorsoHTML.md
+        sed -i "s/%time%/$(date +'%H:%M')/g" CorsoHTML.md
+        npx @marp-team/marp-cli@latest CorsoHTML.md --pdf --allow-local-files
+        rm CorsoHTML.md
+        mv CorsoHTML-backup.md CorsoHTML.md
+     
     - name: commit & push
       run: |
         git add -A
