@@ -590,7 +590,7 @@ Facendo clic sul testo del collegamento\, il browser verrà indirizzato all'indi
 
 ## Link - colori
 
-Esiste una convenzione fra browser per visualizzare i collegamenti con un colre diverso\, in base ad alcune caratteristiche
+Esiste una convenzione fra browser per visualizzare i collegamenti con un colore diverso\, in base ad alcune caratteristiche
 
 Un collegamento  __non visitato__  è sottolineato e  __blu__
 
@@ -720,7 +720,7 @@ L'elemento  __\<img>__  indicherà il default da usare nel caso non ci siano mat
 
 ---
 
-## Picture - perchè?
+## Picture - perché?
 
 Quando usare il tag  __\<picture>__?
 
@@ -1415,7 +1415,7 @@ Un esempio sono i simboli matematici
 
 ---
 
-## Entity - simboli
+## Entity - simboli non riproducibili
 
 Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili da tastiera\, anche loro sono rappresentabili con delle entity
 
@@ -1445,7 +1445,7 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 
 ---
 
-## Entity - emoji
+## Entity - emoji esempi
 
 Di seguito alcuni esempi di emoji
 
@@ -1464,7 +1464,7 @@ Per un elenco completo è possibile utilizzare questo indirizzo
 
 ---
 
-## Entity - emoji
+## Entity - emoji - rendering
 
 Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentate diversamente in base al sistema operativo\, sito web o applicazione che le rappresenta\.
 
@@ -1748,9 +1748,10 @@ Le classi di alert servono ad evidenziare un testo utilizzando un contesto\, com
         <strong>SUCCESSO</strong> hai fatto qualcosa di perfetto
     </div>
 
-Le tipogie di classi di alert si sovrappongono a quelle già viste per i testi
+Le tipologie di classi di alert si sovrappongono a quelle già viste per i testi
 
-    .alert-success .alert-info .alert-warning .alert-danger .alert-primary .alert-secondary .alert-light .alert-dark
+    .alert-success .alert-info .alert-warning .alert-danger
+    .alert-primary .alert-secondary .alert-light .alert-dark
 
 Come classi di supporto agli alert è possibile anche usare
 
