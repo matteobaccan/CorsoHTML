@@ -368,7 +368,7 @@ Esiste la possibilità di inserire del testo che verrà scartato in automatico d
 
 In HTML esistono 140 colori standard che possono essere chiamati per nome
 
-<https://www.w3schools.com/colors/colors_names\.asp>
+<https://www.w3schools.com/colors/colors_names.asp>
 
 Ad ognuno è associata una sequenza RGB
 
@@ -428,7 +428,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ![width:700px](img/Chapter_html1.png)
 
-<https://www.w3schools.com/colors/colors_rgb\.asp>
+<https://www.w3schools.com/colors/colors_rgb.asp>
 
 ---
 
@@ -468,7 +468,7 @@ Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che
 
 ![width:700px](img/Chapter_html3.png)
 
-<https://www.w3schools.com/colors/colors_hsl\.asp>
+<https://www.w3schools.com/colors/colors_hsl.asp>
 
 ---
 
