@@ -307,6 +307,23 @@ Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle p
 
 ---
 
+## Heading size
+
+Le dimensioni di default dei __font-size__ degli heading sono
+
+h1 - 2em
+h2 - 1.5em
+h3 - 1.17em
+h4 - 1em
+h5 - .83em
+h6 - .67em
+
+dove em deriva dalla parola "emphasis" e identifica una larghezza relativamente al carattere corrente.
+Se il carattere corrente è di 16px il valore di 2em identifica 32px
+Come peso viene invece assegnato un __font-weight: bolder__
+
+---
+
 ## Style
 
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
