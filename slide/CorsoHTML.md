@@ -758,7 +758,8 @@ L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __
 
 L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__, che definisce le aree cliccabili nella mappa dell'immagine
 
-    <img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg" usemap="#workmap" width="500px" height="300px">
+    <img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg"
+     usemap="#workmap" width="500px" height="300px">
 
     <map name="workmap">
         <area shape="rect" title="google" coords="0,0,250,300" href="https://www.google.com">
