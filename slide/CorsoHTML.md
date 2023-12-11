@@ -40,7 +40,7 @@ La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchi
 
 ## HTML
 
-### Hyper Text Markup Language
+__Hyper Text Markup Language__
 
 Cos'è HTML?
 
@@ -448,7 +448,7 @@ Il bianco è rappresentato da rgb\(255\, 255\, 255\)
 
 ---
 
-## Colori RGB
+## Colori - RGB Calculator
 
 ![width:700px](img/Chapter_html1.png)
 
@@ -466,7 +466,7 @@ Si tratta del valore esadecimale precedentemente rappresentato da 0 a 255
 
 ---
 
-## Colori HEX Calculator
+## Colori - HEX Calculator
 
 ![width:700px](img/Chapter_html2.png)
 
@@ -488,7 +488,7 @@ Lightness è a sua volta una percentuale che va dal 0% che è il nero a 100% che
 
 ---
 
-## Colori HSL Calculator
+## Colori - HSL Calculator
 
 ![width:700px](img/Chapter_html3.png)
 
