@@ -3,7 +3,7 @@ theme: default
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
+backgroundImage: url('img/background.svg')
 marp: true
 footer: https://github.com/matteobaccan/CorsoHTML versione del %date% %time%
 ---
@@ -20,6 +20,11 @@ Impariamo a usare HTML5 conoscendone le basi
 img[alt~='center'] {
   display: block;
   margin: 0 auto;
+}
+h2 {
+    color: #e50000;
+    position: absolute;
+    top: 30px;
 }
 " -->
 
@@ -140,20 +145,22 @@ Il rendering è quel processo che permette di visualizzare una pagina HTML.
 
 ## HTML - esempio minimo di pagina HTML
 
-    <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 
-    <html lang="it">
+<html lang="it">
 
     <head>
-    <title>Titolo della pagina</title>
+        <title>Titolo della pagina</title>
     </head>
 
     <body>
-    <h1>Intestazione</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h1>Intestazione</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </body>
 
-    </html>
+</html>
+```
 
 ---
 
@@ -1820,6 +1827,8 @@ __rounded\-pill__ 	Arrotonda i bordi del badge
 
 ---
 
-### Disclaimer
+## Disclaimer
 
 L'autore ha generato questo testo in parte con GPT-3, il modello di generazione del linguaggio su larga scala di OpenAI. Dopo aver generato la bozza della lingua, l'autore ha rivisto, modificato e rivisto la lingua a proprio piacimento e si assume la responsabilità  ultima del contenuto di questa pubblicazione.
+
+L'immagine di sfondo è stata generata con <https://app.haikei.app>
