@@ -856,20 +856,32 @@ Con lo  __style__   __width__  è possibile indicare l’occupazione di una sing
 
 ## Table colspan e rowspan
 
-Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa più di una riga o di una colonna
+Con __colspan__ e __rowspan__ è possibile indicare l'occupazione di una cella
 
 ```html
 <table>
-    <thead> <tr> <th colspan="2" >Colonna 1</th><th>Colonna 2</th> </tr> </thead>
+    <thead> 
+        <tr> 
+            <th colspan="2" >Colonna 1</th><th>Colonna 2</th> 
+        </tr> 
+    </thead>
     <tbody>
-        <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
-        <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
+        <tr> 
+            <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> 
+        </tr>
+        <tr>
+            <td>Dato 2</td> <td>Dato 3</td> 
+        </tr>
     </tbody>
     <tfoot><tr><td>Piede 1</td><td>Piede 2</td><td>Piede 3</td></tr></tfoot>
 </table>
 ```
 
-![](img/Chapter_html7.png)
+---
+
+## Table colspan e rowspan - risultato
+
+![center width:900px](img/Chapter_html7.png)
 
 ---
 
