@@ -835,18 +835,22 @@ Ci sono una serie di proprietà che possono essere utilizzate per personalizzare
 
 Con lo  __style__   __width__  è possibile indicare l’occupazione di una singola colonna
 
-    <table  style="width:100%" >
-        <thead>
-            <tr>
-                <th  style="width:10%" >Colonna 1</th> <th>Colonna 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dato 1</td><td>Dato 2</td>
-            </tr>
-        </tbody>
-    </table>
+```html
+<table  style="width:100%" >
+    <thead>
+        <tr>
+            <th style="width:10%">Colonna 1</th>
+            <th>Colonna 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+        </tr>
+    </tbody>
+</table>
+```
 
 ---
 
@@ -854,14 +858,16 @@ Con lo  __style__   __width__  è possibile indicare l’occupazione di una sing
 
 Con lo  __colspan__ e __rowspan__ è possibile indicare che una cella occupa più di una riga o di una colonna
 
-    <table>
-        <thead> <tr> <th colspan="2" >Colonna 1</th><th>Colonna 2</th> </tr> </thead>
-        <tbody>
-            <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
-            <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
-        </tbody>
-        <tfoot><tr><td>Piede 1</td><td>Piede 2</td><td>Piede 3</td></tr></tfoot>
-    </table>
+```html
+<table>
+    <thead> <tr> <th colspan="2" >Colonna 1</th><th>Colonna 2</th> </tr> </thead>
+    <tbody>
+        <tr> <td  rowspan="2" >Dato 1</td> <td>Dato 2</td> <td>Dato 3</td> </tr>
+        <tr> <td>Dato 2</td> <td>Dato 3</td> </tr>
+    </tbody>
+    <tfoot><tr><td>Piede 1</td><td>Piede 2</td><td>Piede 3</td></tr></tfoot>
+</table>
+```
 
 ![](img/Chapter_html7.png)
 
