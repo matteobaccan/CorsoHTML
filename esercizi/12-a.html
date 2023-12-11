@@ -3,18 +3,22 @@
 
 <head>
   <title>Titolo della pagina</title>
+  <style>
+    iframe {
+      width: 600px;
+      height: 200px;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
-<iframe src="http://www.acmenovara.it" name="A"></iframe>
-<iframe src="https://www.google.com" name="B"></iframe>
-<iframe src="https://www.google.it" name="C"></iframe>
-<br/>
-<a href="https://www.google.it">Google</a>
-<a href="https://www.google.com">Google</a>
-
-<a href="http://www.acmenovara.it" target="B">CAMBIO B</a>
-
+  ACME Novara
+  <iframe src="https://www.acmenovara.it" name="A"></iframe>
+  Gazzetta.it - <a href="https://www.acmenovara.it" target="B">Cambio in Acmenovara.it</a>
+  <iframe src="https://www.gazzetta.it" name="B"></iframe>
+  Google.it - protetto contro l'inclusione in iframe
+  <iframe src="https://www.google.it" name="C"></iframe>
 </body>
 
 </html>

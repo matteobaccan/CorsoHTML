@@ -20,7 +20,7 @@ jobs:
         cp CorsoHTML.md CorsoHTML-backup.md
         sed -i "s/%date%/$(date +'%Y-%m-%d')/g" CorsoHTML.md
         sed -i "s/%time%/$(date +'%H:%M')/g" CorsoHTML.md
-        npx @marp-team/marp-cli@latest CorsoHTML.md --pdf --allow-local-files
+        npx @marp-team/marp-cli@latest CorsoHTML.md --pdf --allow-local-files --pdf-outlines
         rm CorsoHTML.md
         mv CorsoHTML-backup.md CorsoHTML.md
      
