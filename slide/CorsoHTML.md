@@ -24,7 +24,23 @@ img[alt~='center'] {
 h2 {
     color: #e50000;
     position: absolute;
-    top: 30px;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 15px 0px 0px 75px;    
+    height: 70px;
+    border-bottom: 1px solid red;
+    margin: 0px;
+}
+h3 {
+    color: #e50000;
+}
+footer {
+    width: 100%;
+    left: 5px;
+    bottom: 0;
+    padding: 0 0 10px 10px;
 }
 " -->
 
@@ -40,7 +56,7 @@ La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchi
 
 ## HTML
 
-__Hyper Text Markup Language__
+Hyper Text Markup Language
 
 Cos'è HTML?
 
@@ -143,7 +159,9 @@ Il rendering è quel processo che permette di visualizzare una pagina HTML.
 
 ---
 
-## HTML - esempio minimo di pagina HTML
+## HTML - minimo
+
+Esempio minimo di pagina HTML
 
 ```html
 <!DOCTYPE html>
@@ -1114,6 +1132,7 @@ L’autore
     <meta name="author" content="Matteo Baccan">
 
 ---
+
 ## Open Graph
 
 Altri elementi che si trovano in  __head__  sono quelli del protocollo Open Graph.
@@ -1124,7 +1143,7 @@ Il protocollo Open Graph consente a qualsiasi pagina Web di essere arricchita di
 
 ---
 
-## Open Graph
+## Open Graph - minimo
 
 Le quattro proprietà minime per Open Graph sono
 
@@ -1138,7 +1157,7 @@ __og:url__  : l’indirizzo canonico dell’oggetto
 
 ---
 
-## Open Graph
+## Open Graph - in action
 
 Un esempio di utilizzo delle proprietà Open Graph
 
@@ -1162,7 +1181,7 @@ Altri elementi di Open Graph sono
 
 __og:audio__ : l’audio che accompagna questo oggetto
 __og:description__ : la descrizione di questo oggetto
-__og:determiner__ : la parola che appare prima del titolo all’interno di una frase\. E’ possibile scegliere fra  __a__ \,  __an__ \,  __the__ \,  __""__ \,  __auto__ \)\. Se è scelto  __auto __ il valore sarà scelto fra  __a__  o  __an__ \. Il default è vuoto  __""__  \(blank\)\.
+__og:determiner__ : la parola che appare prima del titolo all’interno di una frase\. E’ possibile scegliere fra  __a__ \,  __an__ \,  __the__ \,  __""__ \,  __auto__ \)\. Se è scelto  __auto__ il valore sarà scelto fra  __a__  o  __an__ \. Il default è vuoto  __""__  \(blank\)\.
 __og:locale__ : è la lingua dell’oggetto\. Se non indicato il default è  __en\_US__ \.
 __og:locale:alternate__ : l’elenco di altre lingue nelle quali la pagina è disponibile
 __og:site\_name__ : se l’oggetto è parte di un grande sito web\, sarà il nome con il quale verrà referenziato il sito
@@ -1609,6 +1628,14 @@ Uno degli attributi più interessanti di  __input__ è type\, che identifica il 
     button    checkboxcolor    date    datetime    datetime-local    email
     file    hidden    image    month    number    password    radio
     range    reset    search    submit    tel    text    time    url    week
+
+---
+
+## Form input type - visual
+
+![center width:450px](img/Understanding%20the%20HTML%20Input%20Tag%20and%20Its%20Types.jpg)
+
+<https://www.codewithfaraz.com/article/122/understanding-the-html-input-tag-and-its-types-a-comprehensive-guide>
 
 ---
 
