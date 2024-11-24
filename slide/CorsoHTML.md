@@ -28,8 +28,8 @@ h2 {
     background-color: white;
     width: 100%;
     left: 0;
-    padding: 15px 0px 0px 75px;    
-    height: 70px;
+    padding: 10px 0px 0px 75px;    
+    height: 65px;
     border-bottom: 1px solid red;
     margin: 0px;
 }
@@ -54,30 +54,37 @@ La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchi
 
 ---
 
-## HTML
+## Chi sono ?
 
-Hyper Text Markup Language
-
-Cos'è HTML?
-
-- È il linguaggio standard per la creazione di pagine web tramite marcatori.
-- Il suo scopo è quello di descrive la struttura delle pagine.
-- Identifica una serie di elementi strutturati.
-- La sua interpretazione necessita di un browser.
+Matteo Baccan è un ingegnere del software e formatore professionista con oltre 30 anni di esperienza nel settore IT.
+Ha lavorato per diverse aziende e organizzazioni, occupandosi di progettazione, sviluppo, testing e gestione di applicazioni web e desktop, utilizzando vari linguaggi e tecnologie. È anche un appassionato divulgatore e insegnante di informatica, autore di numerosi articoli, libri e corsi online rivolti a tutti i livelli di competenza.
+Gestisce un sito internet e un canale YouTube dove condivide video tutorial, interviste, recensioni e consigli sulla programmazione.
+Attivo nelle community open source, partecipa regolarmente a eventi e concorsi di programmazione.
+Si definisce un "sognatore realista" che ama sperimentare, innovare e condividere le sue conoscenze e passioni, seguendo il motto: "Non smettere mai di imparare, perché la vita non smette mai di insegnare".
 
 ---
 
-## HTML – strumenti
+## HTML – strumenti - Codepen
 
 Il portale che useremo durante il corso è
 
 [https://codepen\.io](https://codepen.io/)
 
-_CodePen is a social development environment. At its heart\, it allows you to write code in the browser, and see the results of it as you build. A useful and liberating online code editor for developers of any skill\, and particularly empowering for people learning to code. We focus primarily on front-end languages like HTML, CSS, JavaScript, and preprocessing syntaxes that turn into those things._
+_CodePen is a social development environment. At its heart\, it allows you to write code in the browser, and see the results of it as you build. A useful and liberating online code editor for developers of any skill\, and particularly empowering for people learning to code._
 
-Iscrivetevi e seguite il profilo creato apposta per il corso
+Iscrivetevi e seguite il profilo creato per il corso
 
 [https://codepen\.io/matteobaccan](https://codepen.io/matteobaccan)
+
+---
+
+## HTML – strumenti - GitHub
+
+Il repository che useremo durante il corso è
+
+[https://github.com/matteobaccan/CorsoHTML](https://github.com/matteobaccan/CorsoHTML)
+
+All'interno di questo repository troverete le slide del corso e i sorgenti dei vari esempi.
 
 ---
 
@@ -98,17 +105,41 @@ Le slide e i sorgenti del corso\, liberamente ispirati a [https://www\.w3schools
 
 ---
 
+## HTML
+
+HTML - HyperText Markup Language
+
+Cos'è HTML?
+
+HTML è il linguaggio fondamentale del Web, progettato per strutturare e presentare contenuti online. Si tratta di un linguaggio di markup che utilizza specifici tag per definire l'organizzazione degli elementi in una pagina web.
+
+---
+
+## HTML - Caratteristiche
+
+- È il linguaggio standard universalmente riconosciuto per la creazione di pagine web, che permette di organizzare contenuti testuali e multimediali in modo coerente e accessibile.
+
+- La sua funzione primaria è definire la struttura semantica del documento web, indicando quali parti rappresentano intestazioni, paragrafi, link, immagini e altri elementi fondamentali.
+
+- Opera attraverso un sistema di tag (marcatori) che incapsulano e descrivono il significato dei diversi elementi della pagina, creando una gerarchia organizzata di contenuti.
+
+- Richiede un browser web per essere interpretato e visualizzato correttamente, trasformando il codice in un'interfaccia grafica comprensibile all'utente finale.
+
+---
+
 ## Browser
 
 I browser sono dei programmi necessari alla corretta visualizzazione di una pagina HTML.
 
 Esempi di browser sono:
 
-    - Chrome
-    - Firefox
-    - Edge
-    - Safari
-    - Opera
+```text
+- Chrome
+- Firefox
+- Edge
+- Safari
+- Opera
+```
 
 Senza i browser non sarebbe possibile visualizzare le pagine web, vista anche la loro complessità e natura dinamica.
 
@@ -232,7 +263,9 @@ La loro struttura è per __chiave__ = __"valore"__
 
 ## HTML – definizione
 
-    <!DOCTYPE html>
+```html
+<!DOCTYPE html>
+```
 
 Identifica il fatto che il documento sia in formato HTML5
 
@@ -240,11 +273,13 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ## HTML primo tag
 
-    <html lang="it">
+```html
+<html lang="it">
 
-    ...
+...
 
-    </html>
+</html>
+```
 
 É il primo elemento di una pagina html\, all’interno di questo  elemento è contenuta la struttura della pagina
 
@@ -252,31 +287,32 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ## HEAD
 
-    <head>
+```html
+<head>
 
-    ...
+...
 
-    </head>
+</head>
+```
 
 È il tag che contiene le informazioni inerenti alla pagina
 
-\- Titolo
-
-\- Descrizione
-
-\- Tag per motori di ricerca
-
-\- Tag per Social Network
+- Titolo
+- Descrizione
+- Tag per motori di ricerca
+- Tag per Social Network
 
 ---
 
 ## HEAD - esempio
 
-    <head>
+```html
+<head>
 
     <title>Titolo della pagina</title>
 
-    </head>
+</head>
+```
 
 È il titolo della pagina: viene visualizzato all’interno del browser per dare un nome al tab che state visualizzando o dai motori di ricerca per rappresentare la vostra pagina
 
