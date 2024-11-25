@@ -215,7 +215,7 @@ Esempio minimo di pagina HTML
 
 ## HTML - Elementi - TAG
 
-Le pagine HTML sono composte da una serie di elementi, chiamati TAG, formattatine nel seguente modo:
+Le pagine HTML sono composte da una serie di elementi, chiamati TAG, formattate nel seguente modo:
 
 ```html
 <nometag> contenuto </nometag>
@@ -641,7 +641,7 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ```css
 body {
-    background\-color: powderblue;
+    background-color: powderblue;
 }
 
 h1 {
@@ -722,7 +722,7 @@ __“nomeframe”__ Apre il documento in un determinato frame
 ## Link - esempi
 
 ```HTML
-<iframe src="http://www.acmenovara.it" name="A">
+<iframe src="https://www.acmenovara.it" name="A">
 <p>ACME Novara</p>
 </iframe>
 
@@ -734,7 +734,7 @@ __“nomeframe”__ Apre il documento in un determinato frame
 <p>Google.it</p>
 </iframe>
 
-<a href="http://www.acmenovara.it" target="B">CAMBIO B</a>
+<a href="https://www.acmenovara.it" target="B">CAMBIO B</a>
 ```
 
 ---
