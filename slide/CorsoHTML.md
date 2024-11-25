@@ -320,11 +320,13 @@ Identifica il fatto che il documento sia in formato HTML5
 
 ## BODY
 
-    <body>
+```html
+<body>
 
-    ...
+...
 
-    </body>
+</body>
+```
 
 Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabelle etc
 
@@ -332,11 +334,13 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ## BODY - Intestazione
 
-    <body>
+```html
+<body>
 
-        <h1>Intestazione</h1>
+    <h1>Intestazione</h1>
 
-    </body>
+</body>
+```
 
 È il primo degli heading disponibili in HTML5
 
@@ -344,11 +348,13 @@ Definisce il corpo della pagina html: testi\, paragrafi\, immagini\, link\, tabe
 
 ## BODY - esempio
 
-    <body>
+```html
+<body>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-    </body>
+</body>
+```
 
 Definisce un paragrafo
 
@@ -356,11 +362,13 @@ Definisce un paragrafo
 
 ## Heading
 
-    <h1>Intestazione 1</h1>
+```html
+<h1>Intestazione 1</h1>
 
-    <h2>Intestazione 2</h2>
+<h2>Intestazione 2</h2>
 
-    <h3>Intestazione 3</h3> 
+<h3>Intestazione 3</h3> 
+```
 
 Questo tipo di tag sono intestazioni
 
@@ -372,12 +380,14 @@ Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle p
 
 Le dimensioni di default dei __font-size__ degli heading sono
 
+```text
 h1 - 2em
 h2 - 1.5em
 h3 - 1.17em
 h4 - 1em
 h5 - .83em
 h6 - .67em
+```
 
 dove em deriva dalla parola "emphasis" e identifica una larghezza relativamente al carattere corrente.
 Se il carattere corrente è di 16px il valore di 2em identifica 32px
@@ -389,11 +399,13 @@ Come peso viene invece assegnato un __font-weight: bolder__
 
 L’attributo  __style__  viene utilizzato per assegnare un stile ad un determinato tag
 
-    <h1 style="color:red;">Intestazione</h1>
+```html
+<h1 style="color:red;">Intestazione</h1>
 
-    <h2 style="color:blue;">Intestazione</h2>
+<h2 style="color:blue;">Intestazione</h2>
 
-    <h3 style="color:yellow;">Intestazione</h3>
+<h3 style="color:yellow;">Intestazione</h3>
+```
 
 Ad esempio per cambiare il colore del carattere di un testo
 
@@ -401,16 +413,20 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 ## Formattazione
 
-    <b> - Grassetto
-    <strong> - Importante
-    <i> - Italico
-    <em> - Enfatizzato
-    <mark> - Marked
-    <small> - Smaller
-    <del> - Cancellato
-    <ins> - Inserted
-    <sub> - Subscript
-    <sup> - Superscript
+Altri TAG per la formattazione
+
+```html
+<b> - Grassetto
+<strong> - Importante
+<i> - Italico
+<em> - Enfatizzato
+<mark> - Marked
+<small> - Smaller
+<del> - Cancellato
+<ins> - Inserted
+<sub> - Subscript
+<sup> - Superscript
+```
 
 ---
 
@@ -418,27 +434,26 @@ Ad esempio per cambiare il colore del carattere di un testo
 
 Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
-    <abbr>          Defines an abbreviation or acronym
-
-    <address>       Defines contact information for the author/owner of a document
-
-    <bdo>           Defines the text direction
-
-    <blockquote>    Defines a section that is quoted from another source
-
-    <cite>          Defines the title of a work
-
-    <q>             Defines a short inline quotation
+```html
+<abbr>          Definisce un'abbreviazione o un acronimo
+<address>       Definisce le informazioni di contatto per l'autore/proprietario di un documento
+<bdo>           Definisce la direzione del testo
+<blockquote>    Definisce una sezione citata da un'altra fonte
+<cite>          Definisce il titolo di un'opera
+<q>             Definisce una breve citazione in linea
+```
 
 ---
 
 ## Commenti
 
-Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo\.
+Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo.
 
-    <!-- Questo è un commento -->
+```html
+<!-- Questo è un commento -->
 
-    <p>Questo è un paragrafo</p>
+<p>Questo è un paragrafo</p>
+```
 
 ---
 
@@ -456,16 +471,18 @@ Ad ognuno è associata una sequenza RGB
 
 I colori possono essere usati in vari contesti\, come colore di sfondo\, colore di testo o di bordo
 
-    <h1 style="background-color:DodgerBlue;">Intestazione</h1>
-    <p style="background-color:Tomato;">Paragrafo</p>
+```html
+<h1 style="background-color:DodgerBlue;">Intestazione</h1>
+<p style="background-color:Tomato;">Paragrafo</p>
 
-    <h1 style="color:Tomato;">Intestazione </h1>
-    <p style="color:DodgerBlue;">Paragrafo</p>
-    <p style="color:MediumSeaGreen;">Paragrafo</p>
+<h1 style="color:Tomato;">Intestazione </h1>
+<p style="color:DodgerBlue;">Paragrafo</p>
+<p style="color:MediumSeaGreen;">Paragrafo</p>
 
-    <h1 style="border:2px solid Tomato;">Intestazione</h1>
-    <h1 style="border:2px solid DodgerBlue;">Intestazione</h1>
-    <h1 style="border:2px solid Violet;">Intestazione</h1>
+<h1 style="border:2px solid Tomato;">Intestazione</h1>
+<h1 style="border:2px solid DodgerBlue;">Intestazione</h1>
+<h1 style="border:2px solid Violet;">Intestazione</h1>
+```
 
 ---
 
@@ -473,12 +490,14 @@ I colori possono essere usati in vari contesti\, come colore di sfondo\, colore 
 
 I colori possono essere indicati in vari formati RGB, HEX, HSL, RGBA e HSLA
 
-    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
-    <h1 style="background-color:#ff6347;">...</h1>
-    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+```html
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
 
-    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
-    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+```
 
 ---
 
@@ -490,7 +509,9 @@ I colori RGBA sono una estensione di RGB con l’aggiunta del canale Alpha per l
 
 In HTML possiamo indicare un RGB con questa formula
 
-    rgb(red, green, blue)
+```html
+rgb(red, green, blue)
+```
 
 Ogni parametro identifica l’intensità del colore in una scala da 0 a 255
 
@@ -574,67 +595,63 @@ Esterno: utilizzando un elemento \<link> per collegarsi a un file CSS esterno
 
 ## CSS Inline
 
-    <h1 style="color:blue;">Una intestazione blue</h1>
+```html
+<h1 style="color:blue;">Una intestazione blue</h1>
 
-    <p style="color:red;">Un paragrafo rosso</p>
+<p style="color:red;">Un paragrafo rosso</p>
+```
 
 ---
 
 ## CSS Interno
 
+```html
 ...
 
-    <head>
+<head>
 
-    <style>
-
+<style>
     body {background-color: powderblue;}
-
     h1   {color: blue;}
-
     p    {color: red;}
+</style>
 
-    </style>
-
-    </head>
+</head>
 
 ...
+```
 
 ---
 
 ## CSS Esterno
 
+```html
 ...
+<head>
 
-    <head>
+    <link rel="stylesheet" href="styles.css">
 
-        <link rel="stylesheet" href="styles.css">
-
-    </head>
-
+</head>
 ...
+```
 
 ---
 
-## styles\.css
+## styles.css
 
-    body {
+```css
+body {
+    background\-color: powderblue;
+}
 
-        background\-color: powderblue;
+h1 {
+    color: blue;
+}
 
-    }
-
-    h1 {
-
-        color: blue;
-
-    }
-
-    p {
-
-        color: red;
-
-    }
+p {
+    color: red;
+}
+```
 
 ---
 
@@ -757,12 +774,14 @@ __alt__  \- Specifica un testo alternativo per l'immagine
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
 
-    <div style="background-image:url('https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg');">
+```html
+<div style="background-image:url('https://i.ytimg.com/vi/-cQk6kK7JVs/maxresdefault.jpg');">
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec ante eros, egestas vitae ullamcorper id, dignissim nec ipsum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Donec ante eros, egestas vitae ullamcorper id, dignissim nec ipsum.
 
-    </div>
+</div>
+```
 
 Testo  __Lorem ipsum__ generato da [https://www\.lipsum\.com/](https://www.lipsum.com/)
 
