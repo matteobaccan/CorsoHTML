@@ -791,11 +791,15 @@ Testo  __Lorem ipsum__ generato da [https://www\.lipsum\.com/](https://www.lipsu
 
 Se volete che l'immagine di sfondo copra l'intero elemento\, si può impostare la proprietà
 
-__background-size: cover__
+```css
+background-size: cover
+```
 
 Inoltre\, per assicurasi che l'intero elemento sia sempre coperto\, basta impostare la proprietà
 
-__background-attachment: fixed__
+```css
+background-attachment: fixed
+```
 
 In questo modo\, l'immagine di sfondo coprirà l'intero elemento\, senza cambiarne le proporzioni
 
@@ -809,11 +813,13 @@ Ogni elemento  __\<source>__  ha un attributo multimediale che definisce quando 
 
 L'elemento  __\<img>__  indicherà il default da usare nel caso non ci siano match corretti.
 
-    <picture>
-      <source media="(min-width: 650px)" srcset="computer.jpg">
-      <source media="(min-width: 465px)" srcset="tablet.jpg">
-      <img src="cellulare.jpg">
-    </picture> 
+```html
+<picture>
+    <source media="(min-width: 650px)" srcset="computer.jpg">
+    <source media="(min-width: 465px)" srcset="tablet.jpg">
+    <img src="cellulare.jpg">
+</picture> 
+```
 
 ---
 
@@ -828,6 +834,7 @@ Quando usare il tag  __\<picture>__?
 \- Adattare facilmente il contesto alla dimensione del device
 
 ---
+
 ## MAP
 
 Il tag  __\<map>__  viene usato per definire una mappa di immagini.
@@ -838,13 +845,15 @@ L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __
 
 L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__, che definisce le aree cliccabili nella mappa dell'immagine
 
-    <img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg"
-     usemap="#workmap" width="500px" height="300px">
+```html
+<img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg"
+    usemap="#workmap" width="500px" height="300px">
 
-    <map name="workmap">
-        <area shape="rect" title="google" coords="0,0,250,300" href="https://www.google.com">
-        <area shape="rect" title="bing" coords="250,0,500,300" href="https://www.bing.com">
-    </map>
+<map name="workmap">
+    <area shape="rect" title="google" coords="0,0,250,300" href="https://www.google.com">
+    <area shape="rect" title="bing" coords="250,0,500,300" href="https://www.bing.com">
+</map>
+```
 
 ---
 
@@ -856,11 +865,13 @@ Per aggiungere una favicon ad un sito web\, occorre salvarla nella directory pri
 
 Nel caso sia posizionata o nominata in modo diverso è necessario indicarne il percorso a livello di  __head__
 
-    <head>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    </head>
+```html
+<head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+```
 
-![](img/Chapter_html5.png)
+![width:400px](img/Chapter_html5.png)
 
 ---
 
@@ -870,7 +881,7 @@ Un sito utilizzabile per disegnare delle favicon è [https://www.favicon.cc/](ht
 
 Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una serie di altri formati orizzontalmente accettati dai maggiori browser
 
-![](img/Chapter_html6.png)
+![favicon](img/Chapter_html6.png)
 
 ---
 
@@ -879,16 +890,18 @@ Non volendo usare il formato  __ico__  è comunque possibile scegliere fra una s
 Il tag  __table__ serve a racchiudere delle informazioni rappresentabili in righe e colonne\. Anche se molto utilizzato in passato\, è stato progressivamente superato da altri costrutti responsive\.
 Il tag  __table__  contiene da più tag
 
-    table       : tabella
-    thead       : area di intestazione tabella
-    tbody       : corpo della tabella
-    tfoot       : piede della tabella
-    tr          : riga
-    th          : header
-    td          : data
-    caption     : titolo
-    colgroup    : definizione di colonne
-    col         : singolo elemento di definizione di colonna
+```text
+table       : tabella
+thead       : area di intestazione tabella
+tbody       : corpo della tabella
+tfoot       : piede della tabella
+tr          : riga
+th          : header
+td          : data
+caption     : titolo
+colgroup    : definizione di colonne
+col         : singolo elemento di definizione di colonna
+```
 
 ---
 
@@ -896,11 +909,13 @@ Il tag  __table__  contiene da più tag
 
 Ci sono una serie di proprietà che possono essere utilizzate per personalizzare i tag  __table__, ad esempio
 
-    border: 1px solid black;
-    border-collapse: collapse;
-    border-radius: 10px;
-    border-color: #96D4D4;
-    background-color: #96D4D4;
+```css
+border: 1px solid black;
+border-collapse: collapse;
+border-radius: 10px;
+border-color: #96D4D4;
+background-color: #96D4D4;
+```
 
 ---
 
@@ -964,11 +979,9 @@ Con  __caption__  è possibile dare un titolo a una tabella
 
 Il tab  __caption__ deve essere inserito subito dopo il tag  __table__
 
-\.\.\.
-
-__\<caption> Caption \</caption>__
-
-\.\.\.
+```html
+<caption> Caption </caption>
+```
 
 ---
 
@@ -978,10 +991,12 @@ Con  __colgroup__ e  __col__  è possibile indicare una serie di caratteristiche
 
 Il tab  __col__  può anche avere un attributo che indica quante colonne subiscono il nuovo stile
 
-    <colgroup>
-        <col span="2" style="background-color:green;">
-        <col style="background-color:blue; border: 5px solid black;">
-    </colgroup>
+```html
+<colgroup>
+    <col span="2" style="background-color:green;">
+    <col style="background-color:blue; border: 5px solid black;">
+</colgroup>
+```
 
 ---
 
@@ -991,11 +1006,13 @@ L’utilizzo dei tag  __ul__ e  __li__ permette di definire delle liste non ordi
 
 Le liste sono rappresentate da una serie di righe contigue evidenziate da un piccolo cerchio nero iniziale
 
-    <ul>
-        <li>Primo elemento</li>
-        <li>Secondo elemento</li>
-        <li>Terzo elemento</li>
-    </ul>
+```html
+<ul>
+    <li>Primo elemento</li>
+    <li>Secondo elemento</li>
+    <li>Terzo elemento</li>
+</ul>
+```
 
 ---
 
@@ -1005,11 +1022,13 @@ L’utilizzo dei tag  __ol__ e  __li__ permette di definire delle liste ordinate
 
 Le liste sono rappresentate da una serie di righe contigue numerate
 
-    <ol>
-        <li>Primo elemento</li>
-        <li>Secondo elemento</li>
-        <li>Terzo elemento</li>
-    </ol>
+```css
+<ol>
+    <li>Primo elemento</li>
+    <li>Secondo elemento</li>
+    <li>Terzo elemento</li>
+</ol>
+```
 
 ---
 
@@ -1019,15 +1038,17 @@ L’utilizzo dei tag  __dl__, __dt__ e __dd__ permettono di creare delle liste d
 
 Con  __dl__ si definisce la lista\, con  __dt__ si descrive il nome \(term\)\, con  __dd__ si descrive il termine
 
-    <dl>
-        <dt>Cornetto</dt>
-            <dd>- alla crema</dd>
-            <dd>- al cioccolato</dd>
-            <dd>- alla marmellata</dd>
-        <dt>Latte</dt>
-            <dd>- di soia</dd>
-            <dd>- di capra</dd>
-    </dl>
+```html
+<dl>
+    <dt>Cornetto</dt>
+        <dd>- alla crema</dd>
+        <dd>- al cioccolato</dd>
+        <dd>- alla marmellata</dd>
+    <dt>Latte</dt>
+        <dd>- di soia</dd>
+        <dd>- di capra</dd>
+</dl>
+```
 
 ---
 
@@ -1037,13 +1058,13 @@ Esistono due tag generici e abbastanza simili utilizzati per definire delle aree
 
 I tag sono  __div__ e  __span__ \.
 
-__DIV__
+### DIV
 
 L’elemento inizia sempre su una nuova riga
 Occupa l’intera larghezza disponibile
 Ha un margine inferiore e superiore
 
-__SPAN__
+### SPAN
 
 Non inizia su una nuova riga
 Occupa solo la larghezza necessaria
@@ -1051,15 +1072,15 @@ Non ha un margine superiore e inferiore
 
 ---
 
-## Blocchi e inline
+## Blocchi e inline - rappresentazione
 
 La rappresentazione di __DIV__ e __SPAN__ è notevolmente diversa:
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div>__ Praesent laoreet hendrerit neque sed sagittis\.
-![](img/Chapter_html8.png)
+![div](img/Chapter_html8.png)
 
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN__</span> Praesent laoreet hendrerit neque sed sagittis\.
-![](img/Chapter_html9.png)
+![span](img/Chapter_html9.png)
 
 ---
 
@@ -1067,10 +1088,12 @@ Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="backg
 
 L’attributo  __class__ serve ad indicare una classe associata ad un qualsiasi tag\.
 
-    <div class="town">
-        <h2>Parigi</h2>
-        <p>Capitale della federazione dei pianeti uniti, situata sul Quadrante Alfa</p>
-    </div>
+```html
+<div class="town">
+    <h2>Parigi</h2>
+    <p>Capitale della federazione dei pianeti uniti, situata sul Quadrante Alfa</p>
+</div>
+```
 
 La classe specificata può poi essere descritta a livello di CSS\.
 
@@ -1092,7 +1115,9 @@ Avere un  __id__  ci permette di applicare delle caratteristiche ad un singolo t
 
 Il tag  __iframe__ permette l’inclusione di una pagina all’interno di una pagina HTML
 
+```html
     <iframe src="url" title="descrizione"></iframe> 
+```
 
 L’attributo necessario per il funzionamento di un  __Iframe__  è  __url__ \.
 
@@ -1100,19 +1125,23 @@ Questo attributo indica l’indirizzo della pagina da includere.
 
 ---
 
-## Iframe
+## Iframe - attributi
 
 __iframe__ ha una serie di attributi che ne condizionano la visualizzazione come:
 
-    <iframe src="https://www.baccan.it/" title="Matteo Baccan" height="200" width="300"></iframe>
+```html
+<iframe src="https://www.baccan.it/" title="Matteo Baccan" height="200" width="300"></iframe>
 
-    <iframe src="https://www.baccan.it/" title="Matteo Baccan" style="height:200px;width:300px;"></iframe>
+<iframe src="https://www.baccan.it/" title="Matteo Baccan" style="height:200px;width:300px;"></iframe>
+```
 
 __Iframe__ può poi essere utilizzato come target di un tag  __a__
 
-    <iframe src="about:blank" title="Matteo Baccan" name="baccan"></iframe>
+```html
+<iframe src="about:blank" title="Matteo Baccan" name="baccan"></iframe>
 
-    <a href="https://www.baccan.it/" target="baccan">Baccan.it</a>
+<a href="https://www.baccan.it/" target="baccan">Baccan.it</a>
+```
 
 ---
 
@@ -1122,11 +1151,13 @@ __script__ è il tag col quale è possibile inserire del codice JavaScript per r
 
 __script__  può contenere direttamente del codice\, o referenziare una pagina esterna contenente a sua volta del codice.
 
-    <a href="https://www.baccan.it/" id="baccan">Baccan.it</a>
+```html
+<a href="https://www.baccan.it/" id="baccan">Baccan.it</a>
 
-    <script>
-        document.getElementById("baccan").innerHTML = "CIAO!!";
-    </script>
+<script>
+    document.getElementById("baccan").innerHTML = "CIAO!!";
+</script>
+```
 
 ---
 
