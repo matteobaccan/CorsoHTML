@@ -447,7 +447,7 @@ Esistono alcuni elementi utilizzati per poter fare delle citazioni
 
 ## Commenti
 
-Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser\. Lo scopo del commento è puramente documentativo.
+Esiste la possibilità di inserire del testo che verrà scartato in automatico del browser. Lo scopo del commento è puramente informativo.
 
 ```html
 <!-- Questo è un commento -->
@@ -1169,11 +1169,13 @@ E’ importante capire come sono gestiti i file in una struttura a cartelle\. La
 
 Rispetto alla pagina corrente
 
-    <img src="foto.jpg">                        foto.jpg è nella stessa cartella
-    <img src="immagini/foto.jpg">               foto.jpg è nella cartella  immagini
-    <img src="/immagini/foto.jpg">              foto.jpg è nella cartella  immagini del root folder
-    <img src="../foto.jpg">                     foto.jpg è nella cartella padre della cartella corrente
-    <img src="http://www.foo.bar/foto.jpg">     foto.jpg è sul sito foo.bar
+```html
+<img src="foto.jpg">                        foto.jpg è nella stessa cartella
+<img src="immagini/foto.jpg">               foto.jpg è nella cartella  immagini
+<img src="/immagini/foto.jpg">              foto.jpg è nella cartella  immagini del root folder
+<img src="../foto.jpg">                     foto.jpg è nella cartella padre della cartella corrente
+<img src="http://www.foo.bar/foto.jpg">     foto.jpg è sul sito foo.bar
+```
 
 ---
 
@@ -1187,37 +1189,49 @@ Altri elementi che entrano a far parte di questo tag sono i tag  __meta__\.
 
 ---
 
-## Head
+## Head - meta
 
 Il set di caratteri usato per la corretta visualizzazione del sito
 
-    <meta charset="UTF-8">
+```html
+<meta charset="UTF-8">
+```
 
 Aggiornamento automatico
 
-    <meta http-equiv="refresh" content="10">
+```html
+<meta http-equiv="refresh" content="10">
+```
 
 Impostazioni per la visualizzazione responsive
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
 
 ---
 
-## Head
+## Head - motori di ricerca
 
 Elementi utilizzati dai motori di ricerca
 
 Descrizione
 
-    <meta name="description" content="La mia bellissima pagina">
+```html
+<meta name="description" content="La mia bellissima pagina">
+```
 
 Keywords
 
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+```html
+<meta name="keywords" content="HTML, CSS, JavaScript">
+```
 
 L’autore
 
-    <meta name="author" content="Matteo Baccan">
+```html
+<meta name="author" content="Matteo Baccan">
+```
 
 ---
 
@@ -1249,21 +1263,18 @@ __og:url__  : l’indirizzo canonico dell’oggetto
 
 Un esempio di utilizzo delle proprietà Open Graph
 
-    <meta property="og:url"             content="https://www.baccan.it" />
-
-    <meta property="og:title"           content="Il sito personale di Matteo Baccan" />
-
-    <meta property="og:description"     content="Scrivo software e aiuto le aziende a scriverne di migliore" />
-
-    <meta property="og:image"           content="https://www.baccan.it/logo/29.png" />
-
-    <meta property="og:type"            content="blog" />
-
-    <meta property="og:site_name"       content="Il sito personale di Matteo Baccan" />
+```html
+<meta property="og:url"             content="https://www.baccan.it" />
+<meta property="og:title"           content="Il sito personale di Matteo Baccan" />
+<meta property="og:description"     content="Scrivo software e aiuto le aziende a scriverne di migliore" />
+<meta property="og:image"           content="https://www.baccan.it/logo/29.png" />
+<meta property="og:type"            content="blog" />
+<meta property="og:site_name"       content="Il sito personale di Matteo Baccan" />
+```
 
 ---
 
-## Open Graph
+## Open Graph - altri elementi
 
 Altri elementi di Open Graph sono
 
@@ -1277,32 +1288,42 @@ __og:video__ : l’indirizzo del video in accompagnamento della pagina
 
 ---
 
-## Open Graph
+## Open Graph - Gal Gadot
 
 Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot__  __[https://www\.imdb\.com/name/nm2933757/](https://www.imdb.com/name/nm2933757/)__  protagonista di “Wonder Woman 1984”
 
-\<meta  __property="og:url"__  content="http://www\.imdb\.com/name/nm2933757/" />
-\<meta  __property='og:image'__  content="https://m\.media\-amazon\.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@\.\_V1\_UY1200\_CR165\,0\,630\,1200\_AL\_\.jpg" />
-\<meta  __property='og:type'__  content="actor" />
+```html
+<meta  __property="og:url"__  content="http://www.imdb.com/name/nm2933757/" />
+<meta  __property='og:image'__  content="https://m.media-amazon.com/images/M/MV5BYThjM2NlOTI
+tYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY1200_CR165,0,630,1200_AL_.jpg" />
+<meta  __property='og:type'__  content="actor" />
+```
 
 ---
 
-## Open Graph
+## Open Graph - description
 
-\<meta  __property="og:description"__  content="Gal Gadot\, Actress: Wonder Woman 1984\. Gal Gadot is an Israeli actress\, singer\, martial artist\, and model\. She was born in Rosh Ha'ayin\, Israel\. Her parents are Irit\, a teacher\, and Michael\, an engineer\. She served in the IDF for two years\, and won the Miss Israel title in 2004\. Gal made her film debut in the fourth film of the Fast and Furious franchise\, Fast &amp; Furious \- Solo parti\.\.\." />
-\<meta  __property='og:title'__  content="Gal Gadot \- IMDb" />
-\<meta  __property='og:site\_name'__ content='IMDb' />
+```html
+<meta  __property="og:description"__  content="Gal Gadot, Actress: Wonder Woman 1984. Gal Gadot is an Israeli actress,
+singer, martial artist, and model. She was born in Rosh Ha'ayin, Israel. Her parents are Irit, a teacher, and Michael,
+an engineer. She served in the IDF for two years, and won the Miss Israel title in 2004. Gal made her film debut in
+the fourth film of the Fast and Furious franchise, Fast &amp; Furious - Solo parti..." />
+<meta  __property='og:title'__  content="Gal Gadot - IMDb" />
+<meta  __property='og:site_name'__ content='IMDb' />
+```
 
 ---
 
-## Open Graph
+## Open Graph - image
 
 Alcune proprietà Open Graph possono avere delle proprietà aggiuntive\.
 
 Ad esempio  __og:image__  può indicare alcuni dati in riferimento alla propria dimensione.
 
-    og:image:width      Larghezza in pixel
-    og:image:height     Altezza in pixel
+```html
+og:image:width      Larghezza in pixel
+og:image:height     Altezza in pixel
+```
 
 ---
 
@@ -1314,7 +1335,9 @@ Un responsive web design si adatterà in automatico alle diverse dimensioni dell
 
 Per poter definire che una pagina è responsive occorre aggiungere una riga nel tag  __head__
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
 
 Questa riga dirà al browser come controllare le dimensioni di pagina
 
@@ -1324,19 +1347,23 @@ Questa riga dirà al browser come controllare le dimensioni di pagina
 
 Per rendere una immagine responsive è possibile utilizzare  __max\-width__  che ci permette di indica la dimensione massima che avrà in larghezza ed impostare l’altezza ad  __auto__
 
-    <img src="gattino.jpg" style="max-width:100%; height:auto;"> 
+```html
+<img src="gattino.jpg" style="max-width:100%; height:auto;"> 
+```
 
 ---
 
-## Responsive image
+## Responsive image - picture
 
 Un altro elemento responsive che abbiamo visto è il tag  __picture__
 
-    <picture>
-        <source media="(min-width: 650px)" srcset="computer.jpg">
-        <source media="(min-width: 465px)" srcset="tablet.jpg">
-        <img src="cellulare.jpg">
-    </picture>
+```html
+<picture>
+    <source media="(min-width: 650px)" srcset="computer.jpg">
+    <source media="(min-width: 465px)" srcset="tablet.jpg">
+    <img src="cellulare.jpg">
+</picture>
+```
 
 ---
 
@@ -1347,7 +1374,9 @@ Per farlo occorre impostare le dimensioni del carattere in  __vw__  che rapprese
 
 Ad esempio proviamo ad impostare la grandezza di  __ciao__  a 10vw
 
-    <div style="font-size:10vw">Ciao</div>
+```html
+<div style="font-size:10vw">Ciao</div>
+```
 
 Ingrandendo a diminuendo la dimensione dello schermo il testo si adeguerà di conseguenza\.
 Il __viewport width__ è la larghezza della finestra del browser e l’unità __vw__ è il suo percentile
@@ -1360,19 +1389,21 @@ Il __viewport width__ è la larghezza della finestra del browser e l’unità __
 
 Un altro modo per adattare le pagine ad una particolare dimensione è l’utilizzo delle media query
 
-In questo modo è possibile cambiare completamente layout\, in base alle dimensioni dello schermo
+In questo modo è possibile cambiare completamente layout, in base alle dimensioni dello schermo
 
 ---
 
-## Media Query
+## Media Query - CSS
 
 All’interno di una media query è possibile indicare il momento in cui un particolare frammento di CSS deve entrare in gioco
 
-In questo caso\, il CSS viene considerato fino alla larghezza di 800px
+In questo caso, il CSS viene considerato fino alla larghezza di 800px
 
-    @media screen and (max-width: 800px) {
-        /* CSS */
-    }
+```css
+@media screen and (max-width: 800px) {
+    /* CSS */
+}
+```
 
 ---
 
@@ -1380,11 +1411,13 @@ In questo caso\, il CSS viene considerato fino alla larghezza di 800px
 
 Il tag  __code__ permette di evidenziare del testo in modo possa essere usato per la rappresentazione di codice\, ad esempio usando un font non proporzionale
 
-    <code>
-        x = 1;
-        y = 2;
-        z = x + y;
-    </code>
+```html
+<code>
+    x = 1;
+    y = 2;
+    z = x + y;
+</code>
+```
 
 Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
@@ -1394,7 +1427,9 @@ Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
 Il tag  __kbd__ permette di evidenziare una sequenza di tasti da premere: l’aspetto è simile a quello di  __code__
 
-    <p>Visualizza il sorgente premendo <kbd>Ctrl + U</kbd></p>
+```html
+<p>Visualizza il sorgente premendo <kbd>Ctrl + U</kbd></p>
+```
 
 Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
@@ -1404,8 +1439,10 @@ Il comportamento è simile all’uso di un tag  __span__ con font  __courier__
 
 Il tag  __samp__ permette di simulare l’output di un programma
 
-    <p>Esempio di output:</p>
-    <p><samp>Hello world.<br>Premi F1 per continuare</samp></p>
+```html
+<p>Esempio di output:</p>
+<p><samp>Hello world.<br>Premi F1 per continuare</samp></p>
+```
 
 ---
 
@@ -1413,11 +1450,13 @@ Il tag  __samp__ permette di simulare l’output di un programma
 
 Il tag  __pre__ permette di mantenere la formattazione presente all’interno di un testo
 
-    <pre>
-        x = 1;
-        y = 2;
-        z = x + y;
-    </pre>
+```html
+<pre>
+    x = 1;
+    y = 2;
+    z = x + y;
+</pre>
+```
 
 ---
 
@@ -1425,7 +1464,9 @@ Il tag  __pre__ permette di mantenere la formattazione presente all’interno di
 
 Il tag  __var__ evidenzia una variabile o una espressione
 
-    L’area del rettangolo è <var>b</var> per <var>a</var>, dove <var>b</var> è la base e <var>a</var> è l’altezza
+```html
+L’area del rettangolo è <var>b</var> per <var>a</var>, dove <var>b</var> è la base e <var>a</var> è l’altezza
+```
 
 ---
 
@@ -1435,20 +1476,22 @@ HTML ha diversi tag semantici che definiscono le diverse parti di una pagina\.
 
 Questi elementi permettono una standardizzazione del codice verso una serie di elementi comuni
 
-    <header> - Intestazione o sezione di un documento
-    <nav> - Link di navigazione
-    <section> - Sezioni
-    <article> - Un contenuto
-    <aside> - Una sidebar
-    <footer> - Il piede del documento o di una sezione
-    <details> - Dettagli aggiuntivi rispetto al documento
-    <summary> - Un header dell’elemento <details>
+```html
+<header> - Intestazione o sezione di un documento
+<nav> - Link di navigazione
+<section> - Sezioni
+<article> - Un contenuto
+<aside> - Una sidebar
+<footer> - Il piede del documento o di una sezione
+<details> - Dettagli aggiuntivi rispetto al documento
+<summary> - Un header dell’elemento <details>
+```
 
 ![bg right:40% 80%](img/Chapter_html10.png)
 
 ---
 
-## Layout
+## Layout - alternative
 
 Esistono tecniche diverse per posizionare questi tag
 
@@ -1471,7 +1514,7 @@ Esistono tecniche diverse per posizionare questi tag
 
 Per verificare che il proprio codice HTML/CSS sia valido è possibile usare dei siti di validazione codice
 
-Il più conosciuto è il validatore di w3\.org\, che è in grado di darci segnalazione di tutte le anomalie presenti nel nostro codice\. Esistono però delle valide alternative
+Il più conosciuto è il validatore di w3.org, che è in grado di darci segnalazione di tutte le anomalie presenti nel nostro codice\. Esistono però delle valide alternative
 
 [https://validator\.w3\.org](https://validator.w3.org/)
 [https://html5\.validator\.nu](https://html5.validator.nu/)
@@ -1493,7 +1536,7 @@ Alcuni di più famosi sono
 
 ---
 
-## Validazione cross device
+## Validazione cross device - siti web
 
 Browserstack richiede una registrazione per poter usare la versione gratuita e mette a disposizione una simulazione su device reali per sistemi operativi Windows\, Mac\, IOS e Android
 
@@ -1501,7 +1544,7 @@ Browserstack richiede una registrazione per poter usare la versione gratuita e m
 
 ---
 
-## Validazione cross device
+## Validazione - browserling
 
 Browserling permette 1 minuto di navigazione su una serie di sistemi operativi e versioni di browser
 
@@ -1527,10 +1570,11 @@ __&\#numero\_entity;__
 
 ---
 
-## Entity
+## Entity - caratteri riservati
 
 Di seguito una serie di entity largamente diffuse
 
+```html
         non-breaking space                      &nbsp;      &#160;
     <   less than                               &lt;        &#60;
     >   greater than                            &gt;        &#62;
@@ -1543,6 +1587,7 @@ Di seguito una serie di entity largamente diffuse
     €   euro                                    &euro;      &#8364;
     ©   copyright                               &copy;      &#169;
     ®   registered trademark                    &reg;       &#174;
+```
 
 ---
 
@@ -1552,16 +1597,18 @@ Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili
 
 Un esempio sono i simboli matematici
 
-    ∀ 	&#8704; 	&forall;        FOR ALL
-    ∂ 	&#8706; 	&part;          PARTIAL DIFFERENTIAL
-    ∃ 	&#8707; 	&exist;         THERE EXISTS
-    ∅ 	&#8709; 	&empty;         EMPTY SETS
-    ∇ 	&#8711; 	&nabla;         NABLA
-    ∈ 	&#8712; 	&isin;          ELEMENT OF
-    ∉ 	&#8713; 	&notin;         NOT AN ELEMENT OF
-    ∋ 	&#8715; 	&ni;            CONTAINS AS MEMBER
-    ∏ 	&#8719; 	&prod;          N-ARY PRODUCT
-    ∑ 	&#8721; 	&sum;           N-ARY SUMMATION
+```html
+    ∀  &#8704; &forall;        FOR ALL
+    ∂  &#8706; &part;          PARTIAL DIFFERENTIAL
+    ∃  &#8707; &exist;         THERE EXISTS
+    ∅  &#8709; &empty;         EMPTY SETS
+    ∇  &#8711; &nabla;         NABLA
+    ∈  &#8712; &isin;          ELEMENT OF
+    ∉  &#8713; &notin;         NOT AN ELEMENT OF
+    ∋  &#8715; &ni;            CONTAINS AS MEMBER
+    ∏  &#8719; &prod;          N-ARY PRODUCT
+    ∑  &#8721; &sum;           N-ARY SUMMATION
+```
 
 ---
 
@@ -1571,9 +1618,11 @@ Oltre ai caratteri riservati\, esistono una serie di caratteri non riproducibili
 
 Un esempio sono i simboli matematici
 
-    ∅ 	&#8709; 	&empty;     Vuoto
-    ∈ 	&#8712; 	&isin;      Contenuto
-    ∉ 	&#8713; 	&notin;     Non contenuto
+```html
+    ∅  &#8709;  &empty;     Vuoto
+    ∈  &#8712;  &isin;      Contenuto
+    ∉  &#8713;  &notin;     Non contenuto
+```
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
@@ -1589,7 +1638,9 @@ Le emoji sono caratteri provenienti dal charset Unicode UTF\-8 e sono sottoposte
 
 L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è che la pagina inizi col metatag
 
-    <meta charset="UTF-8">
+```html
+<meta charset="UTF-8">
+```
 
 <https://www.fileformat.info/info/charset/UTF-8/list.htm>
 
@@ -1599,14 +1650,16 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 
 Di seguito alcuni esempi di emoji
 
-    ✔	&#10004;	2714
-    ✖	&#10006;	2716
-    ✝	&#10013;	271D
-    ✡	&#10017;	2721
-    ✨	&#10024;	2728
-    ✳	&#10035;	2733
-    ✴	&#10036;	2734
-    ❄	&#10052;	2744
+```html
+    ✔ &#10004; 2714
+    ✖ &#10006; 2716
+    ✝ &#10013; 271D
+    ✡ &#10017; 2721
+    ✨ &#10024; 2728
+    ✳ &#10035; 2733
+    ✴ &#10036; 2734
+    ❄ &#10052; 2744
+```
 
 Per un elenco completo è possibile utilizzare questo indirizzo
 
@@ -1628,11 +1681,13 @@ Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentat
 
 Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, dopo l’entity della emoji\, un entity di colorazione
 
+```html
     &#127999; 🏿 Carnagione scura
     &#127998; 🏾 Carnagione abbastanza scura
     &#127997; 🏽 Carnagione media
     &#127996; 🏼 Carnagione abbastanza chiara
     &#127995; 🏻 Carnagione chiara
+```
 
 ---
 
@@ -1640,12 +1695,14 @@ Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, 
 
 Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
 
+```html
     &#9757; Nessun tono della pelle
     &#9757;&#127999; Scuro
     &#9757;&#127998; Medio Scuro
     &#9757;&#127997; Medio
     &#9757;&#127996; Luce media
     &#9757;&#127995; Luce
+```
 
 ---
 
@@ -1655,13 +1712,15 @@ Un form HTML serve a raccogliere l'input dell'utente\.
 
 __Form__ è tag che inizia e finisce una maschera di acquisizione dati
 
-    <form action="/action.php">
-        <label for="fname">Nome:</label>
-        <input type="text" id="fname" name="fname" value="Matteo">
-        <label for="lname">Cognome:</label>
-        <input type="text" id="lname" name="lname" value="Baccan">
-        <input type="submit" value="conferma">
-    </form>
+```html
+<form action="/action.php">
+    <label for="fname">Nome:</label>
+    <input type="text" id="fname" name="fname" value="Matteo">
+    <label for="lname">Cognome:</label>
+    <input type="text" id="lname" name="lname" value="Baccan">
+    <input type="submit" value="conferma">
+</form>
+```
 
 ---
 
@@ -1685,27 +1744,31 @@ Esistono più tag che rappresentano il modo col quale inserire dati in una form\
 
 Ognuno di essi ha delle proprie caratteristiche di utilizzo
 
-    <input>
-    <label>
-    <select>
-    <textarea>
-    <button>
-    <fieldset>
-    <legend>
-    <datalist>
-    <output>
-    <option>
-    <optgroup>
+```html
+<input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option>
+<optgroup>
+```
 
 ---
 
 ## Form input
 
-Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testuali monoriga\. Normalmente si lega ad un tag  __label__  che rappresenta la sua descrizione
+Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testuali di una riga. Normalmente si lega ad un tag  __label__  che rappresenta la sua descrizione
 
-    <label for="fname">Nome:</label>
+```html
+<label for="fname">Nome:</label>
 
-    <input type="text" id="fname" name="fname">
+<input type="text" id="fname" name="fname">
+```
 
 ---
 
@@ -1713,9 +1776,11 @@ Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testu
 
 Uno degli attributi più interessanti di  __input__ è type\, che identifica il tipo di dati che verranno inseriti nel campo
 
-    button    checkboxcolor    date    datetime    datetime-local    email
-    file    hidden    image    month    number    password    radio
-    range    reset    search    submit    tel    text    time    url    week
+```text
+button    checkboxcolor    date    datetime    datetime-local    email
+file    hidden    image    month    number    password    radio
+range    reset    search    submit    tel    text    time    url    week
+```
 
 ---
 
@@ -1733,15 +1798,17 @@ Per facilitare la scrittura di pagine HTML sono nati col tempo una serie di fram
 
 Fra i framework più noti ci sono
 
-    Boostrap
-    Foundation
-    Bulma
-    Tailwind
-    Uikit
-    Milligram
-    Pure CSS
-    Tachyons
-    Materialize CSS
+```text
+Boostrap
+Foundation
+Bulma
+Tailwind
+Uikit
+Milligram
+Pure CSS
+Tachyons
+Materialize CSS
+```
 
 ---
 
@@ -1773,7 +1840,7 @@ che fornisce un contenitore a larghezza intera\, che copre l'intera larghezza de
 
 ## Bootstrap - grid
 
-Il sistema a griglia di Bootstrap è costruito con flexbox e consente fino a 12 colonne nella pagina\.
+Il sistema a griglia di Bootstrap è costruito con flexbox e consente fino a 12 colonne nella pagina.
 
 Se non desideri utilizzare tutte e 12 le colonne singolarmente\, puoi raggruppare le colonne insieme per creare colonne più larghe
 
@@ -1783,17 +1850,19 @@ Se non desideri utilizzare tutte e 12 le colonne singolarmente\, puoi raggruppar
 
 il sistema a griglia Bootstrap 5 ha sei classi:
 
-    .col- (dispositivi extra piccoli - larghezza dello schermo inferiore a 576px)
+```text
+.col- (dispositivi extra piccoli - larghezza dello schermo inferiore a 576px)
 
-    .col-sm- (piccoli dispositivi - larghezza dello schermo uguale o superiore a 576px)
+.col-sm- (piccoli dispositivi - larghezza dello schermo uguale o superiore a 576px)
 
-    .col-md- (dispositivi medi - larghezza dello schermo uguale o superiore a 768px)
+.col-md- (dispositivi medi - larghezza dello schermo uguale o superiore a 768px)
 
-    .col-lg- (dispositivi di grandi dimensioni - larghezza dello schermo uguale o superiore a 992px)
+.col-lg- (dispositivi di grandi dimensioni - larghezza dello schermo uguale o superiore a 992px)
 
-    .col-xl- (dispositivi xlarge - larghezza dello schermo uguale o superiore a 1200px)
+.col-xl- (dispositivi xlarge - larghezza dello schermo uguale o superiore a 1200px)
 
-    .col-xxl- (dispositivi xxlarge - larghezza dello schermo uguale o superiore a 1400px)
+.col-xxl- (dispositivi xxlarge - larghezza dello schermo uguale o superiore a 1400px)
+```
 
 Le classi di cui sopra possono essere combinate per creare layout più dinamici e flessibili\.
 
@@ -1805,17 +1874,19 @@ Boostrap dispone di classi predisposte per la visualizzazione dei tag  __table__
 
 Per utilizzarle è sufficiente indicarle a livello di attributo  __class__
 
-    <table class="table">
-    </table>
+```html
+<table class="table">
+</table>
 
-    <table class="table table-striped">
-    </table>
+<table class="table table-striped">
+</table>
 
-    <table class="table table-hover">
-    </table>
+<table class="table table-hover">
+</table>
 
-    <table class="table table-bordered">
-    </table>
+<table class="table table-bordered">
+</table>
+```
 
 [https://getbootstrap.com/docs/5.0/content/tables/](https://getbootstrap.com/docs/5.0/content/tables/)
 
@@ -1825,32 +1896,36 @@ Per utilizzarle è sufficiente indicarle a livello di attributo  __class__
 
 Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \.\. h6__ \, ma soprattutto aggiunge una serie di classi per la formattazione dei testi:
 
-    .text-start             Allinea il testo a sinistra
-    .text-center            Allinea al centro
-    .text-decoration-none   Rimuove la sottolineatura da un collegamento
-    .text-end               Allinea a destra
-    .text-nowrap            Evita il ritorno a capo
-    .text-lowercase         Minuscolo
-    .text-uppercase         Maiuscolo
-    .text-capitalize        Iniziale in maiuscolo
+```text
+.text-start             Allinea il testo a sinistra
+.text-center            Allinea al centro
+.text-decoration-none   Rimuove la sottolineatura da un collegamento
+.text-end               Allinea a destra
+.text-nowrap            Evita il ritorno a capo
+.text-lowercase         Minuscolo
+.text-uppercase         Maiuscolo
+.text-capitalize        Iniziale in maiuscolo
+```
 
 ---
 
 ## Bootstrap – colori testo
 
-Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori\. Queste classi possono essere sovrascritte da template CSS integrativi
+Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori. Queste classi possono essere sostituite da template CSS integrativi
 
-    .text-muted
-    .text-primary
-    .text-success
-    .text-info
-    .text-warning
-    .text-danger
-    .text-secondary
-    .text-white
-    .text-dark
-    .text-body
-    .text-light
+```text
+.text-muted
+.text-primary
+.text-success
+.text-info
+.text-warning
+.text-danger
+.text-secondary
+.text-white
+.text-dark
+.text-body
+.text-light
+```
 
 ---
 
@@ -1858,14 +1933,16 @@ Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base
 
 Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
-    .bg-primary
-    .bg-success
-    .bg-info
-    .bg-warning
-    .bg-danger
-    .bg-secondary
-    .bg-dark
-    .bg-light
+```text
+.bg-primary
+.bg-success
+.bg-info
+.bg-warning
+.bg-danger
+.bg-secondary
+.bg-dark
+.bg-light
+```
 
 ---
 
@@ -1873,14 +1950,16 @@ Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
 Per quanto riguarda le immagini\, sono state introdotte una serie di classi che aiutano la loro visualizzazione e allineamento
 
-    .rounded                Arrotonda gli angoli dell’immagine
-    .rounded-circle         Mette l’immagine in un cerchio
-    .img-thumbnail          Mette un bordo all’immagine
-    .float-start            Allinea a sinistra
-    .float-end              Allinea a destra
-    .mx-auto (margin:auto) ed .d-block (display:block)      Permettono la centratura
-    .img-fluid              Crea un’immagine responsive applicando
-                            max-width: 100%; e height: auto;
+```text
+.rounded                Arrotonda gli angoli dell’immagine
+.rounded-circle         Mette l’immagine in un cerchio
+.img-thumbnail          Mette un bordo all’immagine
+.float-start            Allinea a sinistra
+.float-end              Allinea a destra
+.mx-auto (margin:auto) ed .d-block (display:block)      Permettono la centratura
+.img-fluid              Crea un’immagine responsive applicando
+                        max-width: 100%; e height: auto;
+```
 
 ---
 
@@ -1888,13 +1967,15 @@ Per quanto riguarda le immagini\, sono state introdotte una serie di classi che 
 
 jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni contenuti
 
-    <div class="jumbotron">
+```html
+<div class="jumbotron">
 
-        <h1>Titolo</h1>
+    <h1>Titolo</h1>
 
-        <p>testo testo testo testo testo testo testo testo testo testo </p>
+    <p>testo testo testo testo testo testo testo testo testo testo </p>
 
-    </div>
+</div>
+```
 
 ---
 
@@ -1902,19 +1983,25 @@ jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni con
 
 Le classi di alert servono ad evidenziare un testo utilizzando un contesto\, come nel caso dei testi
 
-    <div class="alert alert-success">
-        <strong>SUCCESSO</strong> hai fatto qualcosa di perfetto
-    </div>
+```html
+<div class="alert alert-success">
+    <strong>SUCCESSO</strong> hai fatto qualcosa di perfetto
+</div>
+```
 
 Le tipologie di classi di alert si sovrappongono a quelle già viste per i testi
 
-    .alert-success .alert-info .alert-warning .alert-danger
-    .alert-primary .alert-secondary .alert-light .alert-dark
+```text
+.alert-success .alert-info .alert-warning .alert-danger
+.alert-primary .alert-secondary .alert-light .alert-dark
+```
 
 Come classi di supporto agli alert è possibile anche usare
 
-    .alert-dismissible	Alert chiudibile
-    .fade .show		Alert con un fade in chiusura
+```text
+.alert-dismissible Alert chiudibile
+.fade .show        Alert con un fade in chiusura
+```
 
 ---
 
@@ -1922,19 +2009,25 @@ Come classi di supporto agli alert è possibile anche usare
 
 Come per testi e alert\, anche i button hanno delle classi relative al contesto
 
-    <button type="button" class="btn">Basic</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-info">Info</button>
+```html
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+```
 
 Le tipologie di classi di btn si sovrappongono a quelle già viste per i testi
 
-    .btn-success .btn-info .btn-warning .btn-danger .btn-primary .btn-secondary .btn-light .btn-dark
+```text
+.btn-success .btn-info .btn-warning .btn-danger .btn-primary .btn-secondary .btn-light .btn-dark
+```
 
 Come classi di supporto è possibile usare le stesse classi con aggiunta di  __outline__
 
-    .btn-outline-primary .btn-outline-secondary ...
+```text
+.btn-outline-primary .btn-outline-secondary ...
+```
 
 ---
 
@@ -1942,13 +2035,15 @@ Come classi di supporto è possibile usare le stesse classi con aggiunta di  __o
 
 I badge sono delle etichette di testo che subiscono il contesto come button e text
 
-    <h1>Esempio di intestazione <span class="badge bg-secondary">badge</h1>
+```html
+<h1>Esempio di intestazione <span class="badge bg-secondary">badge</h1>
+```
 
 In questo caso il suffisso da usare è __bg__
 
 La classe di supporto dei badge è
 
-__rounded\-pill__ 	Arrotonda i bordi del badge
+__rounded\-pill__ Arrotonda i bordi del badge
 
 ---
 
