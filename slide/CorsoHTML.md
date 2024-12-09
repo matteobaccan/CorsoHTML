@@ -772,6 +772,29 @@ __loading__  \- Specifica il tipo di caricamento __eager__ o __lazy__
 
 ---
 
+## IMG - esempi
+
+Immagine da placeholder
+
+```html
+<img src="https://via.placeholder.com/400x200" alt="immagine">
+```
+
+Attributi width e height
+
+```html
+<img src="https://via.placeholder.com/400x200" alt="immagine" width="400" height="200">
+```
+
+CSS per width e height
+
+```html
+<img src="https://via.placeholder.com/400x200" alt="immagine"
+   style="width:200px;height:100px;">
+```
+
+---
+
 ## Immagini di sfondo
 
 Tramite l’attributo  __style__  è possibile inserire un’immagine di sfondo ad un elemento grafico
