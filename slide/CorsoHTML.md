@@ -1104,7 +1104,7 @@ La rappresentazione di __DIV__ e __SPAN__ è notevolmente diversa:
 Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<div style="background\-color:yellow; border: 1px solid red;">Ciao DIV\</div>__ Praesent laoreet hendrerit neque sed sagittis\.
 ![div](img/Chapter_html8.png)
 
-Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN__</span> Praesent laoreet hendrerit neque sed sagittis\.
+Lorem ipsum dolor sit amet\, consectetur adipiscing elit\. __\<span style="background\-color:yellow; border: 1px solid red;">Ciao SPAN\</span>__ Praesent laoreet hendrerit neque sed sagittis\.
 ![span](img/Chapter_html9.png)
 
 ---

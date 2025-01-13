@@ -10,10 +10,13 @@
         "elit",
         "Flexbox",
         "Gadot",
+        "hsla",
         "marp",
         "nomeframe",
         "nometag",
+        "rgba",
         "RGBA",
+        "RRGGBB",
         "srcset",
         "workmap"
     ]
