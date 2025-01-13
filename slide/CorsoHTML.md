@@ -1316,10 +1316,10 @@ __og:video__ : l’indirizzo del video in accompagnamento della pagina
 Un esempio di uso avanzato di Open Graph preso dalla pagina di  __Gal Gadot__  __[https://www\.imdb\.com/name/nm2933757/](https://www.imdb.com/name/nm2933757/)__  protagonista di “Wonder Woman 1984”
 
 ```html
-<meta  __property="og:url"__  content="http://www.imdb.com/name/nm2933757/" />
-<meta  __property='og:image'__  content="https://m.media-amazon.com/images/M/MV5BYThjM2NlOTI
+<meta  property="og:url"  content="http://www.imdb.com/name/nm2933757/" />
+<meta  property='og:image'  content="https://m.media-amazon.com/images/M/MV5BYThjM2NlOTI
 tYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY1200_CR165,0,630,1200_AL_.jpg" />
-<meta  __property='og:type'__  content="actor" />
+<meta  property='og:type'  content="actor" />
 ```
 
 ---
@@ -1500,12 +1500,12 @@ HTML ha diversi tag semantici che definiscono le diverse parti di una pagina\.
 Questi elementi permettono una standardizzazione del codice verso una serie di elementi comuni
 
 ```html
-<header> - Intestazione o sezione di un documento
-<nav> - Link di navigazione
+<header>  - Intestazione o sezione di un documento
+<nav>     - Link di navigazione
 <section> - Sezioni
 <article> - Un contenuto
-<aside> - Una sidebar
-<footer> - Il piede del documento o di una sezione
+<aside>   - Una sidebar
+<footer>  - Il piede del documento o di una sezione
 <details> - Dettagli aggiuntivi rispetto al documento
 <summary> - Un header dell’elemento <details>
 ```
