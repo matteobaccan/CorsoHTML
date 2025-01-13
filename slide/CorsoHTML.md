@@ -1197,7 +1197,7 @@ Rispetto alla pagina corrente
 <img src="immagini/foto.jpg">               foto.jpg è nella cartella  immagini
 <img src="/immagini/foto.jpg">              foto.jpg è nella cartella  immagini del root folder
 <img src="../foto.jpg">                     foto.jpg è nella cartella padre della cartella corrente
-<img src="http://www.foo.bar/foto.jpg">     foto.jpg è sul sito foo.bar
+<img src="https://www.foo.bar/foto.jpg">    foto.jpg è sul sito foo.bar
 ```
 
 ---
@@ -1220,16 +1220,16 @@ Il set di caratteri usato per la corretta visualizzazione del sito
 <meta charset="UTF-8">
 ```
 
-Aggiornamento automatico
-
-```html
-<meta http-equiv="refresh" content="10">
-```
-
 Impostazioni per la visualizzazione responsive
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Aggiornamento automatico
+
+```html
+<meta http-equiv="refresh" content="10">
 ```
 
 ---
