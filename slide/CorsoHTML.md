@@ -1978,7 +1978,7 @@ Per quanto riguarda le immagini\, sono state introdotte una serie di classi che 
 
 ## Bootstrap – Jumbotron
 
-Il __Jumbotron__ è un componente di Bootstrap che crea un grande box visivamente prominente, ideale per richiamare l'attenzione su contenuti importanti, come titoli, descrizioni o call-to-action.
+__Jumbotron__ è un componente di Bootstrap che crea un grande box visivamente prominente, ideale per richiamare l'attenzione su contenuti importanti, come titoli, descrizioni o call-to-action.
 
 ### Esempio di codice HTML
 
