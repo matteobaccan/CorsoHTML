@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <!-- Domanda 1 -->
+  <question type="multichoice">
+    <name>
+      <text>Qual è il linguaggio fondamentale del Web?</text>
+    </name>
+    <questiontext format="html">
+      <text>Qual è il linguaggio fondamentale del Web?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>HTML</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>CSS</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>JavaScript</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Python</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 2 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un paragrafo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un paragrafo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;h1&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;div&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;span&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 3 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale attributo HTML viene utilizzato per specificare il testo alternativo di un'immagine?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale attributo HTML viene utilizzato per specificare il testo alternativo di un'immagine?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>alt</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>src</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>title</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>href</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 4 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per creare un collegamento ipertestuale?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per creare un collegamento ipertestuale?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;a&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;link&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;img&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;div&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 5 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale attributo HTML viene utilizzato per specificare l'URL di destinazione di un collegamento?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale attributo HTML viene utilizzato per specificare l'URL di destinazione di un collegamento?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>href</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>src</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>alt</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>title</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 6 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'intestazione di livello 1?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'intestazione di livello 1?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;h1&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;h2&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;div&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 7 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire una lista non ordinata?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire una lista non ordinata?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;ul&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;ol&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;li&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;dl&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 8 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire una lista ordinata?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire una lista ordinata?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;ol&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;ul&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;li&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;dl&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 9 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire una tabella?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire una tabella?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;table&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;tr&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;td&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;th&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 10 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire una riga in una tabella?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire una riga in una tabella?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;tr&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;td&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;th&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;table&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 11 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire una cella in una tabella?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire una cella in una tabella?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;td&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;tr&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;th&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;table&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 12 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'intestazione di colonna in una tabella?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'intestazione di colonna in una tabella?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;th&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;tr&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;td&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;table&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 13 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'immagine?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'immagine?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;img&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;picture&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;src&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;alt&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 14 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale attributo HTML viene utilizzato per specificare il percorso di un'immagine?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale attributo HTML viene utilizzato per specificare il percorso di un'immagine?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>src</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>alt</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>href</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>title</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 15 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un modulo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un modulo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;form&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 16 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un campo di input in un modulo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un campo di input in un modulo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;form&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 17 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale attributo HTML viene utilizzato per specificare il tipo di input in un campo di input?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale attributo HTML viene utilizzato per specificare il tipo di input in un campo di input?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>type</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>name</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>value</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>id</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 18 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale valore dell'attributo "type" viene utilizzato per creare un campo di input per una password?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale valore dell'attributo "type" viene utilizzato per creare un campo di input per una password?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>password</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>text</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>email</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>number</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 19 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di testo in un modulo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di testo in un modulo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;textarea&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 20 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un pulsante in un modulo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un pulsante in un modulo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;textarea&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 21 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'etichetta per un campo di input?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'etichetta per un campo di input?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;textarea&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 22 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale attributo HTML viene utilizzato per associare un'etichetta a un campo di input?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale attributo HTML viene utilizzato per associare un'etichetta a un campo di input?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>for</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>id</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>name</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>value</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 23 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un menu a tendina in un modulo?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un menu a tendina in un modulo?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;select&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;button&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 24 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'opzione in un menu a tendina?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'opzione in un menu a tendina?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;option&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;select&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 25 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un gruppo di opzioni in un menu a tendina?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un gruppo di opzioni in un menu a tendina?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;optgroup&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;select&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;option&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;label&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 26 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un file?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un file?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input type="file"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="text"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="password"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="email"&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 27 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un numero?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un numero?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input type="number"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="text"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="password"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="email"&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 28 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un'email?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un'email?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input type="email"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="text"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="password"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="number"&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 29 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per una data?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per una data?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input type="date"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="text"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="password"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="email"&gt;</text>
+    </answer>
+  </question>
+
+  <!-- Domanda 30 -->
+  <question type="multichoice">
+    <name>
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un colore?</text>
+    </name>
+    <questiontext format="html">
+      <text>Quale tag HTML viene utilizzato per definire un'area di input per un colore?</text>
+    </questiontext>
+    <answer fraction="100" format="html">
+      <text>&lt;input type="color"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="text"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="password"&gt;</text>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;input type="email"&gt;</text>
+    </answer>
+  </question>
+</quiz>

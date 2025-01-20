@@ -133,13 +133,11 @@ I browser sono dei programmi necessari alla corretta visualizzazione di una pagi
 
 Esempi di browser sono:
 
-```text
-- Chrome
-- Firefox
-- Edge
-- Safari
-- Opera
-```
+- __Chrome__ - [https://www.google.com/chrome/](https://www.google.com/chrome/)  
+- __Firefox__ - [https://www.mozilla.org/firefox/](https://www.mozilla.org/firefox/)  
+- __Edge__ - [https://www.microsoft.com/edge](https://www.microsoft.com/edge)  
+- __Safari__ - [https://www.apple.com/safari/](https://www.apple.com/safari/)  
+- __Opera__ - [https://www.opera.com/](https://www.opera.com/)  
 
 Senza i browser non sarebbe possibile visualizzare le pagine web, vista anche la loro complessità e natura dinamica.
 
@@ -380,7 +378,7 @@ Hanno 6 livelli di profondità e servono per intestare nel modo corretto delle p
 
 Le dimensioni di default dei __font-size__ degli heading sono
 
-```text
+```css
 h1 - 2em
 h2 - 1.5em
 h3 - 1.17em
@@ -1674,14 +1672,14 @@ L’accortezza da avere per poter visualizzare i caratteri nel modo corretto è 
 Di seguito alcuni esempi di emoji
 
 ```html
-    ✔ &#10004; 2714
-    ✖ &#10006; 2716
-    ✝ &#10013; 271D
-    ✡ &#10017; 2721
-    ✨ &#10024; 2728
-    ✳ &#10035; 2733
-    ✴ &#10036; 2734
-    ❄ &#10052; 2744
+✔ &#10004; 2714
+✖ &#10006; 2716
+✝ &#10013; 271D
+✡ &#10017; 2721
+✨ &#10024; 2728
+✳ &#10035; 2733
+✴ &#10036; 2734
+❄ &#10052; 2744
 ```
 
 Per un elenco completo è possibile utilizzare questo indirizzo
@@ -1705,11 +1703,11 @@ Essendo immagini\, specificate tramite caratteri\, le emoji vengono rappresentat
 Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, dopo l’entity della emoji\, un entity di colorazione
 
 ```html
-    &#127999; 🏿 Carnagione scura
-    &#127998; 🏾 Carnagione abbastanza scura
-    &#127997; 🏽 Carnagione media
-    &#127996; 🏼 Carnagione abbastanza chiara
-    &#127995; 🏻 Carnagione chiara
+&#127999; 🏿 Carnagione scura
+&#127998; 🏾 Carnagione abbastanza scura
+&#127997; 🏽 Carnagione media
+&#127996; 🏼 Carnagione abbastanza chiara
+&#127995; 🏻 Carnagione chiara
 ```
 
 ---
@@ -1719,12 +1717,12 @@ Alcune emoji permettono di cambiare il colore della pelle\, per farlo si pone\, 
 Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
 
 ```html
-    &#9757; Nessun tono della pelle
-    &#9757;&#127999; Scuro
-    &#9757;&#127998; Medio Scuro
-    &#9757;&#127997; Medio
-    &#9757;&#127996; Luce media
-    &#9757;&#127995; Luce
+&#9757; Nessun tono della pelle
+&#9757;&#127999; Scuro
+&#9757;&#127998; Medio Scuro
+&#9757;&#127997; Medio
+&#9757;&#127996; Luce media
+&#9757;&#127995; Luce
 ```
 
 ---
@@ -1817,21 +1815,17 @@ range    reset    search    submit    tel    text    time    url    week
 
 ## CSS Framework
 
-Per facilitare la scrittura di pagine HTML sono nati col tempo una serie di framework CSS utili a velocizzare il lavoro
+Per facilitare la scrittura di pagine HTML sono nati col tempo una serie di framework CSS utili a velocizzare il lavoro. Di seguito i framework più noti:
 
-Fra i framework più noti ci sono
-
-```text
-Boostrap
-Foundation
-Bulma
-Tailwind
-Uikit
-Milligram
-Pure CSS
-Tachyons
-Materialize CSS
-```
+1. __Bootstrap__ - [https://getbootstrap.com/](https://getbootstrap.com/)
+2. __Foundation__ - [https://get.foundation/](https://get.foundation/)
+3. __Bulma__ - [https://bulma.io/](https://bulma.io/)
+4. __Tailwind CSS__ - [https://tailwindcss.com/](https://tailwindcss.com/)
+5. __UIkit__ - [https://getuikit.com/](https://getuikit.com/)
+6. __Milligram__ - [https://milligram.io/](https://milligram.io/)
+7. __Pure CSS__ - [https://purecss.io/](https://purecss.io/)
+8. __Tachyons__ - [https://tachyons.io/](https://tachyons.io/)
+9. __Materialize CSS__ - [https://materializecss.com/](https://materializecss.com/)
 
 ---
 
@@ -1873,7 +1867,7 @@ Se non desideri utilizzare tutte e 12 le colonne singolarmente\, puoi raggruppar
 
 il sistema a griglia Bootstrap 5 ha sei classi:
 
-```text
+```css
 .col- (dispositivi extra piccoli - larghezza dello schermo inferiore a 576px)
 
 .col-sm- (piccoli dispositivi - larghezza dello schermo uguale o superiore a 576px)
@@ -1919,7 +1913,7 @@ Per utilizzarle è sufficiente indicarle a livello di attributo  __class__
 
 Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \.\. h6__ \, ma soprattutto aggiunge una serie di classi per la formattazione dei testi:
 
-```text
+```css
 .text-start             Allinea il testo a sinistra
 .text-center            Allinea al centro
 .text-decoration-none   Rimuove la sottolineatura da un collegamento
@@ -1934,21 +1928,19 @@ Boostrap modifica lo stile standard dei tag tipografici\, come  __h1\, h2\, h3 \
 
 ## Bootstrap – colori testo
 
-Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori. Queste classi possono essere sostituite da template CSS integrativi
+Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base ai colori.
 
-```text
-.text-muted
-.text-primary
-.text-success
-.text-info
-.text-warning
-.text-danger
-.text-secondary
-.text-white
-.text-dark
-.text-body
-.text-light
-```
+1. __`.text-muted`__ - Testo grigio chiaro, per contenuti secondari.  
+2. __`.text-primary`__ - Testo blu, per elementi principali.  
+3. __`.text-success`__ - Testo verde, per messaggi di successo.  
+4. __`.text-info`__ - Testo azzurro, per informazioni.  
+5. __`.text-warning`__ - Testo giallo/arancione, per avvisi.  
+6. __`.text-danger`__ - Testo rosso, per errori o pericoli.  
+7. __`.text-secondary`__ - Testo grigio scuro, per contenuti secondari.  
+8. __`.text-white`__ - Testo bianco, per contrasto su sfondi scuri.  
+9. __`.text-dark`__ - Testo nero/scuro, per contrasto su sfondi chiari.  
+10. __`.text-body`__ - Testo con colore predefinito del documento.  
+11. __`.text-light`__ - Testo grigio chiaro, per sfondi scuri o stile delicato.  
 
 ---
 
@@ -1956,16 +1948,14 @@ Boostrap aggiunge una serie di classi utili per raggruppare dei contesti in base
 
 Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
-```text
-.bg-primary
-.bg-success
-.bg-info
-.bg-warning
-.bg-danger
-.bg-secondary
-.bg-dark
-.bg-light
-```
+1. __`.bg-primary`__ - Sfondo blu, per elementi principali.  
+2. __`.bg-success`__ - Sfondo verde, per messaggi di successo.  
+3. __`.bg-info`__ - Sfondo azzurro, per informazioni.  
+4. __`.bg-warning`__ - Sfondo giallo/arancione, per avvisi.  
+5. __`.bg-danger`__ - Sfondo rosso, per errori o pericoli.  
+6. __`.bg-secondary`__ - Sfondo grigio scuro, per contenuti secondari.  
+7. __`.bg-dark`__ - Sfondo nero/scuro, per contrasto con testo chiaro.  
+8. __`.bg-light`__ - Sfondo grigio chiaro, per contrasto con testo scuro.  
 
 ---
 
@@ -1973,7 +1963,7 @@ Boostrap anche gli sfondi hanno delle colorazioni contestuali
 
 Per quanto riguarda le immagini\, sono state introdotte una serie di classi che aiutano la loro visualizzazione e allineamento
 
-```text
+```css
 .rounded                Arrotonda gli angoli dell’immagine
 .rounded-circle         Mette l’immagine in un cerchio
 .img-thumbnail          Mette un bordo all’immagine
@@ -1988,15 +1978,17 @@ Per quanto riguarda le immagini\, sono state introdotte una serie di classi che 
 
 ## Bootstrap – Jumbotron
 
-jumbotron è un grande box con lo scopo di richiamare l'attenzione su alcuni contenuti
+Il __Jumbotron__ è un componente di Bootstrap che crea un grande box visivamente prominente, ideale per richiamare l'attenzione su contenuti importanti, come titoli, descrizioni o call-to-action.
+
+### Esempio di codice HTML
 
 ```html
 <div class="jumbotron">
-
-    <h1>Titolo</h1>
-
-    <p>testo testo testo testo testo testo testo testo testo testo </p>
-
+    <h1 class="display-4">Titolo Principale</h1>
+    <p class="lead">Questo è un testo di esempio per descrivere il contenuto del Jumbotron.</p>
+    <hr class="my-4">
+    <p>Ulteriori dettagli o informazioni aggiuntive possono essere inseriti qui.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Scopri di più</a>
 </div>
 ```
 
@@ -2014,14 +2006,14 @@ Le classi di alert servono ad evidenziare un testo utilizzando un contesto\, com
 
 Le tipologie di classi di alert si sovrappongono a quelle già viste per i testi
 
-```text
+```css
 .alert-success .alert-info .alert-warning .alert-danger
 .alert-primary .alert-secondary .alert-light .alert-dark
 ```
 
 Come classi di supporto agli alert è possibile anche usare
 
-```text
+```css
 .alert-dismissible Alert chiudibile
 .fade .show        Alert con un fade in chiusura
 ```
@@ -2042,13 +2034,13 @@ Come per testi e alert\, anche i button hanno delle classi relative al contesto
 
 Le tipologie di classi di btn si sovrappongono a quelle già viste per i testi
 
-```text
+```css
 .btn-success .btn-info .btn-warning .btn-danger .btn-primary .btn-secondary .btn-light .btn-dark
 ```
 
 Come classi di supporto è possibile usare le stesse classi con aggiunta di  __outline__
 
-```text
+```css
 .btn-outline-primary .btn-outline-secondary ...
 ```
 
