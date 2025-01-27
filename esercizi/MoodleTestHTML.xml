@@ -531,22 +531,22 @@
   <!-- Domanda 25 -->
   <question type="multichoice">
     <name>
-      <text>Quale tag HTML viene utilizzato per definire un gruppo di opzioni in un menu a tendina?</text>
+      <text>Quale tag HTML viene utilizzato per definire il titolo di una pagina?</text>
     </name>
     <questiontext format="html">
-      <text>Quale tag HTML viene utilizzato per definire un gruppo di opzioni in un menu a tendina?</text>
+      <text>Quale tag HTML viene utilizzato per definire il titolo di una pagina?</text>
     </questiontext>
     <answer fraction="100" format="html">
-      <text>&lt;optgroup&gt;</text>
+      <text>&lt;title&gt;</text>
     </answer>
     <answer fraction="0" format="html">
-      <text>&lt;select&gt;</text>
+      <text>&lt;intestation&gt;</text>
     </answer>
     <answer fraction="0" format="html">
-      <text>&lt;option&gt;</text>
+      <text>&lt;main&gt;</text>
     </answer>
     <answer fraction="0" format="html">
-      <text>&lt;label&gt;</text>
+      <text>&lt;principal&gt;</text>
     </answer>
   </question>
 

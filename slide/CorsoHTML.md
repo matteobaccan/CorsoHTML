@@ -1727,7 +1727,7 @@ Di conseguenza\, se vogliamo colorare diversamente l’emoji della mano faremo
 
 ---
 
-## Form
+## Form (in italiano chiamato anche modulo)
 
 Un form HTML serve a raccogliere l'input dell'utente\.
 
