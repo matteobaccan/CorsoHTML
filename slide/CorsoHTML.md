@@ -860,6 +860,8 @@ Quando usare il tag  __\<picture>__?
 
 ## MAP
 
+FIXME: migliorare la spiegazione sulle coords
+
 Il tag  __\<map>__  viene usato per definire una mappa di immagini.
 
 Una mappa è un'immagine con delle aree selezionabili
