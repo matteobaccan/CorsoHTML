@@ -387,7 +387,7 @@ h5 - .83em
 h6 - .67em
 ```
 
-dove em deriva dalla parola "emphasis" e identifica una larghezza relativamente al carattere corrente.
+dove em è un'unità tipografica, storicamente derivata dalla larghezza della lettera "M", e identifica una dimensione relativa al carattere corrente.
 Se il carattere corrente è di 16px il valore di 2em identifica 32px
 Come peso viene invece assegnato un __font-weight: bolder__
 
@@ -763,7 +763,7 @@ __src__  \- Specifica il percorso dell'immagine
 
 __alt__  \- Specifica un testo alternativo per l'immagine
 
-__loading__  \- Specifica il tipo di caricamento __eager__ o __lazy__
+A questi si aggiunge l'attributo opzionale __loading__, che specifica il tipo di caricamento __eager__ o __lazy__
 
 25/2/1993 nasce il tag IMG
 <http://1997.webhistory.org/www.lists/www-talk.1993q1/0182.html>
@@ -775,19 +775,19 @@ __loading__  \- Specifica il tipo di caricamento __eager__ o __lazy__
 Immagine da placeholder
 
 ```html
-<img src="https://via.placeholder.com/400x200" alt="immagine">
+<img src="https://placehold.co/400x200" alt="immagine">
 ```
 
 Attributi width e height
 
 ```html
-<img src="https://via.placeholder.com/400x200" alt="immagine" width="400" height="200">
+<img src="https://placehold.co/400x200" alt="immagine" width="400" height="200">
 ```
 
 CSS per width e height
 
 ```html
-<img src="https://via.placeholder.com/400x200" alt="immagine"
+<img src="https://placehold.co/400x200" alt="immagine"
    style="width:200px;height:100px;">
 ```
 
@@ -860,8 +860,6 @@ Quando usare il tag  __\<picture>__?
 
 ## MAP
 
-FIXME: migliorare la spiegazione sulle coords
-
 Il tag  __\<map>__  viene usato per definire una mappa di immagini.
 
 Una mappa è un'immagine con delle aree selezionabili
@@ -871,7 +869,7 @@ L'attributo  __name__  dell'elemento  __\<map>__  è associato all'attributo  __
 L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__, che definisce le aree cliccabili nella mappa dell'immagine
 
 ```html
-<img src="https://www.affde.com/uploads/article/33391/hMAObf6pOlc2GHIM.jpg"
+<img src="https://placehold.co/500x300"
     usemap="#workmap" width="500px" height="300px">
 
 <map name="workmap">
@@ -879,6 +877,26 @@ L'elemento  __\<map>__  contiene un numero di elementi  __\<area>__, che definis
     <area shape="rect" title="bing" coords="250,0,500,300" href="https://www.bing.com">
 </map>
 ```
+
+---
+
+## MAP - coords
+
+L'attributo  __coords__  definisce l'area cliccabile con coordinate in pixel, misurate dall'angolo in alto a sinistra dell'immagine. Il formato dipende dal valore di  __shape__:
+
+```text
+shape="rect"     coords="x1,y1,x2,y2"        angolo in alto a sinistra (x1,y1)
+                                             e angolo in basso a destra (x2,y2)
+shape="circle"   coords="x,y,r"              centro del cerchio (x,y) e raggio r
+shape="poly"     coords="x1,y1,x2,y2,..."    vertici del poligono, in sequenza
+shape="default"  senza coords                tutta l'immagine
+```
+
+Nell'esempio precedente, su un'immagine di 500x300 pixel:
+
+__coords="0,0,250,300"__ è il rettangolo che copre la metà sinistra
+
+__coords="250,0,500,300"__ è il rettangolo che copre la metà destra
 
 ---
 
@@ -1544,7 +1562,7 @@ Il più conosciuto è il validatore di w3.org, che è in grado di darci segnalaz
 
 In alternativa esistono dei plugin utilizzabili direttamente da browser\, come  __html\-validator__  per Chrome
 
-<https://chrome.google.com/webstore/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk>
+<https://chromewebstore.google.com/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk>
 
 ---
 
@@ -1800,7 +1818,7 @@ Il tag  __input__ è il primo tag utilizzato e serve ad inserire dei campi testu
 Uno degli attributi più interessanti di  __input__ è type\, che identifica il tipo di dati che verranno inseriti nel campo
 
 ```text
-button    checkboxcolor    date    datetime    datetime-local    email
+button    checkbox    color    date    datetime-local    email
 file    hidden    image    month    number    password    radio
 range    reset    search    submit    tel    text    time    url    week
 ```
@@ -1980,14 +1998,16 @@ Per quanto riguarda le immagini\, sono state introdotte una serie di classi che 
 
 ## Bootstrap – Jumbotron
 
-__Jumbotron__ è un componente di Bootstrap che crea un grande box visivamente prominente, ideale per richiamare l'attenzione su contenuti importanti, come titoli, descrizioni o call-to-action.
+__Jumbotron__ era un componente di Bootstrap (fino alla versione 4) che creava un grande box visivamente prominente, ideale per richiamare l'attenzione su contenuti importanti, come titoli, descrizioni o call-to-action.
 
-### Esempio di codice HTML
+In Bootstrap 5 il componente è stato rimosso: lo stesso effetto si ottiene combinando le utility class
+
+### Esempio di codice HTML (Bootstrap 5)
 
 ```html
-<div class="jumbotron">
+<div class="bg-light p-5 rounded">
     <h1 class="display-4">Titolo Principale</h1>
-    <p class="lead">Questo è un testo di esempio per descrivere il contenuto del Jumbotron.</p>
+    <p class="lead">Questo è un testo di esempio per descrivere il contenuto del box.</p>
     <hr class="my-4">
     <p>Ulteriori dettagli o informazioni aggiuntive possono essere inseriti qui.</p>
     <a class="btn btn-primary btn-lg" href="#" role="button">Scopri di più</a>
@@ -2053,7 +2073,7 @@ Come classi di supporto è possibile usare le stesse classi con aggiunta di  __o
 I badge sono delle etichette di testo che subiscono il contesto come button e text
 
 ```html
-<h1>Esempio di intestazione <span class="badge bg-secondary">badge</h1>
+<h1>Esempio di intestazione <span class="badge bg-secondary">badge</span></h1>
 ```
 
 In questo caso il suffisso da usare è __bg__
