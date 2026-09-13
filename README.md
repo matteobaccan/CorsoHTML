@@ -8,6 +8,8 @@ Il corso è composto da una serie di slide in formato MD e PDF e da una serie di
 
 Gli esempi sono pubblicati anche su [Codepen](https://codepen.io/collection/kNxEPO?grid_type=list&sort_by=itemcreatedat)
 
+Per proseguire dopo le basi HTML5, è disponibile [The Concise TypeScript Book in italiano](https://gibbok.github.io/typescript-book/it-it/), una guida TypeScript gratuita e open source.
+
 ## Esercizi
 
 Di seguito è riportata una scaletta completa degli esercizi presenti nella cartella `esercizi`, con link diretti ai file:
